@@ -1,0 +1,89 @@
+container,
+out-line,
+bottom,
+a {
+  position: relative;
+}
+.out-line {
+  position: absolute;
+  display: flex;
+  /* border: 1px solid black; */
+  width: 310px;
+  top: 27%;
+  left: 40%;
+  height: 360px;
+  margin: 10px;
+  padding: 1px;
+  background-color: #fafafa;
+}
+.container {
+  position: absolute;
+  display: flex;
+  /* border: 1px solid black; */
+  width: 300px;
+  top: 7%;
+  left: 5%;
+  background-color: white;
+  margin-top: -20px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.survey-container {
+  margin: 100px auto;
+  width: 200px;
+}
+
+input {
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 15px;
+  padding: 7px 12px;
+  border-radius: 5px;
+  border: 1px solid #fafafa;
+  background-color: #fafafa;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+button {
+  width: 113%;
+  font-size: 13px;
+  margin-bottom: 15px;
+  padding: 7px 12px;
+  border-radius: 5px;
+  border: 1px solid #fafafa;
+  background-color: #c4e1fb;
+}
+
+.grab {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.font {
+  font-size: 50px;
+  font-family: "Lobster", cursive;
+}
+p {
+  position: absolute;
+  padding-bottom: -20px;
+  color: blue;
+  top: -10%;
+  padding-left: 30px;
+}
+.bottom {
+  position: absolute;
+  display: flex;
+  font-size: 7px;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  left: 30%;
+  bottom: 5%;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Instagram</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- favicon -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-1">
+        <!-- <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png" alt="logo_img">
+            <div class="vl"></div> -->
+        <!-- <img class="logo_instagram_txt" src="img/logo_text.png" alt="logo_text"> -->
+        <p class="logo_instagram_txt font"> justgram</p>
+      </div>
+      <input id="searchInput" type="search" class="input-search" placeholder="검색">
+      <div class="nav-2">
+        <img src="img/home.jpg">
+        <img src="img/dm.jpg">
+        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="탐색">
+        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+        <img class="pic" src="img/my.jpg" alt="마이페이지">
+      </div>
+    </div>
+  </nav>
+  <!-- main -->
+  <main>
+    <div class="feeds">
+      <!-- article -->
+      <article>
+        <header>
+          <div class="profile-of-article">
+            <img class="img-profile pic" src="img/my1.jpg" alt="dlwlrma님의 프로필 사진">
+            <span class="userID main-id point-span">seo_hsss</span>
+          </div>
+          <img class="icon-react icon-more" src="/img/dot.jpg" alt="more">
+        </header>
+        <div class="main-image">
+          <img src="/img/seo1.jpg" class="mainPic">
+        </div>
+        <div class="icons-react">
+          <div class="icons-left">
+            <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+            <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
+            <img class="icon-react" src="img/dm1.jpg" ">
+          </div>
+          <img class=" icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png">
+          </div>
+          <!-- article text data -->
+          <div class="reaction">
+            <div class="liked-people">
+              <img class="pic" src="img/profil.jpg">
+              <p><span class="point-span">johnnyjsuh</span>님 <span class="point-span">외 2,412,751명</span>이 좋아합니다</p>
+            </div>
+            <div class="description">
+              <p><span class="point-span userID">dlwlrma</span><span class="at-tag">@wkorea @gucci</span> 🌱</p>
+            </div>
+            <div class="comment-section">
+              <ul class="comments">
+                <li>
+                  <span><span class="point-span userID">postmalone</span>내가 입으면 더 잘어울릴 것 같아</span>
+                  <img class="comment-heart"
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+                </li>
+                <!-- input 값 여기에 추가 -->
+              </ul>
+              <div class="time-log">
+                <span>32분 전</span>
+              </div>
+            </div>
+          </div>
+          <div class="hl"></div>
+          <div class="comment">
+            <input id="input-comment" class="input-comment" type="text" placeholder="댓글 달기...">
+            <button type="submit" class="submit-comment" disabled>게시</button>
+          </div>
+      </article>
+
+    </div>
+    <!-- main-right -->
+    <div class="main-right">
+      <div class="myProfile">
+        <img class="pic" src="img/my1.jpg" alt="thisisyourhyung님의 프로필 사진">
+        <div>
+          <span class="userID point-span">yugwanhyi2546</span>
+          <span class="sub-span">KWANEE </span>
+        </div>
+      </div>
+      <!-- story section -->
+      <div class="section-story">
+        <div class="menu-title">
+          <span class="sub-title">스토리</span>
+          <span class="find-more">모두 보기</span>
+        </div>
+        <ul class="story-list">
+          <li>
+            <div class="gradient-wrap1">
+              <img src="img/story.jpg">
+            </div>
+
+          </li>
+
+      </div>
+      <!-- recommendation section -->
+      <div class="section-recommend">
+        <div class="menu-title">
+          <span class="sub-title">회원님을 위한 추천</span>
+          <span class="find-more">모두 보기</span>
+        </div>
+        <ul class="recommend-list">
+          <li>
+            <div class="recommend-friend-profile">
+              <img style="width: 290px;left:3px;" src="img/member.jpg">
+            </div>
+          </li>
+
+        </ul>
+      </div>
+      <footer>
+        <p class="insta-sccript">
+          소개 ∙ 도움말 ∙ 홍보 센터 ∙ API ∙ 채용 정보 ∙ 개인정보처리방침 ∙ <br>약관 ∙ 위치 ∙ 인기계정 ∙ 해시태그 ∙ 언어
+          <br><br>
+          © 2020 INSTAGRAM FROM FACEBOOK
+        </p>
+      </footer>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

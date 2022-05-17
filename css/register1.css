@@ -1,0 +1,14 @@
+.container {
+  margin: 100px auto;
+  width: 200px;
+  border: 1px solid black;
+  padding: 50px;
+}
+.input {
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 5px;
+  padding: 7px 12px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
