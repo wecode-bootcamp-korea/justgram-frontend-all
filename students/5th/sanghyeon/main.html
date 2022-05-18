@@ -2,7 +2,77 @@
 <head>
     <meta charset="utf-8">
     <title>mainpage</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css"/>
+    <link href="style/common.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="navWrapper">
+        <nav>
+            <div class="title">
+                <img alt="instagram" src="img/instagram.png">
+                &nbsp;| Justgram
+            </div>
+            <input type="text" placeholder="검색">
+            <div class="navBar">
+                <img alt="explore" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">&nbsp;
+                <img alt="heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">&nbsp;
+                <img alt="profile" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png">
+            </div>
+        </nav>
+    </div>
+    <div class="wrapper">
+        <main>
+            <div class="feeds">
+                <article>
+                    <div class="articleHeader">
+                        <img class="justcode" alt="justcode" src="img/justcode.png">
+                        <div>
+                            <p style="font-weight: bold;">justcode_bootcamp</p>
+                            <p>justCode - 저스트코드</p>
+                        </div>
+                    </div>
+                    <img class="js" alt="js" src="img/jc.png">
+                <div class="iconBox comment">
+                    <img alt="heart" style="width: 33px;"  src="img/heart.png">
+                    <img alt="bubble" src="img/bubble.png">
+                    <img alt="upload" src="img/upload.png">
+                </div>
+                <div class="heartCnt comment">
+                    <img src="img/me.jpeg">
+                    sanghyeon111님 외 30명이 좋아합니다.
+                </div>
+                <div class="contentsBox comment">
+                    <p><span style="font-weight:bold;">justcode_bootcamp</span> "2022년, 개발자가 되기로 결심했다면 1,300명 이상 비전공자 개발자를 배출한 저스트코드와 함께...<span style="color: gray;">더 보기</span></p>
+                    <p style="font-size:8px;color: gray;">10분전</p>
+                    <input class="tInput" type="text" placeholder="댓글달기...">
+                    <input class="submitBtn" type="button" value="게시">
+                </div>
+                </article>
+            </div>
+            <div class="main-right">
+                <div class="articleHeader">
+                    <img class="justcode" style="width: 50px;height: 50px;" alt="justcode" src="img/justcode.png">
+                    <div>
+                        <p style="font-weight: bold;">justcode_bootcamp</p>
+                        <p>justCode - 저스트코드</p>
+                    </div>
+                </div>
+                <div class="storyBoard">
+                    <span>스토리</span>
+                    <span style="font-weight: bold;">모두 보기</span>
+                </div>
+                <!-- 스토리리스트 -->
+                <p>...</p>
+                <div class="storyBoard">
+                    <span>회원님을 위한 추천</span>
+                    <span style="font-weight: bold;">모두 보기</span>
+                </div>
+                <!-- 추천리스트 -->
+                <p>...</p>
+            </div>
+        </main>
+    </div>
 
+    <script src="js/main.js"></script>
 </body>
