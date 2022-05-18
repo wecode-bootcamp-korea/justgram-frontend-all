@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+            <meta charset="UTF-8">
+            <title>JUSTGRAM</title>
+            <link href="style/login.css" rel="stylesheet" type="text/css" />
+            <link href="style/common.css" rel="stylesheet" type="text/css" />
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+                </style>
+    </head>
+    <body>
+        <div class="loginWhole"><!--로그인페이지/전체-->
+           <div class="logoBox"><!--로고박스부분-->
+            <div class="logo"><!--로고부분-->
+                Justgram
+            </div>
+            <div class="inputWholeBox"><!--로고제외 전체부분-->
+                <form class="infoInputWholeBox" id="loginForm" method="post"><!--로고제외 전체부분-->
+                    <div class="infoInputWholeBox"><!--ID~Faccebook로그인까지-->
+
+
+                        <div class="id-box"><!--(전화번호,사용자 이름 또는 이메일)-전체-->
+                            <div class="id-input-box"> <!--(전화번호,사용자 이름 또는 이메일)-박스-->
+                                <input type="text" name="st_id" placeholder="전화번호, 사용자 이름 또는 이메일">
+                            </div>
+                        </div>
+
+                        <div class="pw-box"><!--(비밀번호)-전체-->
+                            <div class="pw-input-box"><!--(비밀번호)-박스-->
+                                <input type="text" name="st_pw" placeholder="비밀번호">
+                            </div>
+                        </div>
+
+
+                        <div class="login-button-box"><!--(로그인 버튼)-전체-->
+                            <button class="login-button" type="submit"><!--로그인 버튼-->
+                                <div class="login-button-text">로그인
+                                </div>
+                            </button>
+                        </div>
+
+
+                        <div class="or-box"> <!--(또는)-전체-->
+                            <div class="or-left-line"> <!--(또는)-왼쪽선-->
+                            </div>
+                            <div class="or-text">또는 <!--(또는)-글자-->
+                            </div>
+                            <div class="or-right-line"> <!--(또는)-오른쪽선-->
+                            </div>
+                        </div>
+
+                        <div class="facebook-login-box"> <!--(페이스북 로그인)-전체-->
+                            <button class="facebook-login-button" type="button"> <!--(페이스북 로그인)-버튼-->
+                                <img class="facebook-icon" src="facebook.png" alt="facebook">  <!--(페이스북 로그인)-아이콘-->
+                                </span>
+                                <span class="facebook-text">Facebook으로 로그인  <!--(페이스북 로그인)-글자-->
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <a class="pw-finder" href="/accounts/password/reset/" tabindex="0">비밀번호를 잊으셨나요? <!--비밀번호를 잊으셨나요?-->
+                    </a>
+
+                </form>
+            </div>
+
+        </div>
+        <script src="login.js"></script>
+    </body>
+</html>
