@@ -1,0 +1,148 @@
+body {
+  background-color: #fafafa;
+}
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 20px 0;
+  align-items: center;
+  border-bottom: 1.5px solid #e4e4e4;
+  margin-bottom: 40px;
+}
+article {
+  border: 1.5px solid #e4e4e4;
+}
+.nav-insta-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-insta-logo-image {
+  width: 30px;
+  padding-right: 15px;
+  border-right: 2px solid black;
+  margin-right: 15px;
+}
+.nav-icons img {
+  width: 30px;
+  margin-left: 20px;
+}
+.nav-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+.nav-find input {
+  width: 170px;
+  text-align: center;
+  padding: 4px 0;
+  background-color: #fafafa;
+  border: 1.5px solid #e4e4e4;
+  border-radius: 2px;
+}
+.feeds {
+  background-color: white;
+  width: 500px;
+}
+.feeds-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.feeds-header-user {
+  display: flex;
+  align-items: center;
+}
+.feeds-header-user img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 13px;
+}
+.feeds-image {
+  display: block;
+  width: 100%;
+}
+.elipsis {
+  margin-right: 13px;
+}
+.feeds-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 20px;
+}
+.feeds-icons-left i {
+  margin-right: 5px;
+}
+.feeds-likes {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.feeds-likes img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.feeds-likes p span {
+  font-weight: 700;
+}
+.feeds-comments {
+  border-bottom: 1px solid #e4e4e4;
+}
+.feeds-comments-comment,
+.feeds-comments-comment-left {
+  padding: 0 10px;
+  display: flex;
+  margin-bottom: 5px;
+}
+.feeds-comments-comment-second {
+  display: flex;
+  justify-content: space-between;
+}
+.feeds-comments-comment-left {
+  display: flex;
+}
+.feeds-comments-comment-right i {
+  color: #b4b4b4;
+  margin-right: 10px;
+}
+.feeds-comments-comment .more {
+  margin-left: 5px;
+  color: #b3b3b3;
+  font-weight: 400;
+}
+.feeds-comments-comment span,
+.feeds-comments-comment-left span {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.feeds-comments-updatedtime {
+  margin-left: 10px;
+  color: #b3b3b3;
+}
+.comment-form {
+  display: flex;
+  justify-content: space-between;
+}
+.comment-input {
+  border: none;
+}
+.comment-submit {
+  border: none;
+  background-color: inherit;
+  color: #c8e3fb;
+}
+.comment-input {
+  padding: 15px 10px;
+  flex: 1;
+}
+.comment-submit {
+  padding: 0 17px;
+}
+.comment-submit:hover {
+  cursor: pointer;
+}
