@@ -8,6 +8,7 @@
   align-items: center;
   font-size: 30px;
   margin: 15px 0;
+  height: 55px;
 }
 
 .nav-left, .nav-center, .nav-right {
@@ -136,10 +137,17 @@ main {
   color: gray;
 }
 
+.others {
+  padding-bottom: 5px;
+}
+
 .time {
   position: relative;
-  left: 20px;
   padding-bottom: 5px;
+}
+
+.feed-time {
+  padding-left: 20px;
 }
 
 .nickname {
@@ -151,7 +159,8 @@ main {
   display: flex;
   background-color: rgb(249,249,249);
   border-top: 1px solid lightgray;
-  padding: 20px 0 0 10px;
+  padding: 20px 0;
+  z-index: -1;
 }
 
 
