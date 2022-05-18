@@ -1,0 +1,98 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main-background {
+    border: 1px solid;
+    border-color: rgba(38,38,38, 0.35);
+    width: 348px;
+    height: 373.6px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    width: 175px;
+    height: 51px;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.main-ui{
+    width: 268px;
+}
+
+input {
+    width: 268px;
+    height: 38px;
+    padding: 0px;
+    border: 1px solid rgba(38,38,38, 0.35);
+    border-radius: 3px;
+    margin-bottom: 6px;
+    font-size: 12px; 
+    background-color: #fafafa; 
+}
+
+#account {
+    margin-top: 21px;
+}
+
+button {
+    width: 268px;
+    height: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: #3f81e3;
+    border: none;
+    border-radius: 3px;
+    font-weight: 900;
+    color: white;
+    opacity: 0.5;
+}
+
+#line {
+    width: 268px;
+    height: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#flogin {
+    width: 268px;
+    height: 16.6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#forgetpw {
+    width: 268px;
+    height: 16px;
+    margin-top: 12px;
+    margin-bottom: 21px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#sub-background {
+    border: 1px solid;
+    border-color: rgba(38,38,38, 0.35);
+    width: 348px;
+    height: 41px;
+    margin:10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
