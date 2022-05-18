@@ -17,6 +17,7 @@ input.addEventListener("keyup", (event) => {
   if (isIdValid && isPwValid) {
     button.style.backgroundColor = "#61ADED";
     button.disabled = false;
+    button.style.cursor = "pointer";
   } else {
     button.style.backgroundColor = "#aed4ea";
     button.disabled = true;
