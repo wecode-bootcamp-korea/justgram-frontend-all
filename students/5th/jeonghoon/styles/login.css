@@ -1,30 +1,93 @@
 body {
-  margin: 0;
-  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border: 1px solid #ddd;
+  width: 400px;
+}
+
+.logo-box {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.container {
-  margin-top: 40px;
-  text-align: center;
+
+.logo-text {
+  display: inline-block;
+  font-family: "lobster", cursive;
+  font-size: 60px;
+  padding: 50px;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.input-common {
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 5px;
   border: 1px solid #ddd;
-}
-
-.page {
-  width: 350px;
-  background: #fff;
   border-radius: 5px;
-  padding-bottom: 15px;
+  font-size: 16px;
 }
 
-.title {
-  padding: 30px 0;
-  text-transform: capitalize;
-  font-size: 25px;
-  font-family: "Nanum Brush Script", cursive;
+.login-id {
+  display: block;
 }
 
+.login-pw {
+  display: block;
+}
+
+.login-btn {
+  margin: 5px 0;
+  padding: 8px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #c4e1fb;
+  color: white;
+  font-size: 16px;
+}
+login-bt:hover {
+  color: #2c58fe;
+}
+.extra-box {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.find-password {
+  font-family: cursive;
+  color: #2c58fe;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding-left: 10px;
+  position: relative;
+  height: 35px;
+  font-size: 17px;
+}
+
+input::placeholder {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+input:focus::placeholder {
+  position: absolute;
+  font-size: 10px;
+  transform: translate(-13px);
+}
+
+/*
 form {
   width: 75%;
   display: flex;
@@ -47,26 +110,7 @@ form input:focus {
   background: #efefef;
 }
 
-input[type="text"],
-input[type="password"] {
-  padding-left: 10px;
-  position: relative;
-  height: 35px;
-  font-size: 17px;
-}
-
-input::placeholder {
-  font-weight: normal;
-  font-size: 13px;
-}
-
-input:focus::placeholder {
-  position: absolute;
-  font-size: 10px;
-  transform: translate(-13px);
-}
-
-form button {
+/*form button {
   border: none;
   background: #c4e1fb;
   padding: 5px 0;
@@ -94,3 +138,4 @@ form button:active {
   font-size: 12px;
   font-weight: 500;
 }
+*/
