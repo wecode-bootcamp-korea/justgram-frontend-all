@@ -13,32 +13,21 @@
     <script defer src="js/main.js"></script>
   </head>
   <body>
-    <main>
-      <div class="login-box">
-        <div class="title-box">Justgram</div>
-        <form class="login-form">
-          <div>
-            <input
-              id="id"
-              class="input-box"
-              type="text"
-              placeholder="전화번호, 사용자 이름 또는 이메일"
-            />
-          </div>
-          <div>
-            <input
-              id="password"
-              class="input-box"
-              type="password"
-              placeholder="비밀번호"
-            />
-          </div>
-          <div>
-            <button class="button-tag" type="submit" disabled>로그인</button>
-          </div>
-        </form>
-        <div><a class="find-atag" href="#">비밀번호를 잊으셨나요?</a></div>
+    <section class="contatiner">
+      <div class="logo-box"><span class="logo-text">Justgram</span></div>
+      <div class="input-box">
+        <input
+          class="identify"
+          type="text"
+          placeholder="전화번호, 사용자 이름 또는 이메일"
+        />
+        <input class="password" type="password" placeholder="비밀번호" />
+
+        <button class="login-btn" type="submit" disabled>로그인</button>
       </div>
-    </main>
+      <div class="extra-box">
+        <a class="find-password" href="#">비밀번호를 잊으셨나요?</a>
+      </div>
+    </section>
   </body>
 </html>
