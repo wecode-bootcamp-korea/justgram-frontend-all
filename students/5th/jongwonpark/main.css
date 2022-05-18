@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+nav {
+    background-color: white;
+    border-bottom: 1px solid #eaeaea;
+    padding-left: 70px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.justalogo {
+    width: 40px;
+    margin: 15px;
+    padding-right: 15px;
+    border-right: 2px solid black;
+}
+.title {
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+.searchbar {
+    text-align : center;
+    outline: none;
+    width: 250px;
+    padding: 5px 0;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+}
+.navleft {
+    display: flex;
+    align-items: center;
+    
+}
+.navright {
+    display: flex;
+    align-items: center;
+}
+.heart , .finder, .mypage {
+    width:35px;
+    margin: 0px 15px;
+}
+
+
