@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafa;
+}
+.loginContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 350px;
+  height: 460px;
+  background-color: #ffff;
+  border: 1px solid #dbdbdb;
+}
+
+.titleLogo {
+  margin: 40px auto;
+  font: lighter 50px 'Lobster', cursive;
+  text-align: center;
+}
+
+.loginBoxes {
+  display: flex; 
+  flex-direction: column;
+  width: 270px;
+}
+
+.idInput {
+  margin: 4px;
+  padding: 12px;
+  background-color: #fafafa;
+  border: 0.5px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.idInput:focus {
+  outline: 0.3px solid black;
+}
+
+.pwInput {
+  margin: 4px;
+  padding: 12px;
+  background-color: #fafafa;
+  border: 0.5px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.pwInput:focus {
+  outline: 0.3px solid black;
+}
+
+::placeholder {
+  color: #9b9b9b;
+  font-size: 12px;
+}
+
+.loginButton {
+  width: 262px;
+  margin: 10px auto;
+  padding: 10px;
+  color: white;
+  background-color: #c4e0fb;
+  border: none;
+  border-radius: 3px;
+}
+ 
+.searchPw {
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  color: #04386a;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+}
