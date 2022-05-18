@@ -48,30 +48,33 @@ input {
     background-color: #fafafa;
     color: #999999;
     font-size: 12px;
-    padding: 9px 0 7px 8px;
+    padding: 9px 8px 7px 8px;
     height: 20px;
     width: 250px;
 }
 
 .login-button-box {
     margin: 8px 40px 8px 40px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-button {
     border: 0px solid;
     background-color: #c4e1fb;
     border-radius: 3.5px;
-    width: 260px;
+    
+    width: 268.594px;
     height: 30px;
-    padding: 5px 9px;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .login-button-text {
+    height: 20px;
     box-flex: 0;
-    width: 248px;
-    height: 18px;
     text-align: center;
     color: white;
     margin: 0;
