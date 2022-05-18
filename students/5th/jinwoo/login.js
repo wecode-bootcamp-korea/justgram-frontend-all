@@ -42,8 +42,8 @@ const changeBtnState = () => {
 idInput.addEventListener('keyup', changeBtnState);
 pwInput.addEventListener('keyup', changeBtnState);
 
-const moveToListPage = () => {
-  location.href="list.html";
+const moveToMainPage = () => {
+  location.href="main.html";
 }
 
-loginBtn.addEventListener('click', moveToListPage); 
+loginBtn.addEventListener('click', moveToMainPage); 
