@@ -73,9 +73,11 @@ input {
 }
 
 .login-button-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 20px;
-    box-flex: 0;
-    text-align: center;
     color: white;
     margin: 0;
     padding: 0;
