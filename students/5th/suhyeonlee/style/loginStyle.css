@@ -7,7 +7,7 @@ body {
 
 .container {
   border: 1px solid #ddd;
-  width: 400px;
+  width: 450px;
 }
 
 .logo-box {
@@ -20,6 +20,7 @@ body {
   font-family: "Lobster", cursive;
   font-size: 60px;
   padding: 25px;
+  margin: 30px 70px;
 }
 
 .input-box {
@@ -31,8 +32,8 @@ body {
 .input-common {
   display: block;
   font-size: 18px;
-  padding: 5px 10px;
-  margin-bottom: 5px;
+  padding: 13px 10px;
+  margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
   background-color: #fafafa;
@@ -40,7 +41,7 @@ body {
 
 .login-btn {
   display: block;
-  margin: 5px 0;
+  margin: 10px 0;
   padding: 10px 0;
   font-size: 18px;
   border-radius: 5px;
@@ -50,7 +51,7 @@ body {
 }
 
 .extra-box {
-  padding-top: 60px;
+  padding-top: 150px;
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -59,4 +60,6 @@ body {
 .find-password {
   font-family: "Courier New", Courier, monospace;
   text-decoration-line: none;
+  color: rgb(20, 28, 146);
+  font-weight: bold;
 }

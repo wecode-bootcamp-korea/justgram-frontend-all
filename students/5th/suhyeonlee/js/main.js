@@ -1,8 +1,8 @@
 // 초기 상태 : 비활성화
 
-const idValue = document.getElementById("id");
-const pwValue = document.getElementById("password");
-const buttonTag = document.getElementsByClassName("button-tag")[0];
+const idValue = document.getElementsByClassName("identify")[0];
+const pwValue = document.getElementsByClassName("password")[0];
+const buttonTag = document.getElementsByClassName("login-btn")[0];
 
 // 아이디, 패스워드 체크 함수
 const lenghtCheck = () => {
