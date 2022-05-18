@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
+.nav-tag {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.nav-tag > span {
+  align-self: center;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.feeds {
+  border: 1px solid rgb(229, 226, 226);
+  margin-right: 10px;
+  width: content;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  float: right;
+  margin-right: 10px;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.icons {
+  align-self: center;
+}
+.photos {
+  width: 700px;
+  height: 600px;
+}
+.title-logo {
+  padding-left: 250px;
+}
+.icons-div {
+  padding-right: 200px;
+}
+.icon {
+  padding-left: 15px;
+  width: 40px;
+}
+
+.stroy-list {
+  padding-left: 0px;
+}
+
+.story {
+  border: 1px solid;
+  border-radius: 100px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
+    linear-gradient(
+      to right,
+      rgb(250, 145, 55) 28%,
+      rgb(235, 65, 65) 42%,
+      rgb(195, 60, 190) 58%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  /* margin: 10px; */
+  margin-top: 6px;
+}
+
+.story-image {
+  /* position: absolute; */
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+
+  /* left: 0; */
+  /* z-index: 3; */
+}
+
+/* .recommand-image-canvas {
+  position: relative;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background: -webkit-radial-gradient(
+      32% 106%,
+      circle cover,
+      rgb(255, 225, 125) 0%,
+      rgb(255, 205, 105) 10%,
+      rgb(250, 145, 55) 28%,
+      rgb(235, 65, 65) 42%,
+      transparent 82%
+    ),
+    -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+  background: -moz-radial-gradient(
+      32% 106%,
+      circle cover,
+      rgb(255, 225, 125) 0%,
+      rgb(255, 205, 105) 10%,
+      rgb(250, 145, 55) 28%,
+      rgb(235, 65, 65) 42%,
+      transparent 82%
+    ),
+    -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+  background: -ms-radial-gradient(
+      32% 106%,
+      circle cover,
+      rgb(255, 225, 125) 0%,
+      rgb(255, 205, 105) 10%,
+      rgb(250, 145, 55) 28%,
+      rgb(235, 65, 65) 42%,
+      transparent 82%
+    ),
+    -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+  background: -o-radial-gradient(
+      32% 106%,
+      circle cover,
+      rgb(255, 225, 125) 0%,
+      rgb(255, 205, 105) 10%,
+      rgb(250, 145, 55) 28%,
+      rgb(235, 65, 65) 42%,
+      transparent 82%
+    ),
+    -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+  background: radial-gradient(
+      circle farthest-corner at 32% 106%,
+      rgb(255, 225, 125) 0%,
+      rgb(255, 205, 105) 10%,
+      rgb(250, 145, 55) 28%,
+      rgb(235, 65, 65) 42%,
+      transparent 82%
+    ),
+    linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+} */
+
+button {
+  background-color: white;
+  width: content;
+  border: none;
+}
+.send-comment {
+  font-size: 15px;
+  font-weight: bold;
+  color: #c0dffd;
+  padding: 0;
+}
+
+.follow {
+  font-size: 15px;
+  font-weight: bold;
+  color: #0095f6;
+}
+
+.search-input {
+  background-repeat: no-repeat;
+  align-self: center;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.search-input::-webkit-input-placeholder {
+  background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 1px center;
+  text-align: center;
+  text-indent: 10;
+}
+
+.comment-input {
+  width: 90%;
+  /* padding-top: 15px;
+  padding-left: 6px; */
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.comment-input:focus {
+  outline: none;
+}
+
+.writer {
+  border-radius: 100%;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.aside-myPhoto {
+  width: 50px;
+}
+
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.writer-photo-nickname {
+  display: flex;
+}
+
+.nickname {
+  text-decoration-line: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+  align-self: center;
+}
+
+.comment-sep-content {
+  border-top: 1px solid rgb(229, 226, 226);
+  margin-top: 10px;
+}
+
+.feed-photo {
+  margin-top: 7px;
+}
+
+.writer-content {
+  padding-left: 6px;
+}
+
+.main-right-common {
+  border: 1px solid rgb(229, 226, 226);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.side-myInfo {
+  display: flex;
+}
+
+.recommand-list {
+}
+
+.recomand-item {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.recommand {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.recommand-nickname {
+  align-self: flex-start;
+}
+
+.follow {
+  align-self: center;
+}
+
+.item-follow {
+  align-self: center;
+}

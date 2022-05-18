@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JustGram Main</title>
+    <link rel="stylesheet" type="text/css" href="../style/mainStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/f3cf30ed42.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav-tag">
+      <span class="title-logo">Justgram</span>
+      <input class="search-input" type="text" placeholder="검색" />
+      <div class="icons-div">
+        <img
+          class="icon"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+        /><img
+          class="icon"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+        />
+        <img
+          class="icon"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+        />
+      </div>
+    </nav>
+    <main>
+      <div class="feeds">
+        <article class="feed">
+          <div class="feed-header">
+            <div class="writer-photo-nickname">
+              <img
+                class="writer"
+                src="data:image/jpeg;base64,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"
+              />
+              <a class="nickname" href="#">작성자 이름</a>
+            </div>
+            <button><i class="fa-solid fa-ellipsis"></i></button>
+          </div>
+          <section class="feed-photo">
+            <img
+              src="data:image/jpeg;base64,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"
+              class="photos"
+            />
+          </section>
+          <section class="feed-icons">
+            <div class="like-comment-share">
+              <button>
+                <i class="fa-regular fa-heart like fa-xl"></i>
+              </button>
+              <button><i class="fa-regular fa-comment fa-xl"></i></button>
+              <button>
+                <i class="fa-regular fa-share-from-square fa-xl"></i>
+              </button>
+            </div>
+            <div class="feed-icon">
+              <button><i class="fa-regular fa-bookmark fa-xl"></i></button>
+            </div>
+          </section>
+          <section class="writer-content">
+            <a class="nickname" href="#">lshyun955</a
+            ><span>고양이가 귀엽군요..</span>
+          </section>
+          <section class="comment-sep-content">
+            <input
+              class="comment-input"
+              type="text"
+              placeholder="댓글 달기..."
+            /><button class="send-comment">게시</button>
+          </section>
+          <section>
+            <ul></ul>
+          </section>
+        </article>
+      </div>
+      <aside class="main-right">
+        <div class="side-myInfo main-right-common">
+          <img
+            class="writer aside-myPhoto"
+            src="data:image/jpeg;base64,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"
+          />
+          <a class="nickname" href="#">작성자 이름</a>
+        </div>
+        <div class="stroy-list main-right-common">
+          <div class="story">
+            <img
+              class="story-image"
+              src="https://images.unsplash.com/photo-1652640049749-8618a5b1a709?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3435&q=80"
+            />
+          </div>
+          <div class="story">
+            <img
+              class="story-image"
+              src="https://images.unsplash.com/photo-1652640049749-8618a5b1a709?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3435&q=80"
+            />
+          </div>
+
+          <div class="story">
+            <img
+              class="story-image"
+              src="https://images.unsplash.com/photo-1652640049749-8618a5b1a709?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3435&q=80"
+            />
+          </div>
+          <div class="story">
+            <img
+              class="story-image"
+              src="https://images.unsplash.com/photo-1652640049749-8618a5b1a709?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3435&q=80"
+            />
+          </div>
+          <div class="story">
+            <img
+              class="story-image"
+              src="https://images.unsplash.com/photo-1652640049749-8618a5b1a709?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3435&q=80"
+            />
+          </div>
+        </div>
+        <div class="recommand-list main-right-common">
+          <div class="recommand">
+            <div class="recomand-item">
+              <img
+                class="writer"
+                src="https://images.unsplash.com/photo-1652640049749-8618a5b1a709?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3435&q=80"
+              /><a class="nickname recommand-nickname" href="#">lshyun955</a>
+            </div>
+            <div class="item-follow">
+              <button class="follow">팔로우</button>
+            </div>
+          </div>
+          <div class="recommand">
+            <div class="recomand-item">
+              <img
+                class="writer"
+                src="https://images.unsplash.com/photo-1652640049749-8618a5b1a709?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3435&q=80"
+              /><a class="nickname recommand-nickname" href="#">lshyun955</a>
+            </div>
+            <div class="item-follow">
+              <button class="follow">팔로우</button>
+            </div>
+          </div>
+          <div class="recommand">
+            <div class="recomand-item">
+              <img
+                class="writer"
+                src="https://images.unsplash.com/photo-1652640049749-8618a5b1a709?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3435&q=80"
+              /><a class="nickname recommand-nickname" href="#">lshyun955</a>
+            </div>
+            <div class="item-follow">
+              <button class="follow">팔로우</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
