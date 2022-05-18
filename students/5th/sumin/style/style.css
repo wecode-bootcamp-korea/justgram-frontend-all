@@ -7,6 +7,10 @@ body{
     background-color:#fafafa;
     font-size: 10px;
 }
+a{
+    color: #043667;
+    text-decoration: none;
+}
 
 .wrapper{
     display: flex;
@@ -78,7 +82,12 @@ body{
 footer{
     margin: 35px 0;
     font-size: 1.2em;
+    text-decoration: none;
 }
-
+footer a{
+    color: #043667;
+    text-decoration: none;
+    font-size: 1.2em;
+}
 /* rgb(118, 118, 118), rgb(133, 133, 133) */
 /* border: 1px solid #e5e5e5; */
