@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.nav-left, .nav-center, .nav-right {
+  display: flex;
+}
+
+.nav-right img {
+  cursor: pointer;
+}
+
+#search-icon {
+  position: relative;
+  left: 90px;
+  margin: 3px 0 0 0;
+}
+
+#search {
+  text-align: center;
+  outline: none;
+  width: 200px;
+  background-color: rgb(249,249,249);
+  border: 1px solid lightgray;
+}
+
+#insta-icon {
+  font-size: 40px;
+  margin: 5px 0 0 0;
+  cursor: pointer;
+}
+
+#logo {
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+img {
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+#feed-img {
+  margin: 0;
+}
+
+#division {
+  background: black;
+  width: 2px;
+  margin: 10px;
+  height: 35px;
+}
+
+main {
+  display: flex;
+  background-color: rgb(249,249,249);
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+  justify-content: center;
+}
+
+.feeds {
+  width: 500px;
+  height: 790px;
+  border: 1px solid lightgray;
+}
+
+.feeds-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.feeds-top-left, .feeds-top-right {
+  display: flex;
+  align-items: center;
+}
+
+.feeds-top-right {
+  cursor: pointer;
+}
+
+#profile-img {
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.feeds-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.feeds-icons-left {
+  display: flex;
+  align-items: center;
+}
+
+.feeds-icons-left > div {
+  padding: 0 5px;
+}
+
+.feeds-likes {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 10px;
+}
+
+.feeds-comments-top {
+  position: relative;
+  left: 20px;
+  padding-bottom: 5px;
+}
+
+.user-comment {
+  position: relative;
+  left: 20px;
+  padding-bottom: 5px;
+}
+
+.time, .others, .ad-desc, 
+.story-text, 
+.suggestion-text {
+  color: gray;
+}
+
+.time {
+  position: relative;
+  left: 20px;
+  padding-bottom: 5px;
+}
+
+.nickname {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.write-comment {
+  display: flex;
+  background-color: rgb(249,249,249);
+  border-top: 1px solid lightgray;
+  padding: 20px 0 0 10px;
+}
+
+
+.write-comment > input{
+  width: 70%;
+  outline: none;
+  border: none;
+  background-color: rgb(249,249,249);
+  padding: 0 0 0 10px;
+}
+
+.write-comment > button{
+  width: 100px;
+  background-color: rgb(249,249,249);
+  border: none;
+  color: lightblue;
+  margin: 0 0 0 200px;
+}
+
+.ad {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.ad #profile-img {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.story {
+  border: 1px solid lightgray;
+  margin: 30px;
+  padding: 10px;
+}
+
+.story-top {
+  display: flex;
+  width: 300px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.story-user {
+  display: flex;
+  padding: 5px;
+}
+
+.all {
+  cursor: pointer;
+}
+
+.suggestion {
+  min-width: 320px;
+  border: 1px solid lightgray;
+  margin: 30px;
+  padding: 10px;
+}
+
+.suggestion-top {
+  display: flex;
+  width: 300px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.suggestion-user {
+  display: flex;
+  padding: 5px;
+}
+
+.follow-btn {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  color: rgb(114,176,233);
+  margin: 0 0 0 100px;
+}
+
+.info-text {
+  min-width: 320px;
+  color: gray;
+  margin: 30px;
+  padding: 10px;
+} 
