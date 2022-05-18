@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 450px;
+    height: 500px;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.logo-text {
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+}
+
+.input-id {
+    width: 400px;
+    height: 40px;
+    margin: 10px 0;
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.input-password {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.i-box:focus {
+    outline: 1px solid grey;
+}
+
+.button-login {
+    width: 400px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #c0dffd;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.extra-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100px;
+    text-align: center;
+}
+
+.find-password {
+    color: #0c3d6f;
+    text-decoration: none;
+}
