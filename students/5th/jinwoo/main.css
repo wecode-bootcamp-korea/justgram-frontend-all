@@ -72,7 +72,7 @@ main {
 
 .feeds {
   width: 500px;
-  height: 790px;
+  height: 750px;
   border: 1px solid lightgray;
 }
 
@@ -126,9 +126,22 @@ main {
 }
 
 .user-comment {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
   position: relative;
   left: 20px;
   padding-bottom: 5px;
+}
+
+.fa-heart {
+  cursor: pointer;
+}
+
+.del-comment-btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .time, .others, .ad-desc, 
@@ -160,6 +173,7 @@ main {
   background-color: rgb(249,249,249);
   border-top: 1px solid lightgray;
   padding: 20px 0;
+  margin: 10px 0; 
   z-index: -1;
 }
 
@@ -244,7 +258,7 @@ main {
 
 .info-text {
   min-width: 320px;
-  color: gray;
+  color: lightgray;
   margin: 30px;
   padding: 10px;
 } 
