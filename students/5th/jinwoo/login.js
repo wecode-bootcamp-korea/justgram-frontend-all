@@ -8,7 +8,7 @@ let checkPwInput = false;
 
 
 const checkId = () => {
-  if (idInput.value !== '') {
+  if (idInput.value !== '' && idInput.value.includes('@')) {
     checkIdInput = true;
   } else {
     checkIdInput = false;
@@ -16,7 +16,7 @@ const checkId = () => {
 }
 
 const checkPw = () => {
-  if (pwInput.value !== '') {
+  if (pwInput.value !== '' && pwInput.value.length >= 5) {
     checkPwInput = true;
   } else {
     checkPwInput = false;
