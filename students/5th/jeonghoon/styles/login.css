@@ -8,7 +8,7 @@ body {
 .container {
   margin-top: 40px;
   text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid #ddd;
 }
 
 .page {
@@ -32,6 +32,7 @@ form {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  color: #fafafa;
 }
 
 form input {
@@ -57,7 +58,6 @@ input[type="password"] {
 input::placeholder {
   font-weight: normal;
   font-size: 13px;
-  transition: 0.3s ease;
 }
 
 input:focus::placeholder {
@@ -68,7 +68,7 @@ input:focus::placeholder {
 
 form button {
   border: none;
-  background: #043fff;
+  background: #c4e1fb;
   padding: 5px 0;
   margin-top: 5px;
   color: #fff;
@@ -82,7 +82,6 @@ form button {
 
 form button:active {
   background: #2c58fe;
-  transform: scale(0.995);
 }
 
 .forget-id {
