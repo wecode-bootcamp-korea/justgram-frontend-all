@@ -4,15 +4,17 @@ body {
     align-items: center;
 }
 
+
 .container {
-    width: 538px;
+    width: 400px;
+    border: 1px solid #DBDBDB;
 }
 
 .logo-box {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 30px 0 40px 0;
+    padding: 30px 0 30px 0;
 }
 
 .logo-title {
@@ -29,9 +31,9 @@ body {
     display: block;
     background-color: #FAFAFA;
     border: 1px solid #DBDBDB;
-    border-radius: 3px;
-    margin: 15px 130px 7px 130px;
-    padding: 12px 10px;
+    border-radius: 4px;
+    margin: 15px 50px 8px 50px;
+    padding: 14px 10px;
     font-size: 12px;
 }
 
@@ -39,9 +41,9 @@ body {
     display: block;
     background-color: #FAFAFA;
     border: 1px solid #DBDBDB;
-    border-radius: 3px;
-    margin: 0 130px;
-    padding: 12px 10px;
+    border-radius: 4px;
+    margin: 0 50px;
+    padding: 14px 10px;
     font-size: 12px;
 }
 
@@ -49,9 +51,9 @@ body {
     display: block;
     background-color: #C0DFFD;
     border: 0;
-    border-radius: 3px;
-    margin: 16px 130px;
-    padding: 8px 10px;
+    border-radius: 4px;
+    margin: 16px 50px;
+    padding: 10px 10px;
     font-size: 16px;
     color: white;
 }
@@ -60,10 +62,11 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 100px 0 0 0;
+    margin: 100px 0 30px 0;
 }
 
 .forget-password {
     color: #124172;
     font-display: under;
+    text-decoration: none;
 }
