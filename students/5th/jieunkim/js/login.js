@@ -8,14 +8,12 @@ function activateBtn() {
 	const userId = thisIsId.value;
 	const password = thisIsPassword.value;
 	
-	if(userId.length > 0 && password.length > 5) {
-		//thisIsLoginBtn.style.backgroundColor = '#0095f6';
-		thisIsLoginBtn.id = "login-btn-act";
+	if(userId.length > 0 && password.length > 0) {
+		thisIsLoginBtn.disabled = false;
 		thisIsLoginBtn.style.cursor = "pointer";
 		// add link
 	} else {
-		//thisIsLoginBtn.style.backgroundColor = '#b2dffc';
-		thisIsLoginBtn.id = "login-btn";
+		thisIsLoginBtn.disabled = true;
 		thisIsLoginBtn.style.cursor = "";
 
 	}
