@@ -1,0 +1,61 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+  border: 1px solid silver;
+  width: 300px;
+}
+.logo {
+    font-family: 'Lobster', cursive;
+    display:flex;
+    justify-content: center;
+}
+.Id-box {
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    
+}
+.IdInput{
+    border: 1px solid silver;
+    width: 200px;
+    color: rgba(128, 128, 128, 0.342);
+    font-size: 12px;
+    background-color: #fafafafa;
+}
+.Pass-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+
+}
+.PassInput{
+    border: 1px solid silver;
+    font-size: 12px;
+    width: 200px;   
+    background-color: #fafafafa; 
+}
+.bt {
+    display: flex;
+    justify-content: center;
+    margin-bottom: px;
+}
+.Button{
+    width: 209px;
+    background-color: #c4e1fd;
+    border: none;
+    color:white;
+    margin-bottom:100px;
+}
+.extra {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: navy;
+    font-size: 12px;
+}
