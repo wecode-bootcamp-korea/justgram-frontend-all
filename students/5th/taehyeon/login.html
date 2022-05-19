@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/login.css" href="style/common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/login.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <img class="logo" src="justgram.png" />
-      <form>
+      <div class="logo-box">
+        <span class="logo-text">Justgram</span>
+      </div>
+      <div class="input-box">
         <input
-          class="input_id"
+          class="input-common identify"
           type="text"
           placeholder="전화번호, 사용자 이름 또는 이메일"
         />
-        <input class="input_pass" type="password" placeholder="비밀번호" />
-        <button class="login_btn" type="submit">로그인</button>
-      </form>
-      <a href="">비밀번호를 잊으셨나요?</a>
+        <input
+          class="input-common password"
+          type="text"
+          placeholder="비밀번호"
+        />
+        <button class="login-btn">로그인</button>
+      </div>
+      <div class="extra-box">
+        <a class="find-password">비밀번호를 잊으셨나요?</a>
+      </div>
     </div>
-    <script src="/js/login.js"></script>
   </body>
 </html>
