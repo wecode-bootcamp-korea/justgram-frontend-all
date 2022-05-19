@@ -9,6 +9,7 @@ nav {
     border-bottom: 1px solid #eaeaea;
     padding-left: 70px;
     padding-right: 50px;
+    padding-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,5 +46,69 @@ nav {
     width:35px;
     margin: 0px 15px;
 }
+.mainpage {
+    background-color: #FFFFFF;
+    padding-left: 70px;
+    padding-right: 50px;
+    border: 1px solid black;
+}
+.feeds {
+    margin-left: 150px;
+    width: 560px;
+}
+.feedtop{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.profile img {
+    width: 40px;
+    border-radius: 40px;
+    margin: 0 10px;
+}
+.profile {
+    display:flex;
+    align-items: center;
+}
+.username {
+    font-style: Neue Helvetica;
+    font-weight: bold;
+}
+article {
+    margin: 5px 5px 40px 5px;
+    border: 1px solid black;
+}
+.doraemonfeed{
+    width: 550px;
+}
+.feedbottom {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.fa-heart {
+    color:red;
+    margin-left: 8px;
+}
+.fa-bookmark {
+    margin-right: 8px;
+}
+.fa-solid , .fa-regular {
+    padding: 5px;
+}
+.howmanylikes {
+    padding: 5px 5px 10px 5px;
+}
+#JJang9 {
+    width: 20px;
+}
+.caption {
+    margin-left: 13px;
+}
+.description {
+    color: #a3a3a3
+}
+
 
 
