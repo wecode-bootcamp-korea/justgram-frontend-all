@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-size: 2em;
+}
+
+h1,
+p,
+button {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  background-color: red;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}
+
+.feeds {
+  display: inline-block;
+  background-color: green;
+}
+
+.article {
+  display: inline-block;
+  background-color: orange;
+}
+
+.main-right {
+  display: inline-block;
+  background-color: violet;
+}
