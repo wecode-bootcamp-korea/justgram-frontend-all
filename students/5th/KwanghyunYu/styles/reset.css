@@ -133,3 +133,6 @@ a {
 input:focus {
   outline: none;
 }
+i:hover {
+  cursor: pointer;
+}

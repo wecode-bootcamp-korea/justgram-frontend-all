@@ -7,11 +7,11 @@ button.disabled = true;
 
 input.addEventListener("keyup", (event) => {
   if (event.target.className === "input-id") {
-    event.target.value.length > 0 ? (isIdValid = true) : (isIdValid = false);
+    event.target.value.includes("@") ? (isIdValid = true) : (isIdValid = false);
   }
 
   if (event.target.className === "input-password") {
-    event.target.value.length > 0 ? (isPwValid = true) : (isPwValid = false);
+    event.target.value.length > 4 ? (isPwValid = true) : (isPwValid = false);
   }
 
   if (isIdValid && isPwValid) {
