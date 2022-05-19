@@ -4,11 +4,10 @@ const thisLogin = document.getElementById("loginbutton")
 
 
 
-thisLogin.addEventListener("keyup",() => {
-    let accountValue = thisIsAccount.value;
-    let passwordValue = thisIsPw.value;
-
-    let trueFalse = !accountValue || !passwordValue;
-
-    return trueFalse? thisLogin.style.opcity="1":thisLogin.style.opcity="0.5"
-});
+function btnEvent(){
+    if (thisIsAccount.value && thisIsPw.value) {
+        thisLogin.removeAttribute("disabled");
+     
+    } }
+    thisIsAccount.addEventListener('keyup',btnEvent);
+    thisIsPw.addEventListener('keyup',btnEvent);

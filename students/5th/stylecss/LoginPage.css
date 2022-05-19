@@ -46,6 +46,14 @@ input {
     margin-top: 21px;
 }
 
+button:disabled {
+    background: rgba(0, 149, 246, 0.3);
+    cursor: default;
+    pointer-events: none;
+}
+
+
+
 button {
     width: 268px;
     height: 30px;
@@ -56,8 +64,14 @@ button {
     border-radius: 3px;
     font-weight: 900;
     color: white;
-    opacity: 0.5;
+    cursor: pointer;
+  
 }
+
+button:hover {
+    opacity: 0.8;
+}
+
 
 #line {
     width: 268px;
