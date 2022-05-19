@@ -90,6 +90,10 @@ article{
     width: 28px;
     margin: 0px 3px;
 }
+.iconBox button{
+    width: 28px;
+    margin: 0px 3px;
+}
 .iconBox{
     display: flex;
     align-items: center;
@@ -131,4 +135,27 @@ input:focus{
 }
 .comment{
     padding: 10px;
+}
+.delBtn{
+    margin-left: 10px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.heart{
+    cursor: pointer;
+}
+.cHeart{
+    width: 20px;
+    cursor: pointer;
+}
+.comments{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.items{
+    display: flex;
+    align-items: center;
 }
