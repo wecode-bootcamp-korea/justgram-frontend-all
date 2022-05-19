@@ -10,28 +10,111 @@
 
 </head>
 <body>
-    <nav>
-        <div class="nav-left">
-            <button type="button" class="nav-btn" aria-label="새 게시글 작성">
-                <i class="fa-brands fa-instagram fa-2x"></i>
-            </button>
-            <button type="button"class="logo-btn">justgram</button>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <button type="button" class="nav-btn" aria-label="새 게시글 작성">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </button>
+                <button type="button"class="logo-btn">justgram</button>
+            </div>
+            <div class="nav-center">
+                <i class="search-icon fa-solid fa-magnifying-glass fa-m"></i>
+                <input class="search-input" type="text" placeholder="검색">            
+            </div>
+            <div>
+                <button type="button"class="nav-btn" aria-label="사람 찾기">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="">
+                </button>
+                <button type="button"class="nav-btn" aria-label="활동 피드">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="">
+                </button>
+                <button type="button"class="nav-btn" aria-label="프로필">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="">
+                </button>           
+            </div>
+        </nav>
+    </header>
+
+
+    <mian>
+        <article>
+            <header class="feed-header">
+                <div>
+                    <a href="">
+                        <img class="user-img" src="./asset/user_1_img.jpg" alt="유저 이미지">
+                    </a>
+                    <a class="feed-bold-txt" href="" style="display: contents;">rem.jh</a>
+                </div>
+                <button type="button"> 
+                    <i class="fa-solid fa-ellipsis"></i>
+                </button>
+            </header>
+
+            <img class="feed-img" src="./asset/post_1.jpg" alt="post">
+
+            <div class="feed-content">
+                <div class="feed-buttons">
+                    <div>
+                        <button class="feed-button" type="button">
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                        </button>
+                        <button type="button">
+                            <i class="fa-regular fa-comment fa-lg"></i>
+                        </button>
+                        <button type="button">
+                            <i class="fa-regular fa-paper-plane fa-lg"></i>
+                        </button>                   
+                    </div>
+                    <button type="button">
+                        <i class="fa-regular fa-bookmark fa-lg"></i>
+                    </button>
+                </div>
+    
+                <div class="like">
+                    <a href="">
+                        <img class="user-img-s" src="./asset/user_2_img.jpg" alt="user profile">
+                    </a>
+
+                    <a class="feed-bold-txt" href="">developer</a>님 <a class="feed-bold-txt" href="">외 <span>10</span>명</a>이 좋아합니다.  
+                </div>
+    
+                <div class="comment-collection">
+                    <ul>
+                        <li>
+                            <a class="feed-bold-txt" href="">hiThere</a> 베스킨라빈스 아몬드 봉봉을 좋아합니다🤞
+                        </li>
+                        <li>
+                            <a class="feed-bold-txt" href="">areYouOkay</a> 옆에 침대가 보이니 눕고 싶네요....
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="upload-time">
+                    <span>42분</spa> 전
+                </div>
+            </div>
+            
+            <div class="comment-box">
+                <input type="text" placeholder="댓글 달기...">
+                <button type="button">게시</button>
+            </div>
+
+        </article>
+        <div> 헷갈렼ㅋㅋㅋㅋ으아아앙앙아ㅏㅏㅏㅏ
+            <aside>
+                <a></a>
+            </aside>
+            <section>
+    
+            </section>
+            <section>
+    
+            </section>
+            <footer>
+    
+            </footer>
         </div>
-        <div class="nav-center">
-            <i class="search-icon fa-solid fa-magnifying-glass fa-m"></i>
-            <input class="search-input" type="text" placeholder="검색">            
-        </div>
-        <div>
-            <button type="button"class="nav-btn" aria-label="사람 찾기">
-                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="">
-            </button>
-            <button type="button"class="nav-btn" aria-label="활동 피드">
-                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="">
-            </button>
-            <button type="button"class="nav-btn" aria-label="프로필">
-                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="">
-            </button>           
-        </div>
-    </nav>
+    </mian>
 </body>
 </html>

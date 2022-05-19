@@ -12,12 +12,29 @@ button{
     padding: 0;
 }
 
+ul{
+    list-style-type:none;
+    padding: 0;
+}
+
+input:focus {outline:none;}
+
+body{
+    background-color: rgb(250,250,250);
+}
+
+body > header{
+    padding-right: 90x;
+    padding-left: 90px;
+    border-bottom: 1.5px solid rgb(233,233,233);
+    background-color: white;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    border-bottom: 1.5px solid rgb(233,233,233);
 }
 
 .nav-center{
@@ -83,3 +100,101 @@ nav{
     width: 100%;
 }
 
+article{
+    width: 603px;
+    margin: 30px auto;
+    border: 1.5px solid rgb(233,233,233);
+    background-color: white;
+}
+
+.feed-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.feed-header > div{
+    display: flex;
+    align-items: center;
+}
+
+.user-img{
+    position: relative;
+    top: 2px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.feed-img{
+    width: 600px;
+}
+
+.feed-content{
+    padding: 8px 15px;  
+}
+
+.feed-bold-txt{
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-decoration-line: none;
+}
+
+.feed-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.feed-buttons > div > button{
+    margin-right: 10px;
+}
+
+.like{
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+    font-size: 14px;
+    /* border: 1px solid blue; */
+}
+
+.user-img-s{
+    position: relative;
+    top: 2px;
+    width: 20px;
+    border-radius: 50%; 
+    margin-right: 10px;
+}
+
+.comment-collection > ul > li{
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.upload-time{
+    font-size: 10px;
+    color: #8e8e8e;
+    margin: 3px 0;
+}
+
+.comment-box{
+    display: flex;
+    border-top: 1.5px solid rgb(233,233,233);
+}
+
+.comment-box > input{
+    width: 90%;
+    height: 40px;
+    padding: 10px 15px; 
+    border: none;
+}
+
+.comment-box > button{
+    width: 10%;
+    height: 40px;
+    font: 14px;
+    font-weight: 600;
+    color: #0095f6;
+    opacity: 0.7;
+}
