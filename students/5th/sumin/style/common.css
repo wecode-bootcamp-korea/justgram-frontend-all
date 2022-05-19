@@ -1,0 +1,19 @@
+/* common.css */
+*{
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background-color:#fafafa;
+   font-size: 10px;
+}
+a{
+   text-decoration: none; 
+}
+input, button{
+   outline: none;
+   border: none;
+}
+button{
+   cursor: pointer;
+}
