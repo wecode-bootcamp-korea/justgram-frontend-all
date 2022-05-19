@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
+body { 
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .container {
@@ -41,20 +41,20 @@ body {
 .input-id {
     width: 400px;
     height: 40px;
-    margin: 10px 0;
     border: 1px solid #dbdbdb;
     background-color: #fafafa;
     border-radius: 3px;
     padding-left: 10px;
+    margin: 10px 0;
 }
 
 .input-password {
     width: 400px;
     height: 40px;
-    margin-bottom: 20px;
     border: 1px solid #dbdbdb;
     background-color: #fafafa;
     border-radius: 3px;
+    margin-bottom: 20px;
     padding-left: 10px;
 }
 
