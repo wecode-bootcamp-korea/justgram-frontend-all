@@ -2,53 +2,49 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #fafafa;
-}
-.loginContainer {
-  position: relative;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.loginContainer {
   margin: auto;
   width: 350px;
-  height: 460px;
   background-color: #ffff;
   border: 1px solid #dbdbdb;
 }
 
-.titleLogo {
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  display: inline-block;
   margin: 40px auto;
+  padding: 15px;
   font: lighter 50px 'Lobster', cursive;
-  text-align: center;
 }
 
-.loginBoxes {
-  display: flex; 
+.inputBox {
+  display: flex;
   flex-direction: column;
-  width: 270px;
+  padding: 0 30px;
 }
 
-.idInput {
-  margin: 4px;
-  padding: 12px;
+.inputCommon{
+  display: block;
+  margin: 4px 13px;
+  padding: 10px 15px;
   background-color: #fafafa;
   border: 0.5px solid #dbdbdb;
   border-radius: 3px;
 }
 
-.idInput:focus {
-  outline: 0.3px solid black;
-}
-
-.pwInput {
-  margin: 4px;
-  padding: 12px;
-  background-color: #fafafa;
-  border: 0.5px solid #dbdbdb;
-  border-radius: 3px;
-}
-
-.pwInput:focus {
+.inputCommon:focus {
   outline: 0.3px solid black;
 }
 
@@ -58,6 +54,7 @@ body {
 }
 
 .loginButton {
+  display: block;
   width: 262px;
   margin: 10px auto;
   padding: 10px;
@@ -66,13 +63,15 @@ body {
   border: none;
   border-radius: 3px;
 }
- 
-.searchPw {
-  position: absolute;
+
+.extraBox {
   display: flex;
-  bottom: 30px;
+  justify-content: center;
+  margin: 50px auto;
+}
+ 
+.findPw {
   color: #04386a;
   font-size: 12px;
   text-decoration: none;
-  text-align: center;
 }
