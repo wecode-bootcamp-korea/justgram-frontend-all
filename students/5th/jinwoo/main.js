@@ -123,8 +123,9 @@ const hideMyMenu = (e) => {
 }
 
 const matchUser = (value) => {
-  const userName = search.value.toLowerCase();
-  return value.toLowerCase().indexOf(userName) !== -1;
+  const userInput = search.value.toLowerCase();
+  const userName = value.toLowerCase().substr(0, userInput.length);
+  return userName.includes(userInput) === true;
 }
 
 const makeUserDiv = (user) => {
