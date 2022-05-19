@@ -1,59 +1,79 @@
-html, body, .container{
-    height: 100%;
-}
 
 body {
     background-color: #FAFAFA;
+    height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
 
 }
 
 .container {
     background-color: white;
-    text-align: center;
-
-    height: 348px;
     width: 374px;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
+    padding: 30px 0 15px 0;
     border: 1px solid #dbdbdb;
-    position: relative;
 }
 
 .logo_box {
-    font-family: 'Lobster', cursive;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.logo_text {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-family: 'Lobster', cursive;
     font-size: 50px;
     height: 51px;
-    padding: 30px 0;
 }
 
-.id&pw_box {
-    width: 268px;
+.input_box {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column; 
+    padding: 0 50px ;
 }
 
-.input_box_id, .input_box_pw {
-    height: 38px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.input-common {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+}
+
+.identify {
+}
+
+.password {
+}
+
+.login_btn {
+    display: block;
+    margin: 5px 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #c4e0fb;
+    font-size: ;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
 
-.press_button {
-    background-color: #0095f6;
 
-}
-
-.If_forget {
-    position: absolute;
-    bottom:20px ;
-    font-size: 12px;
+.extra_box {
     color: #00376B;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.find_password {
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 12px;
 }
