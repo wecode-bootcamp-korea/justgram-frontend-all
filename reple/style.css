@@ -1,0 +1,29 @@
+.container {
+  border: 1px solid black;
+  width: 350px;
+}
+
+.reple {
+  border: 1px solid white;
+  /* width: 80px; */
+  font-size: 10px;
+  margin-left: 290px;
+  margin-top: 10px;
+  color: blue;
+}
+#comments {
+  list-style: none;
+  padding-left: 15px;
+}
+#comments1 {
+  list-style: none;
+  padding-left: 15px;
+}
+#rePle {
+  border: 1px solid white;
+  /* width: 80px; */
+  font-size: 10px;
+  margin-left: 290px;
+  margin-top: 10px;
+  color: red;
+}

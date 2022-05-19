@@ -16,18 +16,27 @@
   <nav>
     <div class="nav-container">
       <div class="nav-1">
-        <!-- <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png" alt="logo_img">
-            <div class="vl"></div> -->
-        <!-- <img class="logo_instagram_txt" src="img/logo_text.png" alt="logo_text"> -->
+
         <p class="logo_instagram_txt font"> justgram</p>
       </div>
-      <input id="searchInput" type="search" class="input-search" placeholder="검색">
+      <input id="input" type="text" class="input-search" placeholder="검색">
+      &nbsp; &nbsp;<p style="font-size:15px">Re:</p>
+      <div class="line">
+        <span style="font-size:10px" id="result1"></span>
+      </div>
+
+      <script>
+        input.oninput = function () {
+          result1.innerHTML = input.value;
+        };
+      </script>
+
       <div class="nav-2">
-        <img src="img/home.jpg">
-        <img src="img/dm.jpg">
+        <img src="./img/home.jpg">
+        <img src="./img/dm.jpg">
         <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="탐색">
         <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
-        <img class="pic" src="img/my.jpg" alt="마이페이지">
+        <img class="pic" src="./img/my.jpg">
       </div>
     </div>
   </nav>
@@ -38,26 +47,26 @@
       <article>
         <header>
           <div class="profile-of-article">
-            <img class="img-profile pic" src="img/my1.jpg" alt="dlwlrma님의 프로필 사진">
+            <img class="img-profile pic" src="./img/my1.jpg">
             <span class="userID main-id point-span">seo_hsss</span>
           </div>
-          <img class="icon-react icon-more" src="/img/dot.jpg" alt="more">
+          <img class="icon-react icon-more" src="./img/dot.jpg" alt="more">
         </header>
         <div class="main-image">
-          <img src="/img/seo1.jpg" class="mainPic">
+          <img src="./img/seo1.jpg" class="mainPic">
         </div>
         <div class="icons-react">
           <div class="icons-left">
             <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
             <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
-            <img class="icon-react" src="img/dm1.jpg" ">
+            <img class="icon-react" src="./img/dm1.jpg" ">
           </div>
           <img class=" icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png">
           </div>
           <!-- article text data -->
           <div class="reaction">
             <div class="liked-people">
-              <img class="pic" src="img/profil.jpg">
+              <img class="pic" src="./img/profil.jpg">
               <p><span class="point-span">johnnyjsuh</span>님 <span class="point-span">외 2,412,751명</span>이 좋아합니다</p>
             </div>
             <div class="description">
@@ -70,17 +79,23 @@
                   <img class="comment-heart"
                     src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
                 </li>
-                <!-- input 값 여기에 추가 -->
+
               </ul>
               <div class="time-log">
                 <span>32분 전</span>
               </div>
+              <p id="result"></p>
             </div>
           </div>
           <div class="hl"></div>
           <div class="comment">
-            <input id="input-comment" class="input-comment" type="text" placeholder="댓글 달기...">
-            <button type="submit" class="submit-comment" disabled>게시</button>
+            <div>
+              <input id="comment" class="input-comment" type="text" placeholder="댓글 달기...">
+              <button id='bt' class="submit-comment">게시</button>
+
+            </div>
+            <!------------------------------------->
+
           </div>
       </article>
 
@@ -88,7 +103,7 @@
     <!-- main-right -->
     <div class="main-right">
       <div class="myProfile">
-        <img class="pic" src="img/my1.jpg" alt="thisisyourhyung님의 프로필 사진">
+        <img class="pic" src="./img/my1.jpg">
         <div>
           <span class="userID point-span">yugwanhyi2546</span>
           <span class="sub-span">KWANEE </span>
@@ -103,7 +118,7 @@
         <ul class="story-list">
           <li>
             <div class="gradient-wrap1">
-              <img src="img/story.jpg">
+              <img src="./img/story.jpg">
             </div>
 
           </li>
@@ -118,7 +133,7 @@
         <ul class="recommend-list">
           <li>
             <div class="recommend-friend-profile">
-              <img style="width: 290px;left:3px;" src="img/member.jpg">
+              <img style="width: 290px;left:3px;" src="./img/member.jpg">
             </div>
           </li>
 
@@ -133,7 +148,8 @@
       </footer>
     </div>
   </main>
-  <script src="js/main.js"></script>
+  <script src="index.js"></script>
+
 </body>
 
 </html>

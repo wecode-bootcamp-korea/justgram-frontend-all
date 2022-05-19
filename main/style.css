@@ -289,9 +289,9 @@ button.submit-comment {
   font-size: 14px;
   font-weight: 600;
 }
-.submit-comment:disabled {
+/* .submit-comment:disabled {
   color: #b9dffc;
-}
+} */
 button.submit-comment:focus {
   outline: none;
 }
@@ -385,4 +385,9 @@ ul.story-list .profile-text {
   font-size: 15px;
   font-family: "Lobster", cursive;
   margin-left: 20px;
+}
+.line {
+  border: 1px solid white;
+  width: auto;
+  height: 20px;
 }
