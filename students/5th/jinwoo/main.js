@@ -5,6 +5,23 @@ const feeds = document.getElementsByClassName('feeds')[0];
 const heartDiv = document.getElementById('feed-heart');
 const user = document.getElementById('user');
 const myMenu = document.getElementById('my-menu');
+const search = document.getElementById('search');
+const searchUser = document.getElementById('search-user');
+
+const userArr = [
+  { 
+    id:'Wecode', 
+    nickname: '위코드'
+  },
+  { 
+    id: 'Justcode',
+    nickname: '저스트코드'
+  },
+  { 
+    id: 'just',
+    nickname: 'just'
+  }
+];
 
 let h = 750;
 writeBtn.disabled = true;
@@ -42,7 +59,7 @@ const postComment = () => {
   btn.innerHTML = '삭제';
   span2.innerHTML = ` ${comment.value}`;
   span.innerHTML = 'im_jw';
-  
+
   div.appendChild(div3);
   div3.appendChild(span);
   div3.appendChild(span2);
@@ -62,9 +79,9 @@ const postComment = () => {
 
   div2.addEventListener('click', () => {
     const commentHeart = div2.getElementsByClassName('fa-heart')[0];
-    if (commentHeart.style.color === 'gray') {
+    if (commentHeart.style.color !== 'red') {
       commentHeart.style.color = 'red';
-    } else {
+    } else if (commentHeart.style.color !== 'gray') {
       commentHeart.style.color = 'gray';
     }
   })
@@ -77,7 +94,7 @@ const postComment = () => {
 }
 
 const enterkey = () => {
-  if (comment.value !== '' && window.event.keyCode == 13) {
+  if (comment.value !== '' && window.event.keyCode === 13) {
     postComment();
   }
 }
@@ -92,7 +109,6 @@ const changeColor = () => {
 }
 
 const toggleMyMenu = (e) => {
-  console.log(e.target.id)
   if (myMenu.style.display !== 'block') {
     myMenu.style.display = 'block';
   } else if (myMenu.style.display !== 'none' && !e.target.closest('#my-menu')) {
@@ -106,9 +122,52 @@ const hideMyMenu = (e) => {
   }
 }
 
+const matchUser = (value) => {
+  const userName = search.value.toLowerCase();
+  return value.toLowerCase().indexOf(userName) !== -1;
+}
+
+const makeUserDiv = (user) => {
+  searchUser.style.opacity = '1';
+  const filteredUser = document.createElement('div');
+  filteredUser.className = 'user-card';
+  filteredUser.innerHTML = `
+      <div><img src="rudy.jpeg" id="search-img" alt="프로필 이미지" /></div>
+      <div>
+        <div id="search-username">${user.id}</div>
+        <div id="search-subname">${user.nickname}</div>
+      </div>
+  `;
+  searchUser.appendChild(filteredUser);
+}
+
+const showUser = () => {
+  searchUser.innerHTML = '';
+  searchUser.style.opacity = '0';
+  if (search.value) {
+    const filteredUserName = userArr.filter(x => matchUser(x.id));
+    if (filteredUserName) {
+      filteredUserName.forEach(function(e) {
+        makeUserDiv(e);
+      })
+    }
+  }
+}
+
+const backspaceKey = () => {
+  if (window.event.keyCode === 8) {
+    showUser();
+  }
+}
+
 comment.addEventListener('keydown', activateBtn);
 comment.addEventListener('keydown', enterkey);
 writeBtn.addEventListener('click', postComment);
 heartDiv.addEventListener('click', changeColor);
 user.addEventListener('click', toggleMyMenu);
 document.addEventListener('click', hideMyMenu);
+search.addEventListener('keyup', showUser);
+search.addEventListener('keypress', backspaceKey);
+search.addEventListener('focusout', function() {
+  searchUser.style.opacity = '0';
+})
