@@ -328,3 +328,9 @@ footer span {
 .util-flex {
   display: flex;
 }
+
+@media screen and (max-width: 768px) {
+  .main-right {
+    display: none;
+  }
+}
