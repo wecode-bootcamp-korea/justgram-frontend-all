@@ -19,6 +19,62 @@
   cursor: pointer;
 }
 
+#user {
+  position: relative;
+}
+
+#my-menu {
+  position: absolute;
+  display: none;
+  width: 200px;
+  height: 170px;
+  background-color: white;
+  right: 0;
+  top: 50px;
+  z-index: 1;
+  border: 1px solid lightgray;
+}
+
+#my-menu ul {
+  list-style:none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#my-menu li {
+  color: black;
+  padding: 10px;
+}
+
+#my-menu:after {
+  border-top: 0px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid lightgray;
+  content: "";
+  position: absolute;
+  left: 169px;
+  top: -10px;
+}
+
+#my-menu li:nth-child(2) {
+  padding: 0 12px;
+}
+
+#my-menu li:nth-child(4) {
+  border-top: 1px solid lightgray;
+  width: 200px;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  padding: 14px 0;
+}
+
+#my-menu span {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
 #search-icon {
   position: relative;
   left: 90px;
