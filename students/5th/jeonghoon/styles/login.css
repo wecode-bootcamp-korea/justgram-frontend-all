@@ -87,29 +87,6 @@ input:focus::placeholder {
   transform: translate(-13px);
 }
 
-/*
-form {
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fafafa;
-}
-
-form input {
-  margin-bottom: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  border-radius: 3px;
-  outline: none;
-}
-
-form input:focus {
-  border: 1px solid rgba(0, 0, 0, 0.7);
-  background: #efefef;
-}
-
 /*form button {
   border: none;
   background: #c4e1fb;
