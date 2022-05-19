@@ -1,11 +1,11 @@
 body {
     width: 100%;
-    height: 100%;
+    margin-top: 30px;
 }
 
 #main-background {
     border: 1px solid;
-    border-color: rgba(38,38,38, 0.35);
+    border-color: #ddd;
     width: 348px;
     height: 373.6px;
     margin:auto;
@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 3px;
 }
 
 h1 {
@@ -33,10 +34,11 @@ input {
     width: 268px;
     height: 38px;
     padding: 0px;
-    border: 1px solid rgba(38,38,38, 0.35);
+    border: 1px solid #ddd;
     border-radius: 3px;
     margin-bottom: 6px;
-    font-size: 12px; 
+    font-size: 12px;
+    color: rgb(162, 162, 162); 
     background-color: #fafafa; 
 }
 
@@ -86,7 +88,7 @@ button {
 
 #sub-background {
     border: 1px solid;
-    border-color: rgba(38,38,38, 0.35);
+    border-color: #ddd;
     width: 348px;
     height: 41px;
     margin:10px auto;
@@ -95,4 +97,5 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 3px;
 }
