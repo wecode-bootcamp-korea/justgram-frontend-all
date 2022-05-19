@@ -6,19 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link href="./styles/main.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Justgram</title>
   </head>
   <body>
     <div class="container">
-      <div class="nav">nav</div>
+      <div class="nav-box">
+        <div class="nav">
+          <div class="nav-logo-box">
+            <i class="fa-brands fa-instagram nav-icons"></i>
+            <span class="nav-logo-text">Justgram</span>
+          </div>
+          <div class="nav-serch-box">
+            <i class="fa-solid fa-magnifying-glass nav-icons"></i>
+            <input type="text" placeholder="검색" />
+          </div>
+          <div class="nav-right-box">
+            <i class="fa-regular fa-compass nav-right-icons"></i>
+            <i class="fa-regular fa-heart nav-right-icons"></i>
+            <i class="fa-regular fa-user nav-right-icons"></i>
+          </div>
+        </div>
+      </div>
 
       <div class="main">
-        <h1></h1>
         <div class="feeds">
-          feeds
-          <div class="article">article</div>
+          <div class="article">
+            <div class="article-header">
+              <div class="article-header-user">
+                <span
+                  class="header-user"
+                  id="header-user-img-box"
+                  alt="user image"
+                >
+                  <img
+                    id="user-img"
+                    src="./assets/zhan-zhang-e5thHbI70uw-unsplash.jpg"
+                  />
+                </span>
+                <span class="header-user" id="header-use-text">user-id</span>
+              </div>
+              <div class="elipsis"><i class="fa-solid fa-ellipsis"></i></div>
+            </div>
+            <div class="article-img-box">
+              <img
+                class="article-img"
+                src="assets/alvan-nee-T-0EW-SEbsE-unsplash.jpg"
+                alt="feedimage"
+              />
+            </div>
+            <div class="article-icons">
+              <div class="article-icons-left">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-regular fa-paper-plane"></i>
+              </div>
+              <div class="article-icons-right">
+                <i class="fa-solid fa-bookmark"></i>
+              </div>
+            </div>
+            <div class="article-likes">
+              <div class="article-likes-profile">
+                <img src="" alt="user photo" />
+              </div>
+              <p><span>ainworld</span>님 <span>외 10명</span>이 좋아합니다</p>
+            </div>
+            <div class="article-comments">article-comments</div>
+            <div class="article-input-comments">article-input-comments</div>
+          </div>
 
-          <div class="main-right">main-right</div>
+          <div class="main-right">
+            <div class="main-right-user"></div>
+            <div class="main-right-story"></div>
+            <div class="main-right-recommend"></div>
+          </div>
         </div>
       </div>
     </div>
