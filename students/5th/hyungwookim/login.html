@@ -5,16 +5,12 @@
         <meta name="viewport" content="width=device-width">
         <title>Justagram</title>
 
-        
         <link href="styles/login.css" rel="stylesheet" type="text/css" />
         <link href="styles/common.css" rel="stylesheet" type="text/css" />
         <link href="imgs/favicon.png" rel="icon" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
-        <script src="/js/login.js" defer></script>
-
 
     </head>
     <body>
@@ -25,11 +21,12 @@
             <div class="input_box">
                     <input class="input-common identify" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
                     <input class="input-common password" type="password" placeholder="비밀번호">
-                    <button class="login_btn">로그인</button>
+                    <button disabled class="login_btn">로그인</button>
             </div>
             <div class="extra_box">
                     <a class="find_password">비밀번호를 잊으셨나요?</a>
             </div>
         </div>  
+    <script src="js/login.js"></script>
     </body>
 </html>
