@@ -30,6 +30,35 @@ article {
 .nav-icons img {
   width: 30px;
   margin-left: 20px;
+  cursor: pointer;
+}
+.nav-icons-user-menu {
+  position: absolute;
+  background-color: white;
+  right: 160px;
+  font-size: 13px;
+  flex-direction: column;
+  justify-content: center;
+  width: 180px;
+  box-shadow: 0px 0px 0.5px 0.5px #b3b3b3;
+  border-radius: 2px;
+  display: none;
+}
+.nav-icons-user-menu i {
+  margin-right: 10px;
+}
+.nav-icons-user-menu div {
+  display: flex;
+  margin: 13px 0 13px 13px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.nav-icons-user-menu div:last-child {
+  margin: 0px;
+  border-top: 1px solid #b3b3b3;
+}
+.nav-icons-user-menu div:last-child span {
+  margin: 13px 0 13px 13px;
 }
 .nav-text {
   font-family: "Dancing Script", cursive;
@@ -295,4 +324,7 @@ footer p {
 footer span {
   font-size: 14px;
   color: #cecece;
+}
+.util-flex {
+  display: flex;
 }

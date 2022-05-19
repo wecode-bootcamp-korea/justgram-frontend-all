@@ -4,10 +4,14 @@ const Id = "Mad1403";
 const feeds_comment = document.querySelector(".feeds-comments");
 const heart = document.querySelector(".heart");
 const remove = document.querySelector(".delete");
+const userMenu = document.querySelector(".nav-icons-user-menu");
+const userIcon = document.querySelector(".user-icon");
 heart.addEventListener("click", () => {
   heart.classList.toggle("fa-solid");
 });
-
+userIcon.addEventListener("click", () => {
+  userMenu.classList.toggle("util-flex");
+});
 input.addEventListener("keyup", () => {
   button.style.color = "#3797f0";
   button.addEventListener("click", (e) => {
@@ -21,7 +25,7 @@ input.addEventListener("keyup", () => {
     const newButtonDiv = document.createElement("div");
     if (input.value) {
       newComment.innerHTML = input.value;
-
+      newComment.style.width = "300px";
       newHeart.classList.add("fa-regular", "fa-heart", "heart");
       newHeart.style.color = "#b4b4b4";
       newDelete.classList.add("fa-solid", "fa-xmark");
