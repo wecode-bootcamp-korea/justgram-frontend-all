@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style/main.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- <h1>Navigation Menu</h1> -->
+            <div class="nav-left">
+                <button type="button" class="nav-btn" aria-label="새 게시글 작성">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </button>
+                <button type="button"class="logo-btn">justgram</button>
+            </div>
+            <div class="nav-center">
+                <i class="search-icon fa-solid fa-magnifying-glass fa-m"></i>
+                <input class="search-input" type="text" placeholder="검색">            
+            </div>
+            <div>
+                <button type="button"class="nav-btn" aria-label="사람 찾기">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="">
+                </button>
+                <button type="button"class="nav-btn" aria-label="활동 피드">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="">
+                </button>
+                <button type="button"class="nav-btn" aria-label="프로필">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="">
+                </button>           
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <article>
+            <h1>Your Feed</h1>
+            <header class="feed-header">
+                <div>
+                    <a href="">
+                        <img class="user-img" src="./asset/user_1_img.jpg" alt="유저 이미지">
+                    </a>
+                    <a class="feed-bold-txt" href="" style="display: contents;">rem.jh</a>
+                </div>
+                <button type="button"> 
+                    <i class="fa-solid fa-ellipsis"></i>
+                </button>
+            </header>
+
+            <img class="feed-img" src="./asset/post_1.jpg" alt="post">
+
+            <div class="feed-content">
+                <div class="feed-buttons">
+                    <div>
+                        <button class="feed-button" type="button">
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                        </button>
+                        <button type="button">
+                            <i class="fa-regular fa-comment fa-lg"></i>
+                        </button>
+                        <button type="button">
+                            <i class="fa-regular fa-paper-plane fa-lg"></i>
+                        </button>                   
+                    </div>
+                    <button type="button">
+                        <i class="fa-regular fa-bookmark fa-lg"></i>
+                    </button>
+                </div>
+    
+                <div class="like">
+                    <a href="">
+                        <img class="user-img-s" src="./asset/user_2_img.jpg" alt="user profile">
+                    </a>
+
+                    <a class="feed-bold-txt" href="">developer</a>님 <a class="feed-bold-txt" href="">외 <span>10</span>명</a>이 좋아합니다.  
+                </div>
+    
+                <div class="comment-collection">
+                    <ul class="comment-list">
+                        <li>
+                            <a class="feed-bold-txt" href="">hiThere</a> 
+                            <span>베스킨라빈스 아몬드 봉봉을 좋아합니다🤞</span>
+                        </li>
+                        <li>
+                            <a class="feed-bold-txt" href="">areYouOkay</a> 
+                            <span>옆에 침대가 보이니 눕고 싶네요....</span>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="upload-time">
+                    <span>42분</spa> 전
+                </div>
+            </div>
+            
+            <div class="comment-box">
+                <input class="comment-write" type="text" placeholder="댓글 달기...">
+                <button class="comment-btn"type="button">게시</button>
+            </div>
+
+        </article>
+
+        <div class="main-right"> 
+            <aside>
+                <h1>Your Profile</h1>
+                <a class="user-img-l-box" href="">
+                    <img class="user-img-l" src="./asset/user_3_img.jpg" alt="유저 이미지">
+                </a>
+                <div>
+                    <a class="user-name feed-bold-txt" href="">jihyeon-kimy</a>
+                    <p class="nickname">개발자를 꿈꾸는 KIMY</p>
+                </div>
+            </aside>
+
+            <section class="story-side-bar">
+                <h1>Story</h1>
+                <div class="story-side-bar-h">
+                    <p>스토리</p>
+                    <a class="feed-bold-txt" href="">모두 보기</a>
+                </div>
+
+                <ul class="story-side-bar-ul-1">
+                    <li class="story-side-bar-content">
+                        
+                        <a class="profileImg2" href="">
+                            <img class="user-img-side" src="./asset/user_4_img.jpg" alt="유저 이미지">
+                        </a>
+                        <div>
+                            <a class="feed-bold-txt" href="">chicken&beer</a>
+                            <span>16분 전</span>
+                        </div>
+                    </li>
+
+                    <li class="story-side-bar-content">
+                        
+                        <a class="profileImg2" href="">
+                            <img class="user-img-side" src="./asset/user_4_img.jpg" alt="유저 이미지">
+                        </a>
+                        <div>
+                            <a class="feed-bold-txt" href="">chicken&beer</a>
+                            <span>16분 전</span>
+                        </div>
+                    </li>
+
+                    <li class="story-side-bar-content">
+                        
+                        <a class="profileImg2" href="">
+                            <img class="user-img-side" src="./asset/user_4_img.jpg" alt="유저 이미지">
+                        </a>
+                        <div>
+                            <a class="feed-bold-txt" href="">chicken&beer</a>
+                            <span>16분 전</span>
+                        </div>
+                    </li>
+
+                    <li class="story-side-bar-content">
+                        
+                        <a class="profileImg2" href="">
+                            <img class="user-img-side" src="./asset/user_4_img.jpg" alt="유저 이미지">
+                        </a>
+                        <div>
+                            <a class="feed-bold-txt" href="">chicken&beer</a>
+                            <span>16분 전</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section class="story-side-bar">
+                <h1>recommend for you</h1>
+                <div class="story-side-bar-h">
+                    <p>회원님을 위한 추천</p>
+                    <a class="feed-bold-txt" href="">모두 보기</a>
+                </div>
+
+                <ul class="story-side-bar-ul-2">
+                    <li class="story-side-bar-content">
+                        
+                        <a href="">
+                            <img class="user-img-side-2" src="./asset/user_4_img.jpg" alt="유저 이미지">
+                        </a>
+                        <div>
+                            <a class="feed-bold-txt" href="">chicken&beer</a>
+                            <span>16분 전</span>
+                        </div>
+                    </li>
+
+                    <li class="story-side-bar-content">
+                        
+                        <a href="">
+                            <img class="user-img-side-2" src="./asset/user_4_img.jpg" alt="유저 이미지">
+                        </a>
+                        <div>
+                            <a class="feed-bold-txt" href="">chicken&beer</a>
+                            <span>16분 전</span>
+                        </div>
+                    </li>
+
+                    <li class="story-side-bar-content">
+                        
+                        <a href="">
+                            <img class="user-img-side-2" src="./asset/user_4_img.jpg" alt="유저 이미지">
+                        </a>
+                        <div>
+                            <a class="feed-bold-txt" href="">chicken&beer</a>
+                            <span>16분 전</span>
+                        </div>
+                    </li> 
+                </ul>
+            </section>
+
+            <footer>
+                <div>
+                    <a class="footer-link" href="">Instagram 정보</a>
+                    <a class="footer-link" href="">지원</a>
+                    <a class="footer-link" href="">홍보 센터</a>
+                    <a class="footer-link" href="">API</a>
+                    <a class="footer-link" href="">채용 정보</a>
+                    <a class="footer-link" href="">개인정보처리방침</a>
+                    <a class="footer-link" href="">약관</a>
+                    <a class="footer-link" href="">디렉터리</a>
+                    <a class="footer-link" href="">프로필</a>
+                    <a class="footer-link" href="">해시태그</a>
+                    <a class= href="">언어</a>
+                </div>
+
+                <div class="copyright">&copy; 2019 INSTAGRAM</div>
+            </footer>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
