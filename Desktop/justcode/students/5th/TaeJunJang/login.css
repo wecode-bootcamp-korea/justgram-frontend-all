@@ -1,0 +1,23 @@
+.main-box {
+    border: 1px solid black;
+    border-radius : 1px;
+    width : 350px;
+    height : 390px;
+    margin : 0 0 10px;
+    padding : 10px 0;
+ 
+}
+
+.log-box {
+    border: 1px solid black;
+}
+
+
+
+.input-box {
+    border: 1px solid black;
+}
+
+.login-button {
+    border: 1px solid black;
+}
