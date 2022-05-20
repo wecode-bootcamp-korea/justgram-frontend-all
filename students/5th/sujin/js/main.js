@@ -27,6 +27,18 @@ Array.from(btnFeedLikes).forEach((btnFeedLike) => {
     })
 })
 
+const btnProfile = document.getElementById("btn_profile");
+btnProfile.addEventListener("click", (e)=>{
+    if( e.target.parentNode.nextElementSibling.classList.contains("off") ){
+        document.querySelector(".btn_profile_cont .profile_cont").classList.remove("off");
+        document.querySelector(".profile_cont .area_click").addEventListener("click", (e) =>{
+            e.target.parentNode.classList.add("off");
+        })
+    } else {
+        document.querySelector(".btn_profile_cont .profile_cont").classList.add("off");
+    }
+});
+
 const inputComments = document.querySelectorAll(".comment_input");
 inputComments.forEach((inputComment, index) => {
     inputComment.addEventListener("keypress", (event)=>{
@@ -102,9 +114,6 @@ function btnAddLikeComment(){
     })
 }
 
-btnDeleteComment();
-btnAddLikeComment();
-
 document.addEventListener("keyup", () => {
     const commentInputs = document.querySelectorAll(".comment_input");
     commentInputs.forEach((commentInput) => {
@@ -115,3 +124,6 @@ document.addEventListener("keyup", () => {
         }
     })
 });
+
+btnDeleteComment();
+btnAddLikeComment();

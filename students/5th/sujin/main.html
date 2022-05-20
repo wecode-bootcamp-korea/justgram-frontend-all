@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="./style/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="./style/common.css" />
     <link rel="stylesheet" href="./style/main.css" />
     <title>Main</title>
@@ -40,9 +40,38 @@
                     <button type="button" id="btn_heart" class="on">
                         <img src="./img/ico_heart.png" alt="heart icon">
                     </button>
-                    <button type="button" id="btn_profile">
-                        <img src="./img/ico_profile.png" alt="profile icon">
-                    </button>
+                    <div class="btn_profile_cont">
+                        <button type="button" id="btn_profile">
+                            <img src="./img/ico_profile.png" alt="profile icon">
+                        </button>
+                        <div class="profile_cont off">
+                            <div class="area_click"></div>
+                            <div class="rect"></div>
+                            <div class="profile_cnt">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="fa-regular fa-circle-user"></i>
+                                            <span>프로필</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="fa-regular fa-bookmark"></i>
+                                            <span>저장됨</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="fa-solid fa-gear"></i>
+                                            <span>설정</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button type="button">로그아웃</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>

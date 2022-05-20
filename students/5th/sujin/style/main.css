@@ -10,10 +10,22 @@ nav .logo .ico_logo{ display:block; width:24px; height:24px; }
 nav .logo .ico_logo img{ width:100%; height:100%; }
 .logo .txt{ display:block; position:relative; margin-left:16px; padding-left:16px;font-family:'Lobster', cursive; font-size:28px; color:#262626; }
 .logo .txt::before{ position:absolute; left:0; top:6px; content:''; display:block; width:2px; height:32px; background:#000; }
-nav .nav_btns button{ position:relative; padding:8px; }
+nav .nav_btns{ display:flex; }
+nav .nav_btns button{ position:relative; width:44px; height:44px; }
 nav .nav_btns button.on::after{ position:absolute; bottom:0; left:50%; transform:translate(-50%,0); -webkit-transform:translate(-50%,0); -moz-transform:translate(-50%,0); -ms-transform:translate(-50%,0); -o-transform:translate(-50%,0); content:''; display:block; width:3px; height:3px; background:red; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%; }
-nav .nav_btns button img{ width:28px; }
-nav .search_cont{ display:flex; justify-content:center; width:200px; background:#fafafa; border:1px solid #dbdbdb; padding:4px 8px; }
+nav .nav_btns button img{ width:100%; padding:8px; }
+nav .nav_btns .btn_profile_cont{ position:relative; }
+nav .nav_btns .profile_cont{ position:absolute; right:0; width:200px; height:auto; background:#fff; border-radius:4px; box-shadow:0 0 5px 1px rgba(0,0,0,0.15); }
+nav .nav_btns .profile_cont .area_click{ position:fixed; width:100%; height:100%; top:0; left:0; z-index:0; }
+nav .nav_btns .profile_cont .rect{ position:absolute; top:-7px; right:14px; width:14px; height:14px; background:#fff; transform:rotate(45deg); border-radius:4px; box-shadow:0 0 5px 1px rgba(0,0,0,0.15); z-index:0; }
+nav .nav_btns .profile_cont .profile_cnt{ position:relative; width:100%; height:100%; background:#fff; }
+nav .nav_btns .profile_cont .profile_cnt ul{ border-bottom:1px solid #dbdbdb; }
+nav .nav_btns .profile_cont .profile_cnt ul li a{ display:flex; align-items:center; padding:12px 16px; }
+nav .nav_btns .profile_cont .profile_cnt ul li a span{ margin-left:12px; }
+nav .nav_btns .profile_cont .profile_cnt > button{ width:100%; padding:12px 16px; text-align:left; border-bottom-left-radius:4px; border-bottom-right-radius:4px; }
+nav .nav_btns .btn_profile_cont .profile_cont.off{ display:none; }
+
+nav .search_cont{ display:flex; justify-content:center; width:200px; background:#fafafa; border:1px solid #dbdbdb; padding:4px 8px; z-index:1; }
 nav .search_cont .btn_innerSrh{ color:#8e8e8e; }
 nav .search_cont.off .btn_innerSrh{ display:block; }
 nav .search_cont.on .btn_innerSrh{ display:none; }
@@ -22,6 +34,7 @@ nav .search_cont.on .input_cont{ display:flex; justify-content:space-between; al
 nav .search_cont.on .input_cont i{ flex:0 0 auto; color:#A5A7AA; }
 nav .search_cont.on .input_cont .search_input{ flex:1 1 auto; width:88%; padding:0 4px; }
 nav .search_cont.on .input_cont .btn_closeSrh{ flex:0 0 auto; padding:2px; }
+
 
 /* main */
 main{ display:flex; justify-content:space-between; width:940px; margin:0  auto; padding-top:85px; }
