@@ -40,34 +40,28 @@ const activateBtn = () => {
 
 const postComment = () => {
   const container = document.querySelector('.feeds-comments');
-  const div = document.createElement("div");
-  const div3 = document.createElement("div");
-  const span = document.createElement("span");
-  const span2 = document.createElement("span");
-  const i = document.createElement('i');
-  const btn = document.createElement('button');
-  const div2 = document.createElement("div");
+  const div = document.createElement('div');
+  div.innerHTML = `
+    <div class="user-comment">
+      <div>
+        <span class="nickname"></span>
+        <span class="comment-value"></span>
+      </div>
+      <div>
+        <i class="fa-solid fa-heart" color="gray"></i>
+        <button class="del-comment-btn">삭제</button>
+      </div>
+    </div>
+  `;
 
-  btn.className = 'del-comment-btn'
-  i.className = 'fa-solid fa-heart';
-  div.className = 'user-comment';
-  span.className = 'nickname';
-  span2.className = 'comment-value';
+  const btn = div.getElementsByTagName('button')[0];
+  const div2 = div.getElementsByTagName('div')[0];
+  const span = div.getElementsByTagName('span')[0];
+  const span2 = div.getElementsByTagName('span')[1];
 
-  i.style.color = 'gray';
+  span.textContent = 'im_jw';
+  span2.textContent = ` ${comment.value}`;
 
-  btn.innerHTML = '삭제';
-  span2.innerHTML = ` ${comment.value}`;
-  span.innerHTML = 'im_jw';
-
-  div.appendChild(div3);
-  div3.appendChild(span);
-  div3.appendChild(span2);
-
-  div2.appendChild(i);
-  div2.appendChild(btn);
-
-  div.appendChild(div2);
   commentContainer.prepend(div);
   comment.value = '';
   writeBtn.disabled = true;
