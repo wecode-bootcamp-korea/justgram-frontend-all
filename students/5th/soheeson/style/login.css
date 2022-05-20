@@ -1,0 +1,150 @@
+body {
+    background-color: #fafafa;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginWhole {
+    border-radius: 1px solid;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.logoBox {
+    border: 1.5px solid #e6e6e6;
+    background-color: white;
+    padding: 20px 0;
+
+}
+
+.logo {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    font-family: 'Lobster', cursive;
+}
+
+.infoInputWholeBox {
+    margin-top: 24px;
+}
+
+.id-box {
+    margin: 0 40px 6px;
+    align-items: center;
+}
+
+.pw-box {
+    margin: 0 40px 6px;
+    align-items: center;
+}
+
+input {
+    border: 1.3px solid #e6e6e6;
+    border-radius: 3.5px;
+    background-color: #fafafa;
+    color: #999999;
+    font-size: 12px;
+    padding: 9px 8px 7px 8px;
+    height: 20px;
+    width: 250px;
+}
+
+.login-button-box {
+    margin: 8px 40px 8px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button {
+    border: 0px solid;
+    background-color: #c4e1fb;
+    border-radius: 3.5px;
+    
+    width: 268.594px;
+    height: 30px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.login-button-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 20px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.or-box {
+    margin: 10px 40px 18px 40px;
+    color: #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.or-text {
+    margin: 0 18px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.or-left-line {
+    border: 0px solid #e6e6e6;
+    background-color: #999999;
+    width: 104.75px;
+    height: 1px;
+}
+
+.or-right-line {
+    border: 0px solid #e6e6e6;
+    background-color: #999999;
+    width: 104.75px;
+    height: 1px;
+}
+
+.facebook-login-box {
+    margin: 8px 40px;
+}
+
+.facebook-login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    width: 268px;
+    height: 20px;
+    padding: 0;
+    background-color: white;
+}
+
+.facebook-text {
+    color: #385185;
+    font-weight: bold;
+}
+
+.facebook-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.pw-finder {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 12px 0px 0px 0px;
+    color: #385185;
+    font-size: 11px;
+    text-decoration: none;
+}

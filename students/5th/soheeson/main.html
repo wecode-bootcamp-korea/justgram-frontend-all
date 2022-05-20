@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+            <meta charset="UTF-8">
+            <title>JUSTGRAM</title>
+            <link href="style/main.css" rel="stylesheet" type="text/css" />
+            <link href="style/common.css" rel="stylesheet" type="text/css" />
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+            </style>
+    </head>
+    <body>
+        <div class="container"><!--메인페이지/전체-->
+            <div class="header"><!--상단바/전체-->
+                <div class="header_box">
+                <a class="logo_box" href="main.html">
+                    <img alt="logo" src="image/instagram.png" />
+                    <span>justgram</span>
+                </a>
+                <div class="search_box">
+                    <img class="magnifying_glass" src="image/search.png" alt="magnifying_glass">
+                    <input class="search" type="text" placeholder="검색">
+                </div>
+                <div class="menu_box">
+                    <img alt="explore" src="image/explore.png"/>
+                    <img alt="heart" src="image/heart.png"/>
+                    <img alt="mypage" src="image/profile.png"/>
+                </div>
+                </div>
+            </div>
+            <div class="contents"><!--상단바제외/전체-->
+                <div class="feed_group"><!--피드박스(왼쪽)/전체-->
+                    <div class="feed_container">
+                        <div class="feed_header"><!--/// css에서 display:flex space-between ///-->
+                            <a href="#"> <img alt="profile_image" src="image/profileme.png" />cannon_mj</a>
+                            <button><img alt="triple_dot" src="image/more.png"/></button>
+                        </div>
+                        <div class="feed_image">
+                            <img alt="feed_image" src="image/intheocean.jpg"/>
+                        </div>
+                        <div class="feed_contents">
+                            <div class="button_group"><!--/// css에서 display:flex space-between ///-->
+                                <span class="button_left_group">
+                                    <button><img alt="heart" src="image/heart.png"/></button>
+                                    <button><img alt="message" src="image/comment.png"/></button>
+                                    <button><img alt="send" src="image/send.png"/></button>
+                                </span>
+                                <span class="button_right_group">
+                                    <button><img alt="save" src="image/save.png"/></button>
+                                </span>
+                            </div>
+                            <div class="like_sentence">
+                                <a href="#"><img alt="like_profile_image" src="image/profileme.png"/></a>
+                                <span class="bold">aineworld</span>님 <span class="bold">외 10명</span>이 좋아합니다.
+                            </div>
+                            <div class="comment_group"><!--/// (1-1) "comment_group" 안에서 append 되도록 한다.  ///-->
+                                                       <!--/// (1-2)  enter 또는 게시버튼을 누르면, "comment_group"을 찾아서 append 해서 아래tag(작성자 이름,작성자 내용)를 넣어야한다.///-->
+
+                            <!--/<div><span>(작성자 이름)</span> <span>(작성자 내용)</span></div>-->
+                            
+                            </div>
+                            <div class="write_comment">
+                                <input class="comment_input" type="text" placeholder="댓글달기..."/>
+                                <button class="write_comment_button">게시</button><!--/// (1) JS에서 게시 버튼을 눌렀을때, 어디 태그를 늘릴것인가? ///-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floationg_section"><!--플로팅박스(오른쪽)/전체-->
+                    <div class="profile_box">
+                        <a href="#"><img alt="profile_img"src="image/profileme.png"/></a>
+                        <a class="profile_text" href="#">
+                            <div class="bold">wecode_bootcamp</div>
+                            <div class="grey">WeCode | 위코드</div>
+                        </a>
+                    </div>
+                    <div class="story_box">
+                        <div class="story_header">
+                            <span>스토리</span>
+                            <button>모두 보기</button>
+                        </div>
+                        <div class="story_group"><!--///높이를 부여해햐함, overflow:scroll;///-->
+                            <div class="story_a_box">
+                                <a href="#"><img alt="profile_a_img"src="image/circle.png"/></a>
+                                <a class="profile_a_text" href="#">
+                                    <div class="bold">_yun_s</div>
+                                    <div class="grey">16분 전</div>
+                                </a>
+                            </div>
+                            <div class="story_b_box">
+                                <a href="#"><img alt="profile_b_img"src="image/circle.png"/></a>
+                                <a class="profile_b_text" href="#">
+                                    <div class="bold">drink_eat_drink</div>
+                                    <div class="grey">3시간 전</div>
+                                </a>
+                            </div>
+                            <div class="story_c_box">
+                                <a href="#"><img alt="profile_c_img"src="image/circle.png"/></a>
+                                <a class="profile_c_text" href="#">
+                                    <div class="bold">hyukyc</div>
+                                    <div class="grey">20시간 전</div>
+                                </a>
+                            </div>
+                            <div class="story_d_box">
+                                <a href="#"><img alt="profile_d_img"src="image/circle.png"/></a>
+                                <a class="profile_d_text" href="#">
+                                    <div class="bold">jminkeek</div>
+                                    <div class="grey">5시간 전</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend_box">
+                        <div class="recommend_header">
+                            <span>회원님만을 위한 추천</span>
+                            <button>모두 보기</button>
+                        </div>    
+                            <div class="recommend_group"><!--///높이를 부여해햐함, overflow:scroll;///-->
+                                <div class="recommend_a_box">
+                                    <a href="#"><img alt="recommend_a_img"src="image/profileme.png"/></a>
+                                    <a class="recommend_a_text" href="#">
+                                        <div class="bold">joaaaaaahye</div>
+                                        <div class="grey">_leqend_a님 외 2명이...</div>
+                                    </a>
+                                    <button>팔로우</button>
+                                </div>
+                                <div class="recommend_b_box">
+                                    <a href="#"><img alt="recommend_b_img"src="image/profileme.png"/></a>
+                                    <a class="recommend_b_text" href="#">
+                                        <div class="bold">rampart81</div>
+                                        <div class="grey">ringo.in.seoul님 외 12...</div>
+                                    </a>
+                                    <button>팔로우</button>
+                                </div>
+                                <div class="recommend_c_box">
+                                    <a href="#"><img alt="recommend_c_img"src="image/profileme.png"/></a>
+                                    <a class="recommend_c_text" href="#">
+                                        <div class="bold">shawnjjoo</div>
+                                        <div class="grey">jimmmylee1220님 외 1...</div>
+                                    </a>
+                                    <button>팔로우</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="company_info_box">
+                        <div class="info"><a href="#">Justgram 정보</a> ・ <a href="#">지원</a> ・ 
+                            <a href="#">홍보센터</a> ・ <a href="#">>API</a> ・ <a href="#">채용정보</a> ・ 
+                            <a href="#">개인정보처리방침</a> ・ <a href="#">약관</a> ・ <a href="#">디렉터리</a> ・ 
+                            <a href="#">프로필</a> ・ <a href="#">해시태그</a> ・ <a href="#">언어</a></div>
+                        <div class="year">@2022 Justgram</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./js/main.js"></script>
+</html>
