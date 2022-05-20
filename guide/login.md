@@ -16,12 +16,12 @@
 ## 디자인
 
 구현해야할 로그인 페이지는 실제 instagram 로그인 부분과 유사하게 디자인했습니다.
-구현할 westagram 디자인: tobe/login.png
+구현할 justgram 디자인: tobe/login.png
 
 - instagram 사이트 로그인 페이지를 참고하여 개발해주세요.
 - 아이콘은 flaticon 사이트를 이용해 다운받아 사용해 주세요.
   (https://www.flaticon.com/free-icon/instagram_1384031?related_item_id=1384031&term=instagram)
-- instagram 로고는 아래의 폰트를 이용해 'westagram'으로 작성해주세요.
+- instagram 로고는 아래의 폰트를 이용해 'justgram'으로 작성해주세요.
   (https://fonts.google.com/specimen/Lobster?preview.text=&preview.text_type=custom)
 
 ## HTML 작성
