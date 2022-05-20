@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+}
+
+#feed-img {
+    width: 400px;
+    height: 600px;
+}
+
+#profile-img{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.container {
+
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+}
+
+.icon-insta {
+    padding-right: 16px;
+    border-right: 2px solid black;
+}
+
+.text-insta {
+    margin-left: 16px;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+}
+
+.input-search {
+    display: flex;
+    width: 160px;
+    height: 24px;
+}
+
+.search {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    background-color: #efefef;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.icon-compass-box {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-compass {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-heart-box {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-heart {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-profile-box {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-profile {
+    width: 100%;
+    height: 100%;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 8vh;
+}
+
+.feeds {
+    border: 1px solid black;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+}
+
+.feed-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed-profile {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.profile-img {
+    margin: 6px;
+}
+
+.profile-text {
+    font-size: 12px;
+    margin: 6px;
+}
+
+.profile-name {
+    margin: 2px;
+}
+
+.profile-location {
+    margin: 2px;
+}
+
+.profile-moreinfo {
+    
+}
+
+.profile-nickname {
+    margin: 2px;
+}
+
+.upload-time {
+    margin: 2px;
+}
+
+.common-follow {
+    margin: 2px;
+}
+
+.feed-img {
+    display: flex;
+}
+
+.feed-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-left {
+
+}
+
+.button-heart {
+
+}
+
+.button-comment {
+
+}
+
+.button-dm {
+
+}
+
+.button-right {
+
+}
+
+.button-bookmark {
+
+}
+
+.feed-heart {
+    font-size: 12px;
+    margin: 8px;
+}
+
+.feed-text {
+    font-size: 12px;
+    margin: 8px;
+}
+
+.feed-uploaded {
+    font-size: 12px;
+    margin: 8px;
+}
+
+.feed-comment-box {
+
+}
+
+.feed-comment-input {
+
+}
+
+.comment-button {
+
+}
+
+.main-right {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.main-right-profile {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin: 8px;
+}
+
+.main-right-story {
+
+}
+
+.story-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 8px;
+}
+
+.story-contents {
+    
+}
+
+.story-content {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin: 8px;
+}
+
+.main-right-recommend {
+    
+}
+
+.recommend-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 8px;
+}
+
+.recommend-contents {
+
+}
+
+.recommend-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin: 8px;
+}
+
+.recommend-profile {
+    display: flex;
+}
+
+.main-right-info {
+
+}
+
+.information {
+
+}
