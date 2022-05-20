@@ -50,6 +50,9 @@ main{
     display: flex;
     flex-direction: row;
 }
+.title{
+    font-family: 'Lobster', cursive;
+}
 .title, .navBar{
     display: flex;
     align-items: center;
@@ -63,7 +66,12 @@ main{
     height: 70%;
     background-color: #FAFAFA;
     margin-left: 10px;
+    right: 0px;
 }
+.innerRight{
+    position: fixed;
+}
+
 article{
     margin: 20px 10px;
     background-color: #FFFFFF;
