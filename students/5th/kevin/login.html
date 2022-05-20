@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="loginStyle.css.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="loginBox">
+        <div class="logo">
+          <img src="sources/Instagram_logo.png" width="250px" alt="로고" />
+        </div>
+        <div>
+          <div class="logininputwrap">
+            <input
+              id="IDI"
+              class="logininput"
+              type="text"
+              placeholder="전화번호, 사용자 이름 또는 이메일"
+            />
+            <input
+              class="logininput"
+              id="PWI"
+              type="password"
+              placeholder="비밀번호"
+            />
+          </div>
+        </div>
+        <div class="loginButton"><button id="LB">로그인</button></div>
+        <div class="bp"><p>비밀번호를 잊으셨나요?</p></div>
+      </div>
+    </div>
+    <script>
+      const IDI = document.getElementById("IDI");
+      const PWI = document.getElementById("PWI");
+      const LB = document.getElementById("LB");
+      let loginCheck = false;
+      IDI.addEventListener("keyup", function () {
+        // console.log(IDI.value);
+        // console.log(PWI.value);
+        IDI.value && PWI.value ? (loginCheck = true) : (loginCheck = false);
+        loginCheck
+          ? (LB.style.backgroundColor = "#2f5681")
+          : (LB.style.backgroundColor = "#c5e1f");
+        // console.log(loginCheck);
+      });
+      PWI.addEventListener("keyup", function () {
+        // console.log(IDI.value);
+        // console.log(PWI.value);
+        IDI.value && PWI.value ? (loginCheck = true) : (loginCheck = false);
+        // console.log(loginCheck);
+        loginCheck
+          ? (LB.style.backgroundColor = "#2f5681")
+          : (LB.style.backgroundColor = "#c5e1f");
+      });
+    </script>
+  </body>
+</html>
