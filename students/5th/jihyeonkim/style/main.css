@@ -17,6 +17,11 @@ ul{
     padding: 0;
 }
 
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
 input:focus {outline:none;}
 
 body{
@@ -24,7 +29,9 @@ body{
 }
 
 body > header{
-    padding-right: 90x;
+    position: fixed;
+    width: 100vw;
+    padding-right: 90px;
     padding-left: 90px;
     border-bottom: 1.5px solid rgb(233,233,233);
     background-color: white;
@@ -35,6 +42,10 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 80px;
+}
+
+nav > h1{
+    display: none;
 }
 
 .nav-center{
@@ -100,11 +111,22 @@ nav{
     width: 100%;
 }
 
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
 article{
     width: 603px;
-    margin: 30px auto;
+    margin-top: 30px;
     border: 1.5px solid rgb(233,233,233);
+    border-radius: 3px;
     background-color: white;
+}
+
+article > h1{
+    display: none;
 }
 
 .feed-header{
@@ -119,11 +141,10 @@ article{
 }
 
 .user-img{
-    position: relative;
-    top: 2px;
-    width: 30px;
+    display: block;
+    width: 35px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
 }
 
 .feed-img{
@@ -138,7 +159,6 @@ article{
     font-size: 14px;
     font-weight: 600;
     color: black;
-    text-decoration-line: none;
 }
 
 .feed-buttons{
@@ -160,11 +180,10 @@ article{
 }
 
 .user-img-s{
-    position: relative;
-    top: 2px;
+    display: block;
     width: 20px;
     border-radius: 50%; 
-    margin-right: 10px;
+    margin: 0 10px 0 0;
 }
 
 .comment-collection > ul > li{
@@ -197,4 +216,120 @@ article{
     font-weight: 600;
     color: #0095f6;
     opacity: 0.7;
+}
+
+.user-img-l{
+    display: block;
+    width:56px;
+    height: 56px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.main-right{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.main-right > aside{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-right > aside > h1{
+    display: none;
+}
+
+.nickname{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.story-side-bar{
+    margin: 20px 0;
+    padding: 12px 12px 0;
+    border: 1.5px solid rgb(233,233,233);
+    border-radius: 3px;
+    background-color: white;
+}
+
+.story-side-bar > h1{
+    display: none;
+}
+
+.story-side-bar-h{
+    display: flex;
+    justify-content: space-between; 
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8e8e8e;
+}
+
+.story-side-bar-ul-1{
+    height: 210px;
+    overflow: hidden;
+}
+
+.story-side-bar-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7px 0;
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.story-side-bar-content > div *{
+    display: block;
+}
+
+.profileImg2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff), 
+    linear-gradient(to right, red 0%,  orange 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.user-img-side{
+    display: block;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.story-side-bar-ul-2{
+    height: 160px;
+    overflow: hidden;
+}
+
+.user-img-side-2{
+    display: block;
+    width: 35px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+footer *{
+    font-size: 15px;
+    color: #8e8e8e;
+}
+
+.footer-link::after{
+    content: " · "
+}
+
+.copyright{
+    padding-top: 10px;
 }
