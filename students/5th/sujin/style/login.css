@@ -1,13 +1,13 @@
 @charset "utf-8";
 
-body { display:flex; justify-content:center; align-items:center; width:100%; height:100vh; background-color:#fafafa; }
-.login_wrap {  display:flex; align-items:center; justify-content:space-between;  flex-direction:column; width:350px; height:396px; background:#fff; border:1px solid #dbdbdb; border-radius:4px; padding:30px 0; }
-.login_wrap .top { display:flex; align-items:center; flex-direction:column; }
-.login_wrap h2 {font-family:'Lobster', cursive; font-size:44px; color:#262626; }
-.login_input { width:268px; margin-top:30px; }
-.login_input input { width:100%; background:#fafafa; border:1px solid #dbdbdb; padding:8px 12px; font-size:12px; }
-.login_input input + input { margin-top:8px; }
-.login_input input:focus { outline:none; }
-.login_input button { display:flex; align-items:center; justify-content:center; width:100%; height:30px; margin-top:16px; background:rgb(0, 149, 246); border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; -ms-border-radius:4px; -o-border-radius:4px; color:#fff; font-size:14px; cursor:pointer; }
-.login_input button:disabled { background:rgba(0, 149, 246, 0.3); cursor:default; }
-.login_wrap > a { color:#00376b; }
+body{ display:flex; justify-content:center; align-items:center; width:100%; height:100vh; background-color:#fafafa; }
+.login_wrap{  display:flex; align-items:center; justify-content:space-between;  flex-direction:column; width:350px; height:396px; background:#fff; border:1px solid #dbdbdb; border-radius:4px; padding:30px 0; }
+.login_wrap .top{ display:flex; align-items:center; flex-direction:column; }
+.login_wrap .logo .txt{ font-family:'Lobster', cursive; font-size:44px; color:#262626; }
+.login_input{ width:268px; margin-top:30px; }
+.login_input input{ width:100%; background:#fafafa; border:1px solid #dbdbdb; padding:8px 12px; font-size:12px; }
+.login_input input + input{ margin-top:8px; }
+.login_input input:focus{ outline:none; }
+.login_input button{ display:flex; align-items:center; justify-content:center; width:100%; height:30px; margin-top:16px; background:rgb(0, 149, 246); border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; -ms-border-radius:4px; -o-border-radius:4px; color:#fff; font-size:14px; cursor:pointer; }
+.login_input button:disabled{ background:rgba(0, 149, 246, 0.3); cursor:default; }
+.login_wrap > a{ color:#00376b; }

@@ -6,10 +6,18 @@ let valId = false;
 let valPw = false;
 
 email.addEventListener("keyup", (e) => {
-    valId = getValueValidation(e.currentTarget.value);
+    if ( e.currentTarget.value.includes("@") ){
+        valId = getValueValidation(e.currentTarget.value);
+    } else {
+        valId = false;
+    }
 });
 pw.addEventListener("keyup", (e) => {
-    valPw = getValueValidation(e.currentTarget.value);
+    if( e.currentTarget.value.length > 4 ){
+        valPw = getValueValidation(e.currentTarget.value);
+    } else {
+        valPw = false;
+    }
 })
 const getValueValidation = (value) => {
     let valid = false;
@@ -22,17 +30,6 @@ const getValueValidation = (value) => {
 document.addEventListener("keyup", () => {
     valId && valPw ? loginBtn.disabled = false : loginBtn.disabled = true;
 });
-
-
-/* document.addEventListener("keyup", () => {
-    let valId = document.getElementById('email').value;
-    let valPw = document.getElementById('pw').value;
-    if (valPw != "" && valId != "") {
-        loginBtn.disabled = false;
-    } else {
-        loginBtn.disabled = true;
-    }
-}); */
 
 
 // const loginInput = () => {}
@@ -53,20 +50,3 @@ document.addEventListener("keyup", () => {
 //         valPw = false;
 //     }
 // });
-
-
-// email.addEventListener('keyup', function () {
-//     valId = getValueValidation(this.value);
-// });
-// pw.addEventListener('keyup', function () {
-//     valPw = getValueValidation(this.value);
-// })
-// function getValueValidation(value) {
-//    var valid = false;
-//    if (value != null && value != "") {
-//       valid = true;   
-//    }
-//    return valid;
-// }
-
-
