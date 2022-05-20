@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+  }
+.wrapper {
+    width: 520px;
+    background-color: #fafafa;
+    padding: 10px;
+}
+.inside {
+    position:relative;
+    height: 600px;
+    border: 1px solid #ebebeb;
+    background-color: white;
+    padding-top: 40px;
+    text-align: center;
+}
+.title {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+.username , .password {
+    width: 400px;
+    height: 60px;
+    margin: 5px;
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 20px;
+}
+.login{
+    width: 400px;
+    height: 45px;
+    background-color: rgb(86, 153, 235);
+    color: white;
+    border-radius: 8px;
+    border:0;
+    margin-top: 20px;
+    font-size: 20px;
+    opacity: 0.3;
+}
+.alertforgotpassword {
+    color: #073c6d;
+    position: absolute;
+    bottom: 20px;
+    left: 175px;
+    font-size: 20px;
+}
+

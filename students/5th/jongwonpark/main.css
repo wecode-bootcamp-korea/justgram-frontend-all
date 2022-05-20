@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+nav {
+    background-color: white;
+    border-bottom: 1px solid #d8d4d4;
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.justalogo {
+    width: 40px;
+    margin: 15px;
+    padding-right: 15px;
+    border-right: 2px solid black;
+}
+.title {
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+.searchbar {
+    text-align : center;
+    outline: none;
+    width: 250px;
+    padding: 5px 0;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+}
+.navleft {
+    display: flex;
+    align-items: center;
+    
+}
+.navright {
+    display: flex;
+    align-items: center;
+}
+.heart , .finder, .mypage {
+    width:35px;
+    margin: 0px 15px;
+}
+.mainpage {
+    background-color: #fafafa;
+    border: 1px solid #d8d4d4;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+.feeds {
+    width: 550px;
+    
+}
+.feedtop{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.profile img {
+    width: 40px;
+    border-radius: 100%;
+}
+.profile {
+    display:flex;
+    align-items: center;
+}
+.username {
+    font-style: Neue Helvetica;
+    font-weight: bold;
+}
+.feedtop .username {
+    margin-left: 10px;
+}
+article {
+    border: 1px solid #d8d4d4;
+    background-color: white;
+}
+.doraemonfeed {
+    width: 100%;
+}
+.feedbottom {
+    padding: 10px 15px;
+}
+.feedbottom-iconwrapper {
+    display:flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+.feedbottom-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+.feedbottom .profile {
+    padding: 10px 0;
+}
+.fa-heart {
+    color:red;
+}
+.comment-wrapper .fa-heart {
+    font-size: 15px;
+}
+.comment-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feedbottom .profile img{
+    width: 30px;
+}
+.description {
+    color: #a3a3a3
+}
+.username.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.username.description {
+    font-size: 14px;
+    font-weight: normal;
+}
+.first {
+    padding-bottom: 20px;
+}
+.story {
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 1%;
+    margin-bottom: 20px;
+    border: 1px solid #d8d4d4;
+
+}
+.story-top {
+    display:flex;
+    justify-content: space-between;
+}
+.story .profile {
+    padding: 10px 0;
+}
+
+.story-top span {
+    font-weight: bold;
+    font-size: 12px;
+}
+.recommendation {
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 1%;
+    margin-bottom: 20px;
+    border: 1px solid #d8d4d4;
+
+}
+.recommendation-top {
+    display:flex;
+    justify-content: space-between;
+}
+.recommendation .profile {
+    padding: 10px 0;
+}
+
+.recommendation-top span {
+    font-weight: bold;
+    font-size: 12px;
+}
+.recommendation-profile{
+    display: flex;
+    justify-content: flex-start;
+}
+.recommendation .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile input {
+    border: 0;
+    background-color: transparent;
+    color: blue;
+    font-weight: bold;
+}
+.right-bottom {
+    width: 200px;
+}
+.makecomment input {
+    border: 0;
+    width: 100%;
+    padding: 10px 15px;
+    border-top:  1px solid #d8d4d4;
+}
+
+
