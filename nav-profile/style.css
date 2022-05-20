@@ -1,0 +1,89 @@
+contents profile {
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  margin-left: 100px;
+}
+
+.contents {
+  position: absolute;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+  z-index: 2;
+}
+
+.profile {
+  position: absolute;
+  margin-top: 0px;
+  display: flex;
+  border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  flex-direction: column;
+  background-color: yellow;
+  z-index: 6;
+}
+.item1 {
+  background-color: yellow;
+  /* z-index: 7; */
+}
+.profile_1 {
+  position: absolute;
+  margin-top: 0px;
+  display: flex;
+  border: 1px solid black;
+  width: 100px;
+  flex-direction: column;
+  background-color: yellow;
+  /* z-index: -1; */
+}
+.na {
+  border: 1px solid black;
+  width: 500px;
+}
+img {
+  display: inline;
+  width: 50px;
+}
+
+.line {
+  display: inline;
+  width: 340px;
+}
+a {
+  font-size: 50px;
+}
+#line {
+  display: flex;
+  justify-content: flex-end;
+}
+/* .item {
+  position: absolute;
+  background: #fff;
+} */
+/* .item:nth-child(1) {
+  top: 0px;
+  left: 0;
+  background-color: rgb(237, 13, 13);
+  z-index: 1;
+}
+.item:nth-child(2) {
+  top: 100px;
+  left: 100px;
+  background-color: yellow;
+ 
+  z-index: 2;
+} */
+
+/* .contents {
+  position: relative;
+  z-index: 2;
+}
+.profile {
+  position: relative;
+  z-index: 1;
+} */
