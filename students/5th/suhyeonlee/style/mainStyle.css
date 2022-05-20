@@ -1,77 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-.nav-tag {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 15px;
-  margin-top: 30px;
-}
-
-.nav-tag > span {
-  align-self: center;
-  font-family: "Lobster", cursive;
-  font-size: 25px;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-}
-
-.feeds {
-  border: 1px solid rgb(229, 226, 226);
-  margin-right: 10px;
-  width: content;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.main-right {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  float: right;
-  margin-right: 10px;
-}
-
-.feed {
-  display: flex;
-  flex-direction: column;
-}
-
-.feed-icons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.icons {
-  align-self: center;
-}
-.photos {
-  width: 700px;
-  height: 600px;
-}
-.title-logo {
-  padding-left: 250px;
-}
-.icons-div {
-  padding-right: 200px;
-}
-.icon {
-  padding-left: 15px;
-  width: 40px;
-}
-
-.stroy-list {
-  padding-left: 0px;
-}
-
-.story {
+/* .story {
   border: 1px solid;
   border-radius: 100px;
   width: 35px;
@@ -87,198 +14,110 @@ main {
     );
   background-origin: border-box;
   background-clip: content-box, border-box;
-  /* margin: 10px; */
   margin-top: 6px;
-}
-
-.story-image {
-  /* position: absolute; */
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-
-  /* left: 0; */
-  /* z-index: 3; */
-}
-
-/* .recommand-image-canvas {
-  position: relative;
-  z-index: 1;
-  width: 35px;
-  height: 35px;
-  border-radius: 100%;
-  background: -webkit-radial-gradient(
-      32% 106%,
-      circle cover,
-      rgb(255, 225, 125) 0%,
-      rgb(255, 205, 105) 10%,
-      rgb(250, 145, 55) 28%,
-      rgb(235, 65, 65) 42%,
-      transparent 82%
-    ),
-    -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
-  background: -moz-radial-gradient(
-      32% 106%,
-      circle cover,
-      rgb(255, 225, 125) 0%,
-      rgb(255, 205, 105) 10%,
-      rgb(250, 145, 55) 28%,
-      rgb(235, 65, 65) 42%,
-      transparent 82%
-    ),
-    -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
-  background: -ms-radial-gradient(
-      32% 106%,
-      circle cover,
-      rgb(255, 225, 125) 0%,
-      rgb(255, 205, 105) 10%,
-      rgb(250, 145, 55) 28%,
-      rgb(235, 65, 65) 42%,
-      transparent 82%
-    ),
-    -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
-  background: -o-radial-gradient(
-      32% 106%,
-      circle cover,
-      rgb(255, 225, 125) 0%,
-      rgb(255, 205, 105) 10%,
-      rgb(250, 145, 55) 28%,
-      rgb(235, 65, 65) 42%,
-      transparent 82%
-    ),
-    -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
-  background: radial-gradient(
-      circle farthest-corner at 32% 106%,
-      rgb(255, 225, 125) 0%,
-      rgb(255, 205, 105) 10%,
-      rgb(250, 145, 55) 28%,
-      rgb(235, 65, 65) 42%,
-      transparent 82%
-    ),
-    linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
 } */
-
-button {
-  background-color: white;
-  width: content;
-  border: none;
+* {
+  box-sizing: border-box;
 }
-.send-comment {
-  font-size: 15px;
-  font-weight: bold;
-  color: #c0dffd;
-  padding: 0;
+body {
 }
 
-.follow {
-  font-size: 15px;
-  font-weight: bold;
-  color: #0095f6;
+.container {
+  /* border: 2px solid black; */
 }
 
-.search-input {
-  background-repeat: no-repeat;
-  align-self: center;
-  width: 200px;
-  height: 30px;
-  border: 1px solid #ccc;
-  padding: 5px;
+.header_style {
+  border-bottom: 1px solid #dedede;
+  padding: 10px 150px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.search-input::-webkit-input-placeholder {
-  background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 1px center;
-  text-align: center;
-  text-indent: 10;
+.logo_box {
+  font-family: "Lobster", cursive;
+  font-size: 25px;
 }
 
-.comment-input {
-  width: 90%;
-  /* padding-top: 15px;
-  padding-left: 6px; */
-  padding: 10px;
-  font-size: 16px;
-  border: none;
+.logo_text {
+  margin-left: 10px;
 }
-
-.comment-input:focus {
-  outline: none;
-}
-
-.writer {
-  border-radius: 100%;
+.logo_image {
+  border-right: 2px solid black;
+  padding-right: 10px;
   margin-right: 10px;
   width: 30px;
 }
 
-.aside-myPhoto {
-  width: 50px;
+.search_box {
+  width: 200px;
+  border: 1px solid #dedede;
+  color: #dedede;
+  text-align: center;
 }
 
-.feed-header {
+.menu_box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.writer-photo-nickname {
+.menu_btn {
+  width: 25px;
+  margin: 0 7px;
+}
+
+.contents {
+  border: 3px solid black;
   display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.nickname {
-  text-decoration-line: none;
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-  margin-right: 10px;
-  align-self: center;
+.feed_group {
+  border: 1px solid black;
 }
 
-.comment-sep-content {
-  border-top: 1px solid rgb(229, 226, 226);
-  margin-top: 10px;
+.aside_section {
+  border: 1px solid purple;
+  width: 300px;
+  margin-left: 30px;
+  float: right;
 }
 
-.feed-photo {
-  margin-top: 7px;
+.feed_container {
+  border: 1px solid red;
 }
 
-.writer-content {
-  padding-left: 6px;
+.feed_header {
+  /* border: 1px solid black; */
 }
 
-.main-right-common {
-  border: 1px solid rgb(229, 226, 226);
-  padding: 10px;
-  margin-bottom: 10px;
-}
-.side-myInfo {
-  display: flex;
+.feed_photo {
+  border: 1px solid black;
+  width: 450px;
 }
 
-.recommand-list {
+.feed_button_group {
+  /* border: 2px solid green; */
 }
 
-.recomand-item {
-  display: flex;
-  margin-bottom: 5px;
+.feed_content {
+  /* border: 2px solid blue; */
 }
 
-.recommand {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
+.like_list_box {
+  /* border: 3px solid black; */
 }
 
-.recommand-nickname {
-  align-self: flex-start;
+.feed_comment {
+  /* border: 2px solid yellow; */
 }
 
-.follow {
-  align-self: center;
+.write_comment {
+  /* border: 1px solid orange; */
 }
 
-.item-follow {
-  align-self: center;
+.write_comment_btn {
+  border: none;
 }
