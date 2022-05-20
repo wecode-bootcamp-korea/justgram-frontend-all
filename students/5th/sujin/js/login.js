@@ -30,23 +30,3 @@ const getValueValidation = (value) => {
 document.addEventListener("keyup", () => {
     valId && valPw ? loginBtn.disabled = false : loginBtn.disabled = true;
 });
-
-
-// const loginInput = () => {}
-// loginInput();
-
-
-// email.addEventListener("keyup", (e) => {
-//     if( e.currentTarget.value != null && e.currentTarget.value != "" ){
-//         valId = true;
-//     } else {
-//         valId = false;
-//     }
-// });
-// pw.addEventListener("keyup", (e) => {
-//     if( e.currentTarget.value != null && e.currentTarget.value != "" ){
-//         valPw = true;
-//     } else {
-//         valPw = false;
-//     }
-// });

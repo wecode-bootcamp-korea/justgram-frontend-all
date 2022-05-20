@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style/common.css">
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="./style/all.min.css" />
+    <link rel="stylesheet" href="./style/common.css" />
+    <link rel="stylesheet" href="./style/main.css" />
     <title>Main</title>
 </head>
 <body>
@@ -15,37 +15,40 @@
         <nav>
             <div class="cont">
                 <h1 class="logo">
-                    <span class="ico_logo"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="instagram icon"></span>
-                    <span class="txt">Justgram</span>
+                    <a href="./main.html">
+                        <span class="ico_logo"><img src="./img/ico_instagram.png" alt="instagram icon"></span>
+                        <span class="txt">Justgram</span>
+                    </a>
                 </h1>
 
                 <div class="search_cont off">
-                    <button class="btn_innerSrh">
+                    <button type="button" class="btn_innerSrh">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <span>검색</span>
                     </button>
                     <div class="input_cont">
                         <i class="fa fa-search"></i>
                         <input type="text" class="search_input"     placeholder="검색" />
-                        <button class="btn_closeSrh"><i class="fas fa-times-circle"></i></button>
+                        <button type="button" class="btn_closeSrh"><i class="fas fa-times-circle"></i></button>
                     </div>
                 </div>
 
                 <div class="nav_btns">
-                    <button id="btn_explore">
-                        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="explore icon">
+                    <button type="button" id="btn_explore">
+                        <img src="./img/ico_explore.png" alt="explore icon">
                     </button>
-                    <button id="btn_heart" class="on">
-                        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="heart icon">
+                    <button type="button" id="btn_heart" class="on">
+                        <img src="./img/ico_heart.png" alt="heart icon">
                     </button>
-                    <button id="btn_profile">
-                        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="profile icon">
+                    <button type="button" id="btn_profile">
+                        <img src="./img/ico_profile.png" alt="profile icon">
                     </button>
                 </div>
             </div>
         </nav>
         <main>
             <div class="feeds_stn">
+                <!-- .article -->
                 <article>
                     <div class="feeds_header">
                         <div class="feeds_profile">
@@ -54,7 +57,7 @@
                                 <span class="name">canon_mj</span>
                             </a>
                         </div>
-                        <button class="menu">
+                        <button type="button" class="menu">
                             <i class="fa-solid fa-ellipsis"></i>
                         </button>
                     </div>
@@ -64,18 +67,17 @@
                     <div class="feeds_cont">
                         <div class="btn_area">
                             <div class="btn_left">
-                                <button>
+                                <button type="button" class="btn_feedLike">
                                     <i class="fa-solid fa-heart"></i>
-                                    <!-- <i class="fa-regular fa-heart"></i> -->
                                 </button>
-                                <button>
+                                <button type="button">
                                     <i class="fa-regular fa-comment"></i>
                                 </button>
-                                <button>
+                                <button type="button">
                                     <i class="fa-solid fa-arrow-up-from-bracket"></i>
                                 </button>
                             </div>
-                            <button><i class="fa-regular fa-bookmark"></i></button>
+                            <button type="button"><i class="fa-regular fa-bookmark"></i></button>
                         </div>
                         <div class="feeds_cnt">
                             <p class="like_nums">
@@ -86,24 +88,46 @@
                                 <div class="desc_cnt">
                                     <p class="profile_name">canon_mj</p>
                                     <p class="desc">위워크에서 진행한 베이킹 클래스 너무 좋은걸 두줄 이상입니다.</p>
-                                    <button class="color_darkGray">더 보기</button>
+                                    <button type="button" class="color_darkGray">더 보기</button>
                                 </div>
                                 <div class="comments">
-                                    <p>
-                                        <span class="profile_name">neceosecius</span>
-                                        <span>거봐 좋았잖아~~~~~</span>
-                                    </p>
-                                    <button><i class="fa-regular fa-heart color_darkGray"></i></button>
+                                    <div>
+                                        <p>
+                                            <b class="profile_name">neceosecius</b>
+                                            <span>거봐 좋았잖아~~~~~</span>
+                                        </p>
+                                        <button type="button" class="btn_commDelete">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                        <button type="button" class="btn_like">
+                                            <i class="fa-regular fa-heart "></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <b class="profile_name">neceosecius</b>
+                                            <span>어땠어??</span>
+                                        </p>
+                                        <button type="button" class="btn_commDelete">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                        <button type="button" class="btn_like">
+                                            <i class="fa-regular fa-heart "></i>
+                                        </button>
+                                    </div>
                                 </div>
                                 <p class="color_darkGray">42분 전</p>
                             </div>
                         </div>
                         <div class="feeds_comments">
-                            <input type="text" placeholder="댓글 달기....">
-                            <button>게시</button>
+                            <input class="comment_input" type="text" placeholder="댓글 달기...." />
+                            <button type="button" class="btn_addComment" disabled>게시</button>
                         </div>
                     </div>
                 </article>
+                <!-- /.article -->
+
+                <!-- .article -->
                 <article>
                     <div class="feeds_header">
                         <div class="feeds_profile">
@@ -112,7 +136,7 @@
                                 <span class="name">canon_mj</span>
                             </a>
                         </div>
-                        <button class="menu">
+                        <button type="button" class="menu">
                             <i class="fa-solid fa-ellipsis"></i>
                         </button>
                     </div>
@@ -122,18 +146,17 @@
                     <div class="feeds_cont">
                         <div class="btn_area">
                             <div class="btn_left">
-                                <button>
-                                    <i class="fa-solid fa-heart"></i>
-                                    <!-- <i class="fa-regular fa-heart"></i> -->
+                                <button type="button" class="btn_feedLike">
+                                    <i class="fa-regular fa-heart"></i> 
                                 </button>
-                                <button>
+                                <button type="button">
                                     <i class="fa-regular fa-comment"></i>
                                 </button>
-                                <button>
+                                <button type="button">
                                     <i class="fa-solid fa-arrow-up-from-bracket"></i>
                                 </button>
                             </div>
-                            <button><i class="fa-regular fa-bookmark"></i></button>
+                            <button type="button"><i class="fa-regular fa-bookmark"></i></button>
                         </div>
                         <div class="feeds_cnt">
                             <p class="like_nums">
@@ -144,25 +167,35 @@
                                 <div class="desc_cnt">
                                     <p class="profile_name">canon_mj</p>
                                     <p class="desc">위워크에서 진행한 베이킹 클래스 너무 좋은걸 두줄 이상입니다.</p>
-                                    <button class="color_darkGray">더 보기</button>
+                                    <button type="button" class="color_darkGray">더 보기</button>
                                 </div>
                                 <div class="comments">
-                                    <p>
-                                        <span class="profile_name">neceosecius</span>
-                                        <span>거봐 좋았잖아~~~~~</span>
-                                    </p>
-                                    <button><i class="fa-regular fa-heart color_darkGray"></i></button>
+                                    <div>
+                                        <p>
+                                            <b class="profile_name">neceosecius</b>
+                                            <span>어땠어??</span>
+                                        </p>
+                                        <button type="button" class="btn_commDelete">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                        <button type="button" class="btn_like">
+                                            <i class="fa-regular fa-heart "></i>
+                                        </button>
+                                    </div>
                                 </div>
                                 <p class="color_darkGray">42분 전</p>
                             </div>
                         </div>
                         <div class="feeds_comments">
-                            <input type="text" placeholder="댓글 달기....">
-                            <button>게시</button>
+                            <input class="comment_input" type="text" placeholder="댓글 달기...." />
+                            <button type="button" class="btn_addComment" disabled>게시</button>
                         </div>
                     </div>
                 </article>
+                <!-- /.article -->
             </div>
+
+            <!-- .main_right -->
             <div class="main_right">
                 <div class="profile_cont">
                     <img class="profile_img" src="./img/bg04.jpg" alt="프로필 이미지">
@@ -178,7 +211,7 @@
                     </div>
                     <div class="story_cnt">
                         <div class="story_box">
-                            <button class="gradient_img">
+                            <button type="button" class="gradient_img">
                                 <img src="./img/story01.jpg" alt="story01">
                             </button>
                             <div class="desc">
@@ -187,7 +220,7 @@
                             </div>
                         </div>
                         <div class="story_box">
-                             <button class="gradient_img">
+                             <button type="button" class="gradient_img">
                                 <img src="./img/story02.jpg" alt="story02">
                             </button>
                             <div class="desc">
@@ -196,7 +229,7 @@
                             </div>
                         </div>
                         <div class="story_box">
-                             <button class="gradient_img">
+                             <button type="button" class="gradient_img">
                                 <img src="./img/story03.jpg" alt="story03">
                             </button>
                             <div class="desc">
@@ -205,7 +238,7 @@
                             </div>
                         </div>
                         <div class="story_box">
-                             <button class="gradient_img">
+                             <button type="button" class="gradient_img">
                                 <img src="./img/story04.jpg" alt="story04">
                             </button>
                             <div class="desc">
@@ -229,7 +262,7 @@
                                 <a class="profile_name" href="javascript:void(0)">joassssseye</a>
                                 <span class="following_txt">_dsdddd님 외 2명이 팔로우합니다ssssssssSSSSSㄴ</span>
                             </div>
-                            <button class="btn_follow">팔로우</button>
+                            <button type="button" class="btn_follow">팔로우</button>
                         </div>
                         <div class="recommend_box">
                             <a href="javascript:void(0)" class="profile_img">
@@ -239,7 +272,7 @@
                                 <a class="profile_name" href="javascript:void(0)">joassssseye</a>
                                 <span class="following_txt">_aaddddd님 외 2명이 팔로우합니다ssssssssSSSSSㄴ</span>
                             </div>
-                            <button class="btn_follow">팔로우</button>
+                            <button type="button" class="btn_follow">팔로우</button>
                         </div>
                         <div class="recommend_box">
                             <a href="javascript:void(0)" class="profile_img">
@@ -249,7 +282,7 @@
                                 <a class="profile_name" href="javascript:void(0)">joassssseye</a>
                                 <span class="following_txt">_bb11_님 외 1명이 팔로우합니다ssssssssSSSSSㄴ</span>
                             </div>
-                            <button class="btn_follow">팔로우</button>
+                            <button type="button" class="btn_follow">팔로우</button>
                         </div>
                     </div>
                 </div>
@@ -270,8 +303,9 @@
                     <p>@copy; 2019 INSTAGRAM</p>
                 </div>
             </div>
+            <!-- /.main_right -->
         </main>
     </section>
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
