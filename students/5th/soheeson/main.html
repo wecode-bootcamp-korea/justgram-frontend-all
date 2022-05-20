@@ -53,14 +53,15 @@
                                 <a href="#"><img alt="like_profile_image" src="image/profileme.png"/></a>
                                 <span class="bold">aineworld</span>님 <span class="bold">외 10명</span>이 좋아합니다.
                             </div>
-                            <div class="comment_group">
-                                <div>
-                                    <span>(작성자 이름)</span> <span>(작성자 내용)</span>
-                                </div>
+                            <div class="comment_group"><!--/// (1-1) "comment_group" 안에서 append 되도록 한다.  ///-->
+                                                       <!--/// (1-2)  enter 또는 게시버튼을 누르면, "comment_group"을 찾아서 append 해서 아래tag(작성자 이름,작성자 내용)를 넣어야한다.///-->
+
+                            <!--/<div><span>(작성자 이름)</span> <span>(작성자 내용)</span></div>-->
+                            
                             </div>
                             <div class="write_comment">
                                 <input class="comment_input" type="text" placeholder="댓글달기..."/>
-                                <button class="write_comment_button">게시</button>
+                                <button class="write_comment_button">게시</button><!--/// (1) JS에서 게시 버튼을 눌렀을때, 어디 태그를 늘릴것인가? ///-->
                             </div>
                         </div>
                     </div>
