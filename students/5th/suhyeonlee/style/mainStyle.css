@@ -19,11 +19,17 @@
 * {
   box-sizing: border-box;
 }
-body {
+
+a {
+  text-decoration-line: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
 }
 
 .container {
-  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
 }
 
 .header_style {
@@ -32,11 +38,13 @@ body {
   margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo_box {
   font-family: "Lobster", cursive;
   font-size: 25px;
+  display: flex;
 }
 
 .logo_text {
@@ -52,6 +60,7 @@ body {
 .search_box {
   width: 200px;
   border: 1px solid #dedede;
+  padding: 5px 0;
   color: #dedede;
   text-align: center;
 }
@@ -68,56 +77,144 @@ body {
 }
 
 .contents {
-  border: 3px solid black;
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
 
 .feed_group {
-  border: 1px solid black;
+  padding: 5px;
+  border: 1px solid #dedede;
 }
 
 .aside_section {
-  border: 1px solid purple;
+  padding: 5px 10px;
   width: 300px;
   margin-left: 30px;
   float: right;
 }
 
 .feed_container {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .feed_header {
-  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+
+.feed_writer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feed_writer_photo {
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 100%;
 }
 
 .feed_photo {
-  border: 1px solid black;
-  width: 450px;
+  width: 600px;
+  height: 600px;
 }
 
 .feed_button_group {
-  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-between;
 }
 
+.feed_btn {
+  border: none;
+  background-color: white;
+}
 .feed_content {
   /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  margin-top: 10px;
 }
 
 .like_list_box {
   /* border: 3px solid black; */
+  margin-top: 10px;
 }
 
+.like_feed_user {
+  display: flex;
+  align-items: center;
+}
+
+.like_photo {
+  width: 15px;
+  margin-right: 5px;
+  border-radius: 100%;
+}
 .feed_comment {
-  /* border: 2px solid yellow; */
+  border-bottom: 1px solid #dedede;
+  margin-top: 10px;
+}
+
+.comment_box {
+  padding: 10px 5px;
 }
 
 .write_comment {
-  /* border: 1px solid orange; */
+  border: none;
+  width: 92%;
+  font-size: 16px;
+}
+
+.write_comment:focus {
+  outline: none;
 }
 
 .write_comment_btn {
   border: none;
+  background-color: white;
+  color: rgb(62, 62, 243);
+  font-weight: bold;
+}
+
+.comment_content {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.aside_top_content {
+  display: flex;
+  align-items: center;
+}
+
+.profile_box {
+  border: 1px solid #dedede;
+  display: flex;
+}
+
+.profile_box_photo {
+  width: 40px;
+  border-radius: 100%;
+}
+
+.profile_info {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_info {
+  color: gray;
+}
+
+.story_box {
+  height: 300px;
+}
+
+.recommend_box {
+  height: 300px;
 }

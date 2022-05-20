@@ -44,26 +44,87 @@
       <div class="contents">
         <section class="feed_group">
           <article class="feed_container">
-            <section class="feed_header"><img alt="" src="" />닉네임</section>
+            <section class="feed_header">
+              <section class="feed_writer">
+                <a href="#"
+                  ><img
+                    class="feed_writer_photo"
+                    alt=""
+                    src="https://images.unsplash.com/photo-1652972573839-827e275fbe97?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1665"
+                  />
+                  <a href="#">lshyun955</a>
+                </a>
+              </section>
+              <button class="feed_btn">
+                <i class="fa-solid fa-ellipsis"></i>
+              </button>
+            </section>
             <img
               class="feed_photo"
               src="https://images.unsplash.com/photo-1652972573839-827e275fbe97?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1665"
             />
-            <section class="feed_button_group">좋아요 댓글 공유 북마크</section>
             <section class="feed_content">
-              <section class="like_list_box">10명의 회원이 좋아합니다.</section>
-              <section class="feed_comment">댓글 목록</section>
-              <input
-                class="write_comment"
-                type="text"
-                placeholder="댓글 달기"
-              />
-              <button class="write_comment_btn">게시</button>
+              <section class="feed_button_group">
+                <section class="like_comment_share">
+                  <button class="feed_btn">
+                    <i class="fa-regular fa-heart like fa-xl"></i>
+                  </button>
+                  <button class="feed_btn">
+                    <i class="fa-regular fa-comment fa-xl"></i>
+                  </button>
+                  <button class="feed_btn">
+                    <i class="fa-regular fa-share-from-square fa-xl"></i>
+                  </button>
+                </section>
+                <section class="bookmark">
+                  <button class="feed_btn">
+                    <i class="fa-regular fa-bookmark fa-xl"></i>
+                  </button>
+                </section>
+              </section>
+              <section class="like_list_box">
+                <div class="like_feed_user">
+                  <img
+                    class="like_photo"
+                    src="https://images.unsplash.com/photo-1652972573839-827e275fbe97?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1665"
+                  /><a href="#">lshyun955</a
+                  >님&nbsp;<span>외&nbsp;10명</span>이&nbsp; 좋아합니다.
+                </div>
+              </section>
+              <section class="feed_comment">
+                <div>
+                  <a href="#">lshyun955</a
+                  ><span class="comment_content">재밌다..</span>
+                </div>
+                <div>
+                  <a href="#">lshyun955</a
+                  ><span class="comment_content">재밌다고?....</span>
+                </div>
+              </section>
+              <section class="comment_box">
+                <input
+                  class="write_comment"
+                  type="text"
+                  placeholder="댓글 달기"
+                />
+                <button class="write_comment_btn">게시</button>
+              </section>
             </section>
           </article>
         </section>
         <aside class="aside_section">
-          <section class="profile_box">사진 닉네임</section>
+          <section class="profile_box">
+            <div class="aside_top_content">
+              <img
+                class="profile_box_photo"
+                src="https://images.unsplash.com/photo-1652972573839-827e275fbe97?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1665"
+              />
+              <div class="profile_info">
+                <a href="#">JustCode</a>
+                <span class="user_info">JustCode | 저스트코드</span>
+              </div>
+            </div>
+          </section>
           <section class="story_box">
             <section class="aside_box_header">
               <span>스토리</span><button>모두 보기</button>
