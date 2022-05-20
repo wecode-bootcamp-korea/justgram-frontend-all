@@ -37,6 +37,7 @@ article {
   border-radius: 10px;
   border: 1px solid black;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 .main-right {
   width: 400px;
@@ -45,4 +46,17 @@ article {
 }
 img {
   object-fit: cover;
+}
+.feed_input {
+  width: 100%;
+}
+.bold {
+  font-weight: bold;
+}
+.feed_input_box {
+  display: flex;
+  width: 100%;
+}
+.feed_input_button {
+  width: 50px;
 }
