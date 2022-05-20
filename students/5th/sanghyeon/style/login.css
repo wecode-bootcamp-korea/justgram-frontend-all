@@ -1,0 +1,96 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FAFAFA;
+
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    margin-top: 50px;
+}
+img{
+    width: 400px;
+}
+.contentsWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.idBox, .passwordBox{
+    width: 74%;
+    padding: 8px;
+    background-color: #FAFAFA;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #d0d0d0;
+}
+.btnLogin{
+    width: 80%;
+    border-radius: 3px;
+    background-color: #C0DFFD;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+
+}
+.loginWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.source{
+    width: 800px;
+}
+.justgram{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    margin: 40px 20px;
+    
+}
+.facebook{
+    font-weight: bold;
+}
+.loginBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: #FFFFFF;
+    border: 1px solid #d0d0d0;
+}
+.newAccountWrapper{
+    width: 90%;
+    text-align: center;
+    padding: 20px 0px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #d0d0d0;
+
+}
+.pWrapper{
+    margin: 15px 0px;
+    font-size: 12px;
+}
+.linkWrapper{
+    display: flex;
+    justify-content: center;
+}
+.btnSource{
+    background-color: #FAFAFA;
+    color: #d0d0d0;
+    border: none;
+}
+.source{
+    color: #d0d0d0;
+    text-align: center;
+}

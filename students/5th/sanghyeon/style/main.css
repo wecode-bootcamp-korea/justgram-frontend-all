@@ -1,0 +1,169 @@
+
+nav img {
+    width: 30px;
+}
+nav input{
+    background-color: #FAFAFA;
+    border: 1px solid #d0d0d0;
+    padding: 5px 0px;
+    border-radius: 4px;
+}
+nav input::placeholder{
+    background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png) ;
+    background-size: contain;
+    background-position: 30% center;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-indent: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    align-items: center;
+}
+.wrapper{
+    margin-top: 80px;
+    width: 800px;
+
+}
+nav{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+.navWrapper{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-top: 0px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+.title{
+    font-family: 'Lobster', cursive;
+}
+.title, .navBar{
+    display: flex;
+    align-items: center;
+}
+.feeds{
+    width: 60%;
+}
+.main-right{
+    margin-top: 15px;
+    width: 40%;
+    height: 70%;
+    background-color: #FAFAFA;
+    margin-left: 10px;
+    right: 0px;
+}
+.innerRight{
+    position: fixed;
+}
+
+article{
+    margin: 20px 10px;
+    background-color: #FFFFFF;
+    border: #d0d0d0 solid 1px;
+}
+.justcode{
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+}
+.articleHeader{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.articleHeader p{
+    margin: 0px 10px;
+}
+.js{
+    width: 100%;
+}
+.iconBox img{
+    width: 28px;
+    margin: 0px 3px;
+}
+.iconBox button{
+    width: 28px;
+    margin: 0px 3px;
+}
+.iconBox{
+    display: flex;
+    align-items: center;
+}
+.heartCnt img{
+    width: 25px;
+    height: 25px;
+    border-radius: 70%;
+    margin: 1px 5px;
+}
+.heartCnt {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.tInput{
+    border: none;
+    border-top: #d0d0d0 1px solid;
+    width: 80%;
+    padding: 8px;
+    margin-top: 20px;
+}
+.contentsBox p{
+    margin: 0px;
+}
+.submitBtn{
+    width: 15%;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
+}
+.storyBoard{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.comment{
+    padding: 10px;
+}
+.delBtn{
+    margin-left: 10px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.heart{
+    cursor: pointer;
+}
+.cHeart{
+    width: 20px;
+    cursor: pointer;
+}
+.comments{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.items{
+    display: flex;
+    align-items: center;
+}
