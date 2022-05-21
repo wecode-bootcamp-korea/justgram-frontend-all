@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Justagram</title>
+
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        <link href="styles/common.css" rel="stylesheet" type="text/css" />
+        <link href="imgs/favicon.png" rel="icon" type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6d553e8f5d.js" crossorigin="anonymous"></script>
+    </head>
+
+
+    <body>
+        <div class="container"> 
+        <!-- 좌우 padding 값 가지고 있다. -->
+
+            <div class="header">
+                <div class="logo_box">
+                    <a>
+                        <i class="fa-brands fa-instagram"></i>
+                        <span class ="justgram">justgram</span>
+                    </a>
+                </div>
+                <input class="search" placeholder="검색">
+                <div class="menu_box">
+                    <image alt="explore" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"/>
+                    <image alt="heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"/>
+                    <image alt="mypage" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"/>
+                </div>
+            </div>
+
+            <div class="contents">
+        
+                <div class="feed_group">
+                    <div class="feed_container">
+                        <div class="feed_header">
+                            <div class="profile_feed">
+                                <span><img alt="profile_img" src="https://images.unsplash.com/photo-1474978528675-4a50a4508dc3?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370"></span>
+                                <a class="profile_name">canon_mj</a>
+                            </div>
+                            <a class="triple_dots"><i class="fa-solid fa-ellipsis"></i></a>
+                        </div>
+                        <div class="feed_image">
+                            <img alt="feed_image" src="/students/5th/hyungwookim/IMG_5654.JPG">
+                        </div>                        
+                        <div class="feed_contents">
+                            <div class="button_group">
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-regular fa-comment"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="like_sentence">
+                                <img alt="like_sentence_profile", src="https://images.unsplash.com/photo-1589779137147-3d388746b765?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987"/>
+                                <a class="bold">aineworld</a><span>님</span> <span class="bold">&nbsp;외 10명</span><span>이 좋아합니다. </span>
+                            </div>
+
+                            <div class="comment_group">
+                                <div class="comment1">
+                                    <a>canon_mj</a>
+                                    <span>귀여워...</span>
+                                    <a class="profile_name_kor" style="font-weight:400">더 보기</a>
+                                </div>
+                                <div class="comment1">
+                                    <a>neceosecius</a>
+                                    <span>귀여운 반디~~~~🙆🏻‍♀️</span>
+                                </div>
+                                <div class="timing"><span>42분 전</span></div>
+                            </div>
+                                <div class="comment_group">
+                                    <!--APPEND CHILD-->
+                                <div class="write_comment">
+                                    <input class="comment_input" placeholder="댓글 달기..."/>
+                                    <button>게시</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                
+                <div class="floating_section">
+                    <div class="profile_box">
+                        <a href="#"><img alt="profile_img" src="https://whattime.s3.ap-northeast-2.amazonaws.com/profile/1631689784_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-07-29%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2011.35.19_thumb.png"/></a>
+                        <a>
+                            <div class="bold">wecode_bootcamp</div>
+                            <div class="profile_name_kor">WeCode | 위코드</div>
+                        </a>
+                    </div>
+                    <div class="story_box">
+                        <div class="story_header">
+                            <span class="profile_name_kor">스토리</span>
+                            <button>모두보기</button>
+                        </div>
+                        <div class="story_group">
+                            <div class="story_profile">
+                                <a href="#"><img alt="profile_story_img" src="https://images.unsplash.com/photo-1618641986557-1ecd230959aa?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987"/></a>
+                                <a>
+                                    <div class="bold">_yum_s</div><br>
+                                    <div class="profile_name_kor">16분 전</div>
+                                </a>
+                            </div>
+                            <div class="story_profile">
+                                <a href="#"><img alt="profile_story_img" src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2831"/></a>
+                                <a>
+                                    <div class="bold">drink_eat_drink</div><br>
+                                    <div class="profile_name_kor">3시간 전</div>
+                                </a>
+                            </div>
+                            <div class="story_profile">
+                                <a href="#"><img alt="profile_story_img" src="https://images.unsplash.com/photo-1474447976065-67d23accb1e3?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=985"/></a>
+                                <a>
+                                    <div class="bold">hyukyc</div><br>
+                                    <div class="profile_name_kor">20시간 전</div>
+                                </a>
+                            </div>
+                            <div class="story_profile">
+                                <a href="#"><img alt="profile_story_img" src="https://images.unsplash.com/photo-1526800544336-d04f0cbfd700?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148"/></a>
+                                <a>
+                                    <div class="bold">jminkeek</div><br>
+                                    <div class="profile_name_kor">어제</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend_box">
+                        <div class="recommend_header">
+                            <span class="profile_name_kor">회원님만을 위한 추천</span>
+                            <button>모두보기</button>
+                        </div>
+                        <div class="recommend_group">
+                            <div class="recommended_profile">
+                                <a><img alt="profile_story_img" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987"/></a>
+                                <a>
+                                    <div class="bold">joaaaaaahye</div>
+                                    <div class="profile_name_kor">_legend_a님 외 2명이...</div>
+                                </a>
+                                <button>팔로우</button>
+                            </div>
+                            <div class="recommended_profile">
+                                <a href="#"><img alt="profile_story_img" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987"/></a>
+                                <a>
+                                    <div class="bold">rampart81</div>
+                                    <div class="profile_name_kor">ringo.in.seoul님 외 12...</div>
+                                </a>
+                                <button>팔로우</button>
+                            </div>
+                            <div class="recommended_profile">
+                                <a href="#"><img alt="profile_story_img" src="https://images.unsplash.com/photo-1497316730643-415fac54a2af?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364"/></a>
+                                <a>
+                                    <div class="bold">shawnjjoo</div>
+                                    <div class="profile_name_kor">jimmylee1220님 외 1...</div>
+                                </a>
+                                <button>팔로우</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company_info_box">
+                        <div> 
+                            <a>justgram 정보 ・&nbsp;</a><a>지원 ・&nbsp;</a><a>홍보센터 ・&nbsp;</a><a>API ・&nbsp;</a><br>
+                            <a>채용 정보 ・&nbsp;</a><a>개인정보처리방침 ・&nbsp;</a><a>약관 ・&nbsp;</a><br>
+                            <a>디렉터리 ・&nbsp;</a><a>프로필 ・&nbsp;</a><a>해시태그 ・&nbsp;</a><a>언어 ・&nbsp;</a><br><br>
+                        </div>
+                        <div><span>Ⓒ 2019 justgram</span></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    
+    <script src="js/main.js"></script>
+    </body>
+</html>
