@@ -144,6 +144,10 @@ main{
     margin-left: 10px;
     padding:0 10px;
 }
+#description{
+    margin-left: 10px;
+    padding:0 10px;
+}
 .people{
     width:20px;
     height:20px;
@@ -166,6 +170,8 @@ main{
 }
 .minutes{
     margin-top: 0;
+    margin-left: 10px;
+    padding:0 10px;
 }
 .addingCommentList{
     border-top: 1px solid lightgray;
@@ -183,8 +189,16 @@ main{
     font-size: 15px;
     
 }
-.upload{
-color:rgb(153, 215, 241);
+.upload-btn{
+color:rgb(19, 126, 172);
+border: none;
+background-color: white;
+}
+
+.upload-btn:disabled{
+    color:rgb(153, 215, 241);
+    border: none;
+background-color: white;
 }
 
 .profile-box{
