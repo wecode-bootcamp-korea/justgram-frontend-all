@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Justgram</title>
+        <link href="styles/common.css" rel="stylesheet" type="text/css" />
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <img class="main-logo" src="img/instagram.png" alt="main-logo">
+                <span class="main-text">Justgram</span>
+                <div class="search-box">
+                    <input class="search-box"type="text" placeholder="검색">
+                </div>
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
+                <img class="newHeart"src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png">
+            </nav>
+            <main>
+                <div class="feed-box">
+                    <div class="article-header">
+                        <img class="author-img" src="img/justcode.png">
+                        <div class="id-location">
+                            <span class="identify">wecode_bootcamp</span>
+                            <span class="location">weCode-위코드</span>
+                        </div>
+                        <img class="moreOption" src="img/option.png">
+                    </div>
+                    
+                    <img class="new-photo" src="img/familyPic.jpg" alt="new-photo">
+                    
+                    <div class="feed-icon">
+                        <img id="red-heart"src="img/heart.png" alt="red-heart">
+                        <img id="chat-icon" src="img/chat.png">
+                        <img src="img/upload.png" alt="share">
+                        <img class="save-icon" src="img/save-instagram.png" alt="save">
+                    </div>
+                    
+                    <div class="feeds-footer">
+                            <div class="howManyLikes">
+                                <img class="people" src="img/logan.jpg">
+                                <span><b>aineworld</b>님 <b>외 10명</b>이 좋아합니다</span>
+                            </div>
+                            <span id="description"><b>canon_mj</b> 위워크에서 진행한 베이킹 클래스...<span style="color: rgb(200, 203, 206);">더 보기</span></span>
+                            <div class="comments">
+                                 <div class="comment">
+                                    <span><b>neceosecius</b> 거봐 좋았잖아~~~~~~</span>
+                                    <img class="likeIt"src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+                                </div>
+                            </div>
+                            <span class="minutes" style="color: rgb(147, 150, 153);">42분전</span> 
+                            <div class="addingCommentList">
+                                <input id="addComment" class="addComment" type="text"placeholder="댓글 달기...">
+                                <button onclick="addComment()" disabled="disbled" class="upload-btn">게시</button>
+                            </div>
+                       </div>
+                </div>
+
+                <div class="main-right">
+                    <div class="profile-box">
+                        <img class="profile-img" src="img/justcode.png">
+                        <div class="id-location">
+                            <span class="identify">wecode_bootcamp</span>
+                            <span class="location">weCode-위코드</span>
+                        </div>
+                    </div>
+                    <div class="story-box">
+                        <div class="story-box-header">
+                            <span>스토리</span>
+                            <span style="color: black;">모두보기</span>
+                        </div>
+                        <div class="story-box-content">
+                            <div class="story1">
+                                <img src="img/kim.jpg">
+                                <div class="story-id">
+                                    <span class="identify">mariesunghee</span>
+                                    <span class="recent">13분 전</span>
+                                </div>
+                            </div>
+                            <div class="story1 center-img">
+                                <img src="img/logan.jpg">
+                                <div class="story-id">
+                                    <span class="identify">ilovenoelle</span>
+                                    <span class="recent">2시간 전</span>
+                                </div>
+                            </div>
+                            <div class="story1">
+                                <img src="img/marie.jpg">
+                                <div class="story-id">
+                                    <span class="identify">positive_happy_mom</span>
+                                    <span class="recent">1시간 전</span>
+                                </div>
+                            </div>   
+                        </div>
+                    </div> 
+
+                    <div class="recommend-box">
+                        <div class="recommend-box-header">
+                            <span>회원님을 위한 추천</span>
+                            <span style="color: black;">모두보기</span>
+                        </div>
+                        <div class="recommend-box-content">
+                            <div class="story1">
+                                <img src="img/logankim.jpg">
+                                <div class="story-id">
+                                    <span class="identify">baekstage</span>
+                                    <span class="recent">회원님을 위한 추천</span>
+                                </div>
+                                <span class="follow">팔로우</span>
+                            </div>
+                            <div class="story1 center-img">
+                                <img src="img/roy.jpg">
+                                <div class="story-id">
+                                    <span class="identify">frontend</span>
+                                    <span class="recent">회원님을 위한 추천</span>
+                                </div>
+                                <span class="follow">팔로우</span>
+                            </div> 
+                            <div class="story1">
+                                <img src="img/noel.jpg">
+                                <div class="story-id">
+                                    <span class="identify">wannabeadeveloper</span>
+                                    <span class="recent">forntend님이 팔로우합니다</span>
+                                </div>
+                                <span class="follow">팔로우</span>
+                            </div>        
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="companyInfo-box">
+                        <p>소개도움말홍보 센터API채용<br/>
+                        정보개인정보처리방침약관위치인기 계정해시태그<br/>
+                        언어</p>
+                        <span>© 2022 INSTAGRAM FROM META</span>    
+                
+                </div>
+
+            </main>
+            
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
