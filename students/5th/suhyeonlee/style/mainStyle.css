@@ -117,6 +117,12 @@ a {
   margin-top: 10px;
 }
 
+.like_btn_box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .like_list_box {
   /* border: 3px solid black; */
   margin-top: 10px;
@@ -133,6 +139,7 @@ a {
   margin-right: 5px;
   border-radius: 100%;
 }
+
 .feed_comment {
   border-bottom: 1px solid #dedede;
   margin-top: 10px;
@@ -173,6 +180,11 @@ a {
 .comment_content {
   font-size: 14px;
   margin-left: 5px;
+}
+
+.remove_comment {
+  background-color: white;
+  border: none;
 }
 
 .aside_top_content {
