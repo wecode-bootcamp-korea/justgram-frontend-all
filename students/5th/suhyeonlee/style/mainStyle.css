@@ -1,21 +1,3 @@
-/* .story {
-  border: 1px solid;
-  border-radius: 100px;
-  width: 35px;
-  height: 35px;
-  border: 2px solid transparent;
-  border-radius: 20px;
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
-    linear-gradient(
-      to right,
-      rgb(250, 145, 55) 28%,
-      rgb(235, 65, 65) 42%,
-      rgb(195, 60, 190) 58%
-    );
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  margin-top: 6px;
-} */
 * {
   box-sizing: border-box;
 }
@@ -25,12 +7,6 @@ a {
   font-size: 13px;
   font-weight: bold;
   color: black;
-}
-
-.container {
-  /* border: 2px solid black; */
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 
 .header_style {
