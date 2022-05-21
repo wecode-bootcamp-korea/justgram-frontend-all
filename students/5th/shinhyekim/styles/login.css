@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.loginContainer {
+  margin: auto;
+  width: 350px;
+  background-color: #ffff;
+  border: 1px solid #dbdbdb;
+}
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  display: inline-block;
+  margin: 40px auto;
+  padding: 15px;
+  font: lighter 50px 'Lobster', cursive;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.inputCommon{
+  display: block;
+  margin: 4px 13px;
+  padding: 10px 15px;
+  background-color: #fafafa;
+  border: 0.5px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.inputCommon:focus {
+  outline: 0.3px solid black;
+}
+
+::placeholder {
+  color: #9b9b9b;
+  font-size: 12px;
+}
+
+.loginButton {
+  display: block;
+  width: 262px;
+  margin: 10px auto;
+  padding: 10px;
+  color: white;
+  background-color: #c4e0fb;
+  border: none;
+  border-radius: 3px;
+}
+
+.extraBox {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+ 
+.findPw {
+  color: #04386a;
+  font-size: 12px;
+  text-decoration: none;
+}
