@@ -340,3 +340,9 @@ a {
   font-weight: bold;
   font-size: 13px;
 }
+
+@media screen and (max-width: 900px) {
+  .aside_section {
+    display: none;
+  }
+}
