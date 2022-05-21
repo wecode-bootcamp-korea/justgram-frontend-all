@@ -1,0 +1,79 @@
+
+body {
+    background-color: #FAFAFA;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    background-color: white;
+    width: 374px;
+    padding: 30px 0 15px 0;
+    border: 1px solid #dbdbdb;
+}
+
+.logo_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_text {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    height: 51px;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column; 
+    padding: 0 50px ;
+}
+
+.input-common {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+}
+
+.identify {
+}
+
+.password {
+}
+
+.login_btn {
+    display: block;
+    margin: 5px 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #C0DFFD;
+    font-size: ;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+.extra_box {
+    color: #00376B;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.find_password {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
