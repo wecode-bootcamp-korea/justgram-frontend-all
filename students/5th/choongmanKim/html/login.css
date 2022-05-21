@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FAFAFA;
+}
+
+.container {
+    width: 530px;
+    border: 1px solid #ddd;
+    background-color: #FFFFFF;
+}
+
+.logoBox-h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+} 
+
+.idBox-input {
+    width: 350px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    background-color: rgb(247,247,247);
+    outline: none;
+    font-weight: bold;
+}
+
+.pwBox-input {
+    width: 350px;
+    margin: 7px auto;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    background-color: rgb(247,247,247);
+    outline: none;
+    font-weight: bold;
+} 
+
+.loginBtn {
+    width: 385px;
+    padding: 15px 30px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: none;
+    background-color: #c0dffd;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: rgb(20, 28, 146);
+    font-weight: bold;
+}
