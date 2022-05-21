@@ -57,6 +57,10 @@ const writeComment = (writer, content) => {
 
     // 댓글을 입력하면 댓글 창에 입력했던 내용을 지우자.
     commentValue.value = "";
+
+    removeCommentBtn.addEventListener("click", () => {
+      commentBox.removeChild(commentDiv);
+    });
   } else {
     alert("댓글 내용을 입력해주세요!");
   }

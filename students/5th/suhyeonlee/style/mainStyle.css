@@ -177,6 +177,10 @@ a {
   font-size: 10px;
 }
 
+.heart_like {
+  color: black;
+}
+
 .comment_content {
   font-size: 14px;
   margin-left: 5px;
