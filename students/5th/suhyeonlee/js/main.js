@@ -61,6 +61,14 @@ const writeComment = (writer, content) => {
     removeCommentBtn.addEventListener("click", () => {
       commentBox.removeChild(commentDiv);
     });
+
+    commentLikeBtn.addEventListener("click", () => {
+      if (likeImage.style.color === "black") {
+        likeImage.style.color = "red";
+      } else {
+        likeImage.style.color = "black";
+      }
+    });
   } else {
     alert("댓글 내용을 입력해주세요!");
   }
