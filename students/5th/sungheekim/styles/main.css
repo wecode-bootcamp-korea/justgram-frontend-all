@@ -1,16 +1,18 @@
 body{
     display: flex;
     flex-direction: column;
+    
 }
 .container{
     display: flex;
     width:1000px;
     flex-direction: column;
     padding:60px;
+    border: 1px solid lightgray;
 }
 nav{
     display: flex;
-    border: 1px solid;
+    border-bottom:1px solid rgb(191, 190, 189);
     padding:10px 20px;
     
 }
@@ -54,20 +56,22 @@ nav input{
     margin-top: 5px;
 }
 main{
-    
-    border: 1px solid red;
+    background-color: rgb(241, 238, 238);
+    border: 1px solid white;
     display: flex;
     justify-content: center;
 }
 .article-header{
     display: flex;
     flex-direction: row;
-    border:1px solid green;
-    margin-top: 40px;
+    border:1px solid rgb(191, 190, 189);
+    background-color: white;
 }
 .id-location{
     display: flex;
     flex-direction: column;
+    padding-top: 5px;
+    flex:1;
 }
 
 .author-img{
@@ -78,22 +82,30 @@ main{
 }
 .article-header .identify{
     font-size: 15px;
-    margin-top: 5px;
 }
 .article-header .location{
     font-size: 12px;
+}
+
+.moreOption{
+    width:15px;
+    height:15px;
+    margin: 10px;
 }
 .new-photo{
     width:500px;
 }
 .feed-box{
     width:500px;
-    border: 1px solid blue;
+    border: none;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .feed-icon{
     display:flex;
     align-items: center;
-    border:1px solid black;
+    border:none;
     padding:7px;
     
 }
@@ -115,7 +127,7 @@ main{
     flex-direction: column;
     justify-content: flex-start;
     
-    border:1px solid black;
+    border:none;
    
 }
 
@@ -145,7 +157,8 @@ main{
 }
 .main-right{
     width:300px;
-    border:1px solid black;
+    border:none;
+    margin-left: 15px;
 }
 .comment{
     display: flex;
@@ -177,7 +190,7 @@ color:rgb(153, 215, 241);
 .profile-box{
     display: flex;
     flex-direction: row;
-    border:1px solid green;
+    
     margin-top: 40px;
     align-items: center;
 }
@@ -195,8 +208,10 @@ color:rgb(153, 215, 241);
     font-size: 12px;
 }
 .story-box{
-    border:1px solid orange;
+    border:1px solid rgb(191, 190, 189);
+    background-color: white;
     padding:10px;
+    margin-bottom: 15px;
 }
 .story-box-header{
     display: flex;
@@ -206,7 +221,8 @@ color:rgb(153, 215, 241);
     margin-bottom: 17px;
 }
 .recommend-box{
-    border:1px solid orange;
+    border:1px solid rgb(191, 190, 189);
+    background-color: white;
     padding:10px;
     
 }
