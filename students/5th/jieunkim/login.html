@@ -5,24 +5,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Justgram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link href="./styles/login.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <div class="main-container">
     <header class="logo">
+      <!--
       <img alt="Justgram" class="img-log" src="./img/instagram_logo.png">
-      <!--  
+      -->
         <p>westgram</p> 
-      --> 
     </header>
     <div class="login-container">
       <div class="input-container">
         <input type="text" id="user-id" placeholder="전화번호, 사용자 이름 또는 이메일" />
-        <input type="password" id="password" placeholder="비밀번호"/>
+        <input type="password" id="password" placeholder="비밀번호">
       </div>
         <div class="login-btn-container">
-          <button id="login-btn" disabled>로그인</button>
+          <a href="./main.html">
+            <button id="login-btn" disabled>로그인</button>
+          </a>
         </div>
     </div>
     <div class="empty"></div>

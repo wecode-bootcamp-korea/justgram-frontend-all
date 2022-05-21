@@ -9,7 +9,6 @@
 
 .main-container {
 	width : 350px;
-	height: 396px;
 	margin: 0 0 10px;
 	padding: 40px 35px 20px 35px;
 	border: 1px solid lightgray;
@@ -22,20 +21,19 @@
 }
 
 .logo p {
+	text-align: center;
 	margin: 0;
 	font-size: 45px;
 	font-family: 'Lobster', cursive;
 }
 
 .login-container {
-	/*justify-content: space-around;*/
 	margin: 35px 0 50px 0px;
 }
 
 .input-container {
 	justify-content: space-between;
 	margin: 0 0 10px 0;
-	/*padding: 10px 0;*/
 }
 
 .input-container input {
@@ -48,7 +46,15 @@
 	font-size: 12px;
 }
 
+.login-btn-container a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
 #login-btn:disabled {
+	width: 100%;
 	padding: 7px 0;
 	background-color: #b2dffc;
 	border: 0;
@@ -56,10 +62,12 @@
 	color: white;
 	font-size: 14px;
 	font-weight: bold;
-	text-align: center;
+	display: block;
+	
 }
 
 #login-btn {
+	width: 100%;
 	padding: 7px 0;
 	background-color: #0095f6;
 	border: 0;
@@ -67,7 +75,6 @@
 	color: white;
 	font-size: 14px;
 	font-weight: bold;
-	text-align: center;
 }
 
 .login-request {

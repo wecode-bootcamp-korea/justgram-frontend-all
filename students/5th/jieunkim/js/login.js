@@ -2,26 +2,40 @@ const thisIsLogo = document.getElementsByClassName('img-logo');
 const thisIsId = document.getElementById('user-id');
 const thisIsPassword = document.getElementById('password');
 const thisIsLoginBtn = document.getElementById('login-btn');
-const thisIsLoginBtnAct = document.getElementById('login-btn-act');
+let userId;
 
-function activateBtn() {
-	const userId = thisIsId.value;
-	const password = thisIsPassword.value;
+function activateLoginBtn() {
+	const userId_attempt = thisIsId.value;
+	const password_attempt = thisIsPassword.value;
 	
-	if(userId.length > 0 && password.length > 0) {
+	if(userId_attempt.length > 0 && password_attempt.length > 0) {
 		thisIsLoginBtn.disabled = false;
 		thisIsLoginBtn.style.cursor = "pointer";
 		// add link
 	} else {
 		thisIsLoginBtn.disabled = true;
 		thisIsLoginBtn.style.cursor = "";
-
 	}
 }
 
+function login() {
+	const userId_attempt = thisIsId.value;
+	const password_attempt = thisIsPassword.value;
 
-thisIsId.addEventListener('keyup', activateBtn);
-thisIsPassword.addEventListener('keyup', activateBtn);
+	if (users[userId_attempt] === password_attempt) {
+		userId = userId_attempt;
+		return true;
+	}
+	userId = "anonymous"; 
+	return false;
+}
 
+function getUserId() {
+	if(login()) return thisIsId.value;
+	return "anonymous";
+}
 
+thisIsId.addEventListener('keyup', activateLoginBtn);
+thisIsPassword.addEventListener('keyup', activateLoginBtn);
+thisIsLoginBtn.addEventListener('click', login);
 
