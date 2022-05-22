@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5101254db8.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/instagram.png" />
+    <title>JUSTGRAM</title>
+  </head>
+  <body>
+      <nav>
+          <div class="nav-box">
+            <div class="logo-box">
+                <span class="logo" style = "font-family: 'Lobster', cursive;">Justgram</span>
+            </div>
+            <div class="search-box">
+                <input class="search" type="text" placeholder="검색">
+            </div>
+            <div class="menu-box">
+                <img class="explore-img" src="img/explore.png" alt="explore">
+                <img class="heart-img" src="img/heart.png" alt="heart">
+                <img class="profile-img" src="img/profile.png" alt="profile">
+            </div>
+          </div>
+          
+      </nav>
+      <main>
+          <div class="feeds">
+              <article>
+                  <div class="feeds-header">
+                      <div>
+                        <img class="feeds-header-img1" src="img/profile.png" alt="people">
+                        <span class="feeds-header-name">sangmin</span>
+                      </div>
+                      <img class="feeds-header-img2" src="img/dots.png" alt="dots">
+                  </div>
+                  <div class="feeds-content">
+                      <img src="img/feedcontent.jpg" alt="content">
+                  </div>
+                  <div class="feeds-button">
+                      <div class="feeds-button-left">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                      </div>
+                      <div class="feeds-button-right">
+                        <i class="fa-regular fa-bookmark"></i>
+                      </div>      
+                  </div>
+                  <div class="feeds-like">
+                      <span>sangmin님 외 100명이 좋아합니다.</span>                      
+                  </div>
+                  <div class="feeds-comment">
+                      <ul id="comment-list">
+                          <li><span class="comment-id">sangmin</span><span class="comment-content"> justgram page test중</span></li>
+                          <li class="comment-li"><div><span class="comment-id">id1</span><span class="comment-content"> 댓글 테스트 1</span></div><div><i class="fa-regular fa-heart"></i><i class="fa-regular fa-trash-can"></i></div></li>
+                      </ul>
+                  </div>
+                  <div class="feeds-comment-enter">
+                    <input class="enter-input" type="text" placeholder="댓글 달기...">
+                    <button class="post-button">게시</button>
+                  </div>
+              </article>
+          </div>
+          <div class="main-right">
+              <div class="main-right-box">
+                <div class="user">
+                    <div class="user-img-box">
+                      <img class="user-img" src="img/user.png" alt="content">
+                    </div>
+                    <div class="user-info-box">
+                        <div class="user-id">sangmin</div>
+                        <div class="user-name">이상민</div>
+                    </div>
+                </div>
+                <div class="story-box">
+                    <div class="story-header">
+                        <span class="story-header-left">스토리</span>
+                        <span class="story-header-right">모두 보기</span>
+                    </div>
+                    <div class="story-content">
+                        <ul>
+                            <li>111</li>
+                            <li>222</li>
+                            <li>333</li>
+                            <li>444</li>
+                            <li>555</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="recommend-box">
+                    <div class="recommend-header">
+                        <span class="story-header-left">회원님을 위한 추천</span>
+                        <span class="story-header-right">모두 보기</span>
+                    </div>
+                    <div class="recommend-content">
+                        <ul>
+                            <li>111</li>
+                            <li>222</li>
+                            <li>333</li>
+                            <li>444</li>
+                            <li>555</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-right-footer">소개 · 도움말 · 홍보 센터 · API · 채용 정보 · <br>개인정보처리방침 · 약관 · 위치 · 인기 계정 · 해시태그 · 언어<br><br>© 2022 JUSTAGRAM
+                </div>
+              </div>
+              
+          </div>
+      </main>
+      <script src="js/main.js"></script>
+  </body>
+</html>
