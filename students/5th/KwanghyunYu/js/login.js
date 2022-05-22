@@ -1,6 +1,5 @@
 const input = document.querySelector(".user-input");
 const button = document.querySelector(".login-button");
-
 let isIdValid = false;
 let isPwValid = false;
 button.disabled = true;

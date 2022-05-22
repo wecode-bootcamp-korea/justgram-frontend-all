@@ -72,6 +72,10 @@ article {
   border: 1.5px solid #e4e4e4;
   border-radius: 2px;
 }
+.nav-find-result {
+  margin-top: 10px;
+  border: 1.5px solid #e4e4e4;
+}
 .feeds {
   background-color: white;
   width: 500px;

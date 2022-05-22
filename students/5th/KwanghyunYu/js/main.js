@@ -1,19 +1,36 @@
 const input = document.querySelector(".comment-input");
 const button = document.querySelector(".comment-submit");
+const main = document.getElementsByTagName("main")[0];
 const Id = "Mad1403";
 const feeds_comment = document.querySelector(".feeds-comments");
 const heart = document.querySelector(".heart");
 const remove = document.querySelector(".delete");
 const userMenu = document.querySelector(".nav-icons-user-menu");
 const userIcon = document.querySelector(".user-icon");
-heart.addEventListener("click", () => {
-  heart.classList.toggle("fa-solid");
-});
-userIcon.addEventListener("click", () => {
-  userMenu.classList.toggle("util-flex");
-});
+const search = document.querySelector(".nav-find-search");
+const resultBox = document.querySelector(".nav-find-result");
+const userData = [
+  {
+    id: "Wecode",
+    nickname: "위코",
+  },
+  {
+    id: "Justcode",
+    nickname: "저코",
+  },
+  {
+    id: "Kwanghyun",
+    nickname: "Jay",
+  },
+];
+
 input.addEventListener("keyup", () => {
-  button.style.color = "#3797f0";
+  if (input.value.length > 0) {
+    button.style.color = "#3797f0";
+  } else {
+    button.style.color = "#c8e3fb";
+  }
+
   button.addEventListener("click", (e) => {
     e.preventDefault();
     const newId = document.createElement("span");
@@ -62,3 +79,32 @@ input.addEventListener("keyup", () => {
     });
   });
 });
+
+heart.addEventListener("click", () => {
+  heart.classList.toggle("fa-solid");
+});
+
+userIcon.addEventListener("click", () => {
+  userMenu.classList.toggle("util-flex");
+});
+
+main.addEventListener("click", () => {
+  userMenu.classList.remove("util-flex");
+});
+
+search.addEventListener("keyup", (e) => {
+  resultBox.innerHTML = "";
+  if (e.target.value) {
+    userMatch(e.target.value).forEach((el) => render(el));
+  }
+});
+
+const userMatch = (value) => {
+  return userData.filter((el) => el.id.toLowerCase().indexOf(value) !== -1);
+};
+
+const render = (arr) => {
+  const IdText = document.createElement("li");
+  IdText.innerHTML = `<div>${arr.id}</div>`;
+  resultBox.append(IdText);
+};
