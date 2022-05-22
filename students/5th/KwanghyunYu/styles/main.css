@@ -1,0 +1,340 @@
+body {
+  background-color: #fafafa;
+}
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 20px 0;
+  align-items: center;
+  border-bottom: 1.5px solid #e4e4e4;
+  margin-bottom: 40px;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+article {
+  border: 1.5px solid #e4e4e4;
+}
+.nav-insta-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-insta-logo-image {
+  width: 30px;
+  padding-right: 15px;
+  border-right: 2px solid black;
+  margin-right: 15px;
+}
+.nav-icons img {
+  width: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.nav-icons-user-menu {
+  position: absolute;
+  background-color: white;
+  right: 160px;
+  font-size: 13px;
+  flex-direction: column;
+  justify-content: center;
+  width: 180px;
+  box-shadow: 0px 0px 0.5px 0.5px #b3b3b3;
+  border-radius: 2px;
+  display: none;
+}
+.nav-icons-user-menu i {
+  margin-right: 10px;
+}
+.nav-icons-user-menu div {
+  display: flex;
+  margin: 13px 0 13px 13px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.nav-icons-user-menu div:last-child {
+  margin: 0px;
+  border-top: 1px solid #b3b3b3;
+}
+.nav-icons-user-menu div:last-child span {
+  margin: 13px 0 13px 13px;
+}
+.nav-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+.nav-find input {
+  width: 170px;
+  text-align: center;
+  padding: 4px 0;
+  background-color: #fafafa;
+  border: 1.5px solid #e4e4e4;
+  border-radius: 2px;
+}
+.nav-find-result {
+  margin-top: 10px;
+  border: 1.5px solid #e4e4e4;
+}
+.feeds {
+  background-color: white;
+  width: 500px;
+}
+.feeds-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.feeds-header-user {
+  display: flex;
+  align-items: center;
+}
+.feeds-header-user img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 13px;
+}
+.feeds-image {
+  display: block;
+  width: 100%;
+}
+.elipsis {
+  margin-right: 13px;
+}
+.feeds-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 20px;
+}
+.feeds-icons-left i {
+  margin-right: 5px;
+}
+.feeds-likes {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.feeds-likes img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.feeds-likes p span {
+  font-weight: 700;
+}
+
+.feeds-comments-comment,
+.feeds-comments-comment-left {
+  padding: 0 10px;
+  display: flex;
+  margin-bottom: 5px;
+}
+.feeds-comments-comment-second {
+  display: flex;
+  justify-content: space-between;
+}
+.feeds-comments-comment-left {
+  display: flex;
+}
+.feeds-comments-comment-right i {
+  color: #b4b4b4;
+  margin-right: 10px;
+}
+.feeds-comments-comment .more {
+  margin-left: 5px;
+  color: #b3b3b3;
+  font-weight: 400;
+}
+.feeds-comments-comment span,
+.feeds-comments-comment-left span {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.feeds-comments-updatedtime {
+  margin-left: 10px;
+  color: #b3b3b3;
+}
+.comment-form {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e4e4e4;
+  margin-top: 10px;
+}
+.comment-input {
+  border: none;
+}
+.comment-submit {
+  border: none;
+  background-color: inherit;
+  color: #c8e3fb;
+}
+.comment-input {
+  padding: 15px 10px;
+  flex: 1;
+}
+.comment-submit {
+  padding: 0 17px;
+}
+.comment-submit:hover {
+  cursor: pointer;
+}
+.main-right {
+  margin-left: 20px;
+}
+.wecode-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.wecode-profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.wecode-profile-nickname {
+  display: flex;
+  flex-direction: column;
+}
+.wecode-profile-nickname span:first-child {
+  font-weight: 600;
+}
+.wecode-profile-nickname span:last-child {
+  color: #aeaeae;
+}
+.story-section,
+.follow-section {
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.story-header,
+.follow-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.story-header span:first-child,
+.follow-header span:first-child {
+  color: #aeaeae;
+  font-size: 13px;
+}
+.story-header span:last-child,
+.follow-header span:last-child {
+  font-weight: 600;
+  font-size: 13px;
+}
+.story-users-first {
+  display: flex;
+}
+.story-users img {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, red 0%, orange 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.story-users-first-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.story-users-first-info span:first-child,
+.story-users-second-info span:first-child,
+.story-users-third-info span:first-child,
+.follow-section-first-info span:first-child,
+.follow-section-second-info span:first-child,
+.follow-section-third-info span:first-child {
+  font-weight: 600;
+}
+.story-users-first-info span:last-child,
+.story-users-second-info span:last-child,
+.story-users-third-info span:last-child,
+.follow-section-first-info span:last-child,
+.follow-section-second-info span:last-child,
+.follow-section-third-info span:last-child {
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.story-users-second {
+  display: flex;
+}
+.story-users-second-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.story-users-third {
+  display: flex;
+}
+.story-users-third-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.story-users-first,
+.story-users-second {
+  margin-bottom: 10px;
+}
+.follow-section img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.follow-section-first-info,
+.follow-section-second-info,
+.follow-section-third-info {
+  display: flex;
+  align-items: center;
+}
+.follow-section-info-text {
+  display: flex;
+  flex-direction: column;
+}
+.follow-section-first,
+.follow-section-second,
+.follow-section-third {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.follow-section button {
+  border: none;
+  background-color: transparent;
+  color: #3797f0;
+  font-weight: 700;
+  cursor: pointer;
+}
+footer p {
+  width: 230px;
+  line-height: 1.1;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #cecece;
+}
+footer span {
+  font-size: 14px;
+  color: #cecece;
+}
+.util-flex {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .main-right {
+    display: none;
+  }
+}

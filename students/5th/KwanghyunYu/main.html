@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-insta-logo">
+        <img
+          class="nav-insta-logo-image"
+          src="assets/free-icon-instagram-logo-87390.png"
+          alt="Instagram logo"
+        />
+        <span class="nav-text">Instagram</span>
+      </div>
+      <div class="nav-find">
+        <input class="nav-find-search" type="text" placeholder="검색" />
+        <ul class="nav-find-result"></ul>
+      </div>
+      <div class="nav-icons">
+        <img
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+          alt="Search icon"
+        />
+        <img
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+          alt="Likes icon"
+        />
+        <img
+          class="user-icon"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+          alt="My page icon"
+        />
+        <div class="nav-icons-user-menu">
+          <div><i class="fa-solid fa-user"></i><span>프로필</span></div>
+          <div><i class="fa-solid fa-bookmark"></i><span>저장됨</span></div>
+          <div><i class="fa-solid fa-gear"></i><span>설정</span></div>
+          <div><span>로그아웃</span></div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="feeds">
+        <article>
+          <div class="feeds-header">
+            <div class="feeds-header-user">
+              <img src="assets/flowers-7073059_640.jpg" alt="user image" />
+              <span class="user-id">canon_mj</span>
+            </div>
+            <div class="elipsis"><i class="fa-solid fa-ellipsis"></i></div>
+          </div>
+          <img
+            class="feeds-image"
+            src="assets/mountains-190055_1280.jpg"
+            alt="feed image"
+          />
+          <div class="feeds-icons">
+            <div class="feeds-icons-left">
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-regular fa-comment"></i>
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </div>
+            <div class="feeds-icons-right">
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+          </div>
+          <div class="feeds-likes">
+            <img src="assets/bird-1213447_640.jpg" alt="user photo" />
+            <p><span>ainworld</span>님 <span>외 10명</span>이 좋아합니다</p>
+          </div>
+          <div class="feeds-comments">
+            <div class="feeds-comments-comment">
+              <span>canon_mj</span>
+              <p>위워크에서 진행한 베이킹 클래스..</p>
+              <span class="more">더 보기..</span>
+            </div>
+            <div class="feeds-comments-comment-second">
+              <div class="feeds-comments-comment-left">
+                <span>ygh0627</span>
+                <p>거봐 좋았잖아</p>
+              </div>
+              <div class="feeds-comments-comment-right">
+                <i class="fa-regular fa-heart heart"></i>
+              </div>
+            </div>
+          </div>
+          <p class="feeds-comments-updatedtime">42분 전</p>
+          <div class="feeds-comments-write">
+            <form class="comment-form">
+              <input
+                class="comment-input"
+                type="text"
+                placeholder="댓글 달기..."
+              />
+              <button class="comment-submit" type="submit">게시</button>
+            </form>
+          </div>
+        </article>
+      </div>
+
+      <div class="main-right">
+        <div class="wecode-profile">
+          <img src="assets/agriculture-7177221_640.jpg" alt="user image" />
+          <div class="wecode-profile-nickname">
+            <span>wecode_bootcamp</span>
+            <span>Wecode | 위코드</span>
+          </div>
+        </div>
+        <div class="story-section">
+          <div class="story-header">
+            <span>스토리</span>
+            <span>모두 보기</span>
+          </div>
+          <div class="story-users">
+            <div class="story-users-first">
+              <img src="assets/tree-7186835_640.jpg" alt="user image" />
+              <div class="story-users-first-info">
+                <span>_yum_s</span><span>16분 전</span>
+              </div>
+            </div>
+            <div class="story-users-second">
+              <img src="assets/bird-1213447_640.jpg" alt="user image" />
+              <div class="story-users-second-info">
+                <span>ygh0627</span><span>45분 전</span>
+              </div>
+            </div>
+            <div class="story-users-third">
+              <img src="assets/mountains-190055_1280.jpg" alt="user image" />
+              <div class="story-users-third-info">
+                <span>kny0723</span><span>1분 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="follow-section">
+          <div class="follow-header">
+            <span>회원님을 위한 추천</span>
+            <span>모두 보기</span>
+          </div>
+          <div class="follow-section-first">
+            <div class="follow-section-first-info">
+              <img src="assets/avocado-6931344_640.jpg" alt="user image" />
+              <div class="follow-section-info-text">
+                <span>Seunghun82</span><span>2명이 팔로우합니다.</span>
+              </div>
+            </div>
+            <button class="follow-button">팔로우</button>
+          </div>
+          <div class="follow-section-second">
+            <div class="follow-section-second-info">
+              <img
+                src="assets/oriental-garden-lizard-7195594_640.jpg"
+                alt="user image"
+              />
+              <div class="follow-section-info-text">
+                <span>Kwanghyun17</span><span>7명이 팔로우합니다.</span>
+              </div>
+            </div>
+            <button class="follow-button">팔로우</button>
+          </div>
+          <div class="follow-section-third">
+            <div class="follow-section-third-info">
+              <img src="assets/cat-5627808_640.jpg" alt="user image" />
+              <div class="follow-section-info-text">
+                <span>Mikyung11</span><span>9명이 팔로우합니다.</span>
+              </div>
+            </div>
+            <button class="follow-button">팔로우</button>
+          </div>
+        </div>
+        <footer>
+          <p>
+            Instagram 정보·지원·홍보 센터·API·채용 정보·개인정보처리방침·약관·
+            디렉터리· 프로필· 해시태그·언어
+          </p>
+          <span>© 2019 INSTAGRAM</span>
+        </footer>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/736b91ac16.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
