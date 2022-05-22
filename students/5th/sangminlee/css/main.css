@@ -1,0 +1,327 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+nav{
+    border : 1px solid #dbdbdb;
+    position : fixed;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    left : 0;
+    right : 0;
+    top : 0;
+    height : 60px;
+    background-color : white;
+}
+
+.nav-box{
+    width : 960px;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-box span{
+    font-size: 30px;
+}
+
+.search{
+    background-color: #fafafa;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background-image: url("../img/search.png");
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    padding-left: 30px;
+    height: 35px;
+    width: 250px;
+    margin-left: 50px;
+}
+
+.search:focus{
+    outline: none;
+}
+
+.menu-box{
+    width: 200px;
+    display: flex;
+    justify-content: end;
+}
+
+.menu-box img{
+    width: 25px;
+    margin-left: 30px;
+}
+
+main{
+    border : 1px solid black;
+    width : 960px;
+    margin: 0 auto;
+    padding-top : 100px;
+}
+
+/* 피드 */
+.feeds{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+/* 내용 */
+article{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dbdbdb;
+    background-color: white;
+}
+
+/* 피드머리 */
+.feeds-header{
+    width: 600px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+
+.feeds-header div{
+    display: flex;
+    align-items: center;
+}
+
+.feeds-header-img1{
+    width: 30px;
+    margin-left: 15px;
+}
+
+.feeds-header-name{
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.feeds-header-img2{
+    width: 20px;
+    margin-right: 20px;
+}
+
+/* 피드사진 */
+.feeds-content img{
+    width: 600px;
+}
+
+/* 피드버튼들 */
+.feeds-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.feeds-button-left{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.feeds-button-right{
+    margin-right: 20px;
+}
+
+.feeds-button .fa-regular{
+    font-size: 25px;
+}
+
+/*.fa-solid{
+    color: red;
+    font-size:25px;
+}*/
+
+/* 피드 좋아요부분 */
+.feeds-like{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* 댓글부분 */
+.comment-li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-li i{
+    margin-right: 10px;
+}
+
+.comment-li i:hover{
+    cursor: pointer;
+}
+
+.feeds-comment{
+    border-bottom: 1px solid #dbdbdb;;
+}
+
+.feeds-comment ul{
+    list-style: none;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.comment-id{
+    font-weight: bold;
+}
+
+/* 댓글입력부분 */
+.feeds-comment-enter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.enter-input{
+    width: 450px;
+    font-size: 15px;
+    margin-left: 10px;
+    border: none;
+}
+
+.enter-input:focus{
+    outline: none;
+  }
+
+.post-button{
+    margin-right: 10px;
+    color: #3586ba;
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.4;
+}
+
+.post-button:hover{
+    cursor: pointer;
+  }
+
+/* main-right */
+.main-right{
+    top: 110px;
+    display: inline-block;
+    width: 300px;
+    position: fixed;
+}
+
+.main-right-box{
+    display: flex;
+    flex-direction: column;
+}
+
+/* user information */
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user-img-box{
+    display: flex;
+    align-items: center;
+}
+
+.user-img{
+    width: 50px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+.user-info-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.user-id{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.user-name{
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+}
+
+/* story */
+
+.story-box{
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.story-header-left{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 15px;
+    color: grey;
+}
+
+.story-header-right{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.story-content ul{
+    list-style: none;
+    margin-left: 20px;
+    padding: 0;
+}
+
+
+/* recommend */
+
+.recommend-box{
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    margin-top: 10px;
+}
+
+.recommend-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.recommend-content ul{
+    list-style: none;
+    margin-left: 20px;
+    padding: 0;
+}
+
+/* 사이트정보 */
+.main-right-footer{
+    margin-top: 10px;
+    font-size: 12px;
+    color: grey;
+}
