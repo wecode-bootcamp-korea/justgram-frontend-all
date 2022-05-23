@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JustGram</title>
-    <link rel="stylesheet" href="style/common.css">
-    <link rel="stylesheet" href="style/login.css">
-    <link rel="icon" href="images/favicon.png">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JustGram</title>
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/login.css">
+  <link rel="icon" href="images/favicon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  </style>
 </head>
 <body>
-     <section class="wrapper">
-        <article class="logInWrap">
-            <h1 class="logo">Justgram</h1>
-            <div class="loginForm">
-                <div class="loginIdBorder">
-                    <input type="text" class="loginId" placeholder="전화번호, 사용자 이름 또는 이메일">
-                </div>
-                <div class="loginPwborder">
-                    <input type="password" class="loginPw" placeholder="비밀번호">
-                </div>
-                <button class="loginBtn" disabled>로그인</button>
-            </div>
-            <footer><a href="#">비밀번호를 잊으셨나요?</a></footer>
-        </article>
-    </section>
-    <script src='js/login.js'></script>
+  <section class="login__wrapper"> 
+    <article class="login__wrap">
+      <h1 class="login__logo">Justgram</h1>
+      <div class="login__form">
+        <div class="login__id-box">
+          <input type="text" class="login__id" placeholder="전화번호, 사용자 이름 또는 이메일">
+        </div>
+        <div class="login__pw-box">
+          <input type="password" class="login__pw" placeholder="비밀번호">
+        </div>
+        <button class="login__btn" disabled>로그인</button>
+      </div>
+      <footer>
+        <a href="#">비밀번호를 잊으셨나요?</a>
+      </footer>
+    </article>
+  </section>
+  <script src='js/login.js'></script>
 </body>
 </html>
