@@ -114,19 +114,23 @@ main{
 .ID{
     font-weight: bolder;
 }
-.font-blue{
-    position: absolute;
-    right:0;
+.posting{
+    border: none;
+    background-color: white;
+    
+    
     color:rgba(0, 0, 255, 0.781)
 }
 .comment{
-    position: relative;
+    display: flex;
+    justify-content:space-between;
     border-top: 1px solid silver;
     margin-top: 10px;
 }
 .main-right{
     width: 300px;
     margin-top: 30px;
+    margin-left: 50px;
   }
 .main-right-img{ 
     width: 50px;
@@ -154,11 +158,37 @@ main{
 }
 .story-div{
     border: 1px solid silver;
+    height: 170px;
+    overflow:auto;
+    margin-bottom: 20px;
+    }
+.story-div::-webkit-scrollbar{
+    display: none;
 }
 .yumsimg{
-    width: 30px;
+    width: 60px;
     border-radius: 100%;
+    padding-right: 10px;
 }
 .yum_div{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
    }
+.yum{
+    display: flex;
+    position: relative;
+}
+.follow{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    color: blue;
+    
+}
+.reco{
+    border: 1px solid silver;
+    margin-bottom: 20px;
+}
+.comment-input{
+    border: none;
+}
