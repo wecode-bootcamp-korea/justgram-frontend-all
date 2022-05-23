@@ -1,0 +1,25 @@
+/* common.css */
+@import "reset.css";
+
+*{
+   box-sizing: border-box;
+}
+body{
+   background-color:#fafafa;
+   font-size: 10px;
+}
+a{
+   text-decoration: none;
+   color: #262626;
+}
+a:hover, a:active{
+   text-decoration: none; 
+   color: #262626;
+}
+input, button{
+   outline: none;
+   border: 0;
+}
+button{
+   cursor: pointer;
+}
