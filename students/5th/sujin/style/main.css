@@ -27,9 +27,10 @@ nav .nav_btns .btn_profile_cont .profile_cont.off{ display:none; }
 
 nav .search_cont{ display:flex; justify-content:center; width:200px; background:#fafafa; border:1px solid #dbdbdb; padding:4px 8px; z-index:1; }
 nav .search_cont .btn_innerSrh{ color:#8e8e8e; }
-nav .search_cont.off .btn_innerSrh{ display:block; }
+nav .search_cont.off .btn_innerSrh{ display:block; width:100%; }
 nav .search_cont.on .btn_innerSrh{ display:none; }
 nav .search_cont.off .input_cont{ display:none; }
+nav .search_cont.on{ background:#fff; }
 nav .search_cont.on .input_cont{ display:flex; justify-content:space-between; align-items:center; width:100%; }
 nav .search_cont.on .input_cont i{ flex:0 0 auto; color:#A5A7AA; }
 nav .search_cont.on .input_cont .search_input{ flex:1 1 auto; width:88%; padding:0 4px; }
@@ -62,7 +63,8 @@ main .feeds_stn{ padding-top:60px; margin-right:28px; flex:1 auto; }
 .feeds_cont .desc_cont .comments{ width:100%; padding-top:12px; }  
 .feeds_cont .desc_cont .comments > div{ display:flex; justify-content:space-between; align-items:flex-start;margin-top:8px; }
 .feeds_cont .desc_cont .comments > div:first-child{ margin-top:0; }
-.feeds_cont .desc_cont .comments > div p{ width:calc(100% - 38px); }
+.feeds_cont .desc_cont .comments > div p{ width:calc(100% - 42px); }
+.feeds_cont .desc_cont .comments > div p span{ word-break:break-all; }
 .feeds_cont .desc_cont .comments > div button{ flex:0 auto; padding:0 4px; font-size:12px; }
 .feeds_cont .desc_cont .comments > div .btn_like .fa-solid{ color:#ee4955; }
 .feeds_cont .desc_cont .btn_commDelete{ display:none;}
@@ -70,11 +72,11 @@ main .feeds_stn{ padding-top:60px; margin-right:28px; flex:1 auto; }
 .feeds_cont .desc_cont >.color_darkGray{ color:#262626; margin-top:4px; font-size:10px; }
 .feeds_cont .feeds_comments{ display:flex; justify-content:space-between; padding:16px; border-top:1px solid #efefef; }
 .feeds_cont .feeds_comments input{ width:94%; }
-.feeds_cont .feeds_comments button{ width:6%; color:#0095f6; opacity:1; }
+.feeds_cont .feeds_comments button{ flex-basis:auto; color:#0095f6; opacity:1; }
 .feeds_cont .feeds_comments button:disabled{ opacity:0.3; }
 
 /* .main_right .profile_cont */
-main .main_right { position:sticky; top:145px; right:0; width:300px; height:500px;}
+main .main_right { position:sticky; top:145px; right:0; width:300px; height:580px; }
 .main_right .profile_cont{ display:flex; align-items:center; padding:0 8px; margin-bottom:20px; }
 .main_right .profile_cont .profile_img{ width:56px; height:56px; border:1px solid #eaeaea; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%; }
 .main_right .profile_cont p{ display:flex; flex-direction:column; margin-left:16px; font-size:14px; }
@@ -115,3 +117,27 @@ main .main_right { position:sticky; top:145px; right:0; width:300px; height:500p
 .info_stn .info_cont a::after{ content:'·'; display:inline-block; margin-left:4px; }
 .info_stn .info_cont a:last-child:after{ display:none; }
 .info_stn > p{ margin-top:12px; }
+
+@media screen and (max-width: 980px) {
+    nav .cont{ width:100%; }
+    main{ flex-direction:column; justify-content:center; width:100%; }
+    main .feeds_stn{ flex:none; width:80%; max-width:600px; padding-right:0; margin:0 auto; }
+    .feeds_cont .feeds_comments input{ width:90%; }
+    main .main_right{ position:static; width:100%; height:auto; }
+    .main_right .profile_cont, .main_right .stn{ display:none; }
+    .info_stn{ display:flex; justify-content:center; align-items:center; flex-direction:column; padding:10px 4%; }
+    .info_stn > p{ margin-top:4px; }
+}
+
+@media screen and (max-width: 480px) {
+    nav .cont{ padding:12px 0; }
+    nav .logo .ico_logo{ width:20px; height:20px; }
+    .logo .txt{ font-size:20px; margin-left:8px; padding-left:8px; }
+    .logo .txt::before{ top:4px; height:24px; }
+    nav .search_cont{ display:none; }
+    nav .nav_btns button{ width:40px; height:40px; }
+    main{ padding-top:70px; }
+    main .feeds_stn{ padding-top:36px; }
+    .feeds_cont .desc_cnt .desc{ width:54%; }
+    main .feeds_stn{ width:100%; max-width:none; }
+}
