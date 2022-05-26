@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style/common.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Main</title>
+</head>
+<body>
+    <section id="main">
+        <nav>
+            <div class="cont">
+                <h1 class="logo">
+                    <a href="./main.html">
+                        <span class="ico_logo"><img src="./img/ico_instagram.png" alt="instagram icon"></span>
+                        <span class="txt">Justgram</span>
+                    </a>
+                </h1>
+
+                <div class="search_cont off">
+                    <button type="button" class="btn_innerSrh">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>검색</span>
+                    </button>
+                    <div class="input_cont">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="search_input"     placeholder="검색" />
+                        <button type="button" class="btn_closeSrh"><i class="fas fa-times-circle"></i></button>
+                    </div>
+                </div>
+
+                <div class="nav_btns">
+                    <button type="button" id="btn_explore">
+                        <img src="./img/ico_explore.png" alt="explore icon">
+                    </button>
+                    <button type="button" id="btn_heart" class="on">
+                        <img src="./img/ico_heart.png" alt="heart icon">
+                    </button>
+                    <div class="btn_profile_cont">
+                        <button type="button" id="btn_profile">
+                            <img src="./img/ico_profile.png" alt="profile icon">
+                        </button>
+                        <div class="profile_cont off">
+                            <div class="area_click"></div>
+                            <div class="rect"></div>
+                            <div class="profile_cnt">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="fa-regular fa-circle-user"></i>
+                                            <span>프로필</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="fa-regular fa-bookmark"></i>
+                                            <span>저장됨</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="fa-solid fa-gear"></i>
+                                            <span>설정</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button type="button">로그아웃</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="feeds_stn">
+                <!-- .article -->
+                <article>
+                    <div class="feeds_header">
+                        <div class="feeds_profile">
+                            <a href="javascript:void(0)">
+                                <img src="./img/bg01.jpg" alt="feed img">
+                                <span class="name">canon_mj</span>
+                            </a>
+                        </div>
+                        <button type="button" class="menu">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+                    <div class="feeds_imgs">
+                        <img src="./img/bg022.jpg" alt="bg02">
+                    </div>
+                    <div class="feeds_cont">
+                        <div class="btn_area">
+                            <div class="btn_left">
+                                <button type="button" class="btn_feedLike">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button type="button">
+                                    <i class="fa-regular fa-comment"></i>
+                                </button>
+                                <button type="button">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                            </div>
+                            <button type="button"><i class="fa-regular fa-bookmark"></i></button>
+                        </div>
+                        <div class="feeds_cnt">
+                            <p class="like_nums">
+                                <img src="./img/bg02.jpg" alt="aineword img">
+                                <span  class="like_name">aineword</span>님&nbsp;<b>외 <span>10</span>명</b>이 좋아합니다
+                            </p>
+                            <div class="desc_cont">
+                                <div class="desc_cnt">
+                                    <p class="profile_name">canon_mj</p>
+                                    <p class="desc">위워크에서 진행한 베이킹 클래스 너무 좋은걸 두줄 이상입니다.</p>
+                                    <button type="button" class="color_darkGray">더 보기</button>
+                                </div>
+                                <div class="comments">
+                                    <div>
+                                        <p>
+                                            <b class="profile_name">neceosecius</b>
+                                            <span>거봐 좋았잖아~~~~~</span>
+                                        </p>
+                                        <button type="button" class="btn_commDelete">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                        <button type="button" class="btn_like">
+                                            <i class="fa-regular fa-heart "></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <b class="profile_name">neceosecius</b>
+                                            <span>어땠어??</span>
+                                        </p>
+                                        <button type="button" class="btn_commDelete">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                        <button type="button" class="btn_like">
+                                            <i class="fa-regular fa-heart "></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="color_darkGray">42분 전</p>
+                            </div>
+                        </div>
+                        <div class="feeds_comments">
+                            <input class="comment_input" type="text" placeholder="댓글 달기...." />
+                            <button type="button" class="btn_addComment" disabled>게시</button>
+                        </div>
+                    </div>
+                </article>
+                <!-- /.article -->
+
+                <!-- .article -->
+                <article>
+                    <div class="feeds_header">
+                        <div class="feeds_profile">
+                            <a href="javascript:void(0)">
+                                <img src="./img/bg03.jpg" alt="feed img">
+                                <span class="name">canon_mj</span>
+                            </a>
+                        </div>
+                        <button type="button" class="menu">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+                    <div class="feeds_imgs">
+                        <img src="./img/bg03.jpg" alt="bg03">
+                    </div>
+                    <div class="feeds_cont">
+                        <div class="btn_area">
+                            <div class="btn_left">
+                                <button type="button" class="btn_feedLike">
+                                    <i class="fa-regular fa-heart"></i> 
+                                </button>
+                                <button type="button">
+                                    <i class="fa-regular fa-comment"></i>
+                                </button>
+                                <button type="button">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                            </div>
+                            <button type="button"><i class="fa-regular fa-bookmark"></i></button>
+                        </div>
+                        <div class="feeds_cnt">
+                            <p class="like_nums">
+                                <img src="./img/bg04.jpg" alt="aineword img">
+                                <span  class="like_name">aineword</span>님&nbsp;<b>외 <span>10</span>명</b>이 좋아합니다
+                            </p>
+                            <div class="desc_cont">
+                                <div class="desc_cnt">
+                                    <p class="profile_name">canon_mj</p>
+                                    <p class="desc">위워크에서 진행한 베이킹 클래스 너무 좋은걸 두줄 이상입니다.</p>
+                                    <button type="button" class="color_darkGray">더 보기</button>
+                                </div>
+                                <div class="comments">
+                                    <div>
+                                        <p>
+                                            <b class="profile_name">neceosecius</b>
+                                            <span>어땠어??</span>
+                                        </p>
+                                        <button type="button" class="btn_commDelete">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                        <button type="button" class="btn_like">
+                                            <i class="fa-regular fa-heart "></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="color_darkGray">42분 전</p>
+                            </div>
+                        </div>
+                        <div class="feeds_comments">
+                            <input class="comment_input" type="text" placeholder="댓글 달기...." />
+                            <button type="button" class="btn_addComment" disabled>게시</button>
+                        </div>
+                    </div>
+                </article>
+                <!-- /.article -->
+            </div>
+
+            <!-- .main_right -->
+            <div class="main_right">
+                <div class="profile_cont">
+                    <img class="profile_img" src="./img/bg04.jpg" alt="프로필 이미지">
+                    <p>
+                        <a href="javascript:void(0)" class="profile_name">wecode_bootcamp</a>
+                        <span class="user_name">WeCode | 위코드</span>
+                    </p>
+                </div>
+                <div class="stn story_cont">
+                    <div class="cont_top">
+                        <p>스토리</p>
+                        <a href="javascript:void(0)">모두 보기</a>
+                    </div>
+                    <div class="story_cnt">
+                        <div class="story_box">
+                            <button type="button" class="gradient_img">
+                                <img src="./img/story01.jpg" alt="story01">
+                            </button>
+                            <div class="desc">
+                                <a class="profile_name" href="javascript:void(0)">_yum</a>
+                                <span class="times">16분전</span>
+                            </div>
+                        </div>
+                        <div class="story_box">
+                             <button type="button" class="gradient_img">
+                                <img src="./img/story02.jpg" alt="story02">
+                            </button>
+                            <div class="desc">
+                                <a class="profile_name" href="javascript:void(0)">drink_drink</a>
+                                <span class="times">3시간전</span>
+                            </div>
+                        </div>
+                        <div class="story_box">
+                             <button type="button" class="gradient_img">
+                                <img src="./img/story03.jpg" alt="story03">
+                            </button>
+                            <div class="desc">
+                                <a class="profile_name" href="javascript:void(0)">hhhhh_</a>
+                                <span class="times">20시간전</span>
+                            </div>
+                        </div>
+                        <div class="story_box">
+                             <button type="button" class="gradient_img">
+                                <img src="./img/story04.jpg" alt="story04">
+                            </button>
+                            <div class="desc">
+                                <a class="profile_name" href="javascript:void(0)">sssss_</a>
+                                <span class="times">22시간전</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stn recommend_cont">
+                    <div class="cont_top">
+                        <p>회원님을 위한 추천</p>
+                        <a href="javascript:void(0)">모두 보기</a>
+                    </div>
+                    <div class="recommend_cnt">
+                        <div class="recommend_box">
+                            <a href="javascript:void(0)" class="profile_img">
+                                <img src="./img/story05.jpg" alt="recommend01">
+                            </a>
+                            <div class="desc">
+                                <a class="profile_name" href="javascript:void(0)">joassssseye</a>
+                                <span class="following_txt">_dsdddd님 외 2명이 팔로우합니다ssssssssSSSSSㄴ</span>
+                            </div>
+                            <button type="button" class="btn_follow">팔로우</button>
+                        </div>
+                        <div class="recommend_box">
+                            <a href="javascript:void(0)" class="profile_img">
+                                <img src="./img/story06.jpg" alt="recommend02">
+                            </a>
+                            <div class="desc">
+                                <a class="profile_name" href="javascript:void(0)">joassssseye</a>
+                                <span class="following_txt">_aaddddd님 외 2명이 팔로우합니다ssssssssSSSSSㄴ</span>
+                            </div>
+                            <button type="button" class="btn_follow">팔로우</button>
+                        </div>
+                        <div class="recommend_box">
+                            <a href="javascript:void(0)" class="profile_img">
+                                <img src="./img/story07.jpg" alt="recommend03">
+                            </a>
+                            <div class="desc">
+                                <a class="profile_name" href="javascript:void(0)">joassssseye</a>
+                                <span class="following_txt">_bb11_님 외 1명이 팔로우합니다ssssssssSSSSSㄴ</span>
+                            </div>
+                            <button type="button" class="btn_follow">팔로우</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_stn">
+                    <div class="info_cont">
+                        <a href="javascript:void(0)">instagram 정보</a>
+                        <a href="javascript:void(0)">지원</a>
+                        <a href="javascript:void(0)">홍보 센터</a>
+                        <a href="javascript:void(0)">API</a>
+                        <a href="javascript:void(0)">채용 정보</a>
+                        <a href="javascript:void(0)">개인정보처리방침</a>
+                        <a href="javascript:void(0)">약관</a>
+                        <a href="javascript:void(0)">디렉터리</a>
+                        <a href="javascript:void(0)">프로필</a>
+                        <a href="javascript:void(0)">해시태그</a>
+                        <a href="javascript:void(0)">언어</a>
+                    </div>
+                    <p>@copy; 2019 INSTAGRAM</p>
+                </div>
+            </div>
+            <!-- /.main_right -->
+        </main>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
