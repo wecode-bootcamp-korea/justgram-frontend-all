@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    }
+main{
+    display: flex;
+    justify-content: center;
+}
+.home{
+    display: flex;
+    justify-content: center;
+   padding-right: 5px;
+}
+.name{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    border-left: 1px solid silver;
+    padding-left: 15px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    display: flex;
+}
+.homeImg{
+    width: 50%;
+}
+.searchOutLine{
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+.searchBar{
+    width: 100%;
+    border: 1px solid silver;
+    text-align: center;
+    color: silver; 
+    background-color: rgba(128, 128, 128, 0.048);
+}
+.searchImg{
+    position: absolute;
+    width: 10px;
+    right:110px;
+    }
+.rightBar{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.emo{
+    width: 30px;
+}
+.profile_img{
+    width:35px;
+    border-radius: 100%;
+    height: 20px;
+    margin:10px
+}
+.feeds{
+    position: relative;
+    border: 1px solid silver;
+    width: 50%;
+    margin-top: 30px;
+}
+.dots{
+    width: 20px;
+    position:absolute ;
+    right: 0;
+    top: 13px;
+}
+.profile_name{
+    font-weight:bold;
+    position:absolute ;
+    top:10px
+}
+.feeds_img{
+    width: 100%;
+    height: 400px;
+}
+.emoji_line{
+    position: relative;
+
+}
+.emoji{
+    width: 15px;
+}
+.save{
+    width: 15px;  
+    position: absolute;
+    right:0;
+}
+.likeline_img{
+    border-radius: 100%;
+    width: 20px;
+}
+.likeline_font{
+    font-weight: bold;
+}
+.message{
+    position: relative;
+}
+.emoji_heart{
+    width: 10px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.font-grey{
+    color:grey;
+}
+.ID{
+    font-weight: bolder;
+}
+.posting{
+    border: none;
+    background-color: white;
+    
+    
+    color:rgba(0, 0, 255, 0.781)
+}
+.comment{
+    display: flex;
+    justify-content:space-between;
+    border-top: 1px solid silver;
+    margin-top: 10px;
+}
+.main-right{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+.main-right-img{ 
+    width: 50px;
+    border-radius: 100%;
+}
+.wecodenickname{
+    display: flex;
+    flex-direction: column;
+
+}
+.wecodeIdDiv{
+    display: flex;
+    align-items: center;
+}
+.font-bold{
+    font-weight:bolder ;
+}
+.text{
+    position: relative;
+}
+.all-looking{
+    position: absolute;
+    right:0;
+    font-weight: bolder;
+}
+.story-div{
+    border: 1px solid silver;
+    height: 170px;
+    overflow:auto;
+    margin-bottom: 20px;
+    }
+.story-div::-webkit-scrollbar{
+    display: none;
+}
+.yumsimg{
+    width: 60px;
+    border-radius: 100%;
+    padding-right: 10px;
+}
+.yum_div{
+    display: flex;
+    flex-direction: column;
+   }
+.yum{
+    display: flex;
+    position: relative;
+}
+.follow{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    color: blue;
+    
+}
+.reco{
+    border: 1px solid silver;
+    margin-bottom: 20px;
+}
+.comment-input{
+    border: none;
+}
